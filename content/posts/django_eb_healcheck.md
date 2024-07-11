@@ -55,5 +55,9 @@ This changed the health check responses from 400 to 200!
 "GET /healthcheck/ HTTP/1.1" 200 186 "-" "ELB-HealthChecker/2.0" "-"
 ```
 
+Seeing the green "Ok" checkmark in the EB dashboard is a good feeling and makes it much easier to go home in the evening.
+
+![Severe](../../health_ok.png)
+
 As a final note, I also changed the health check path from the root path "`/`" to a dedicated path of "`/healthcheck/`".  Using the root path would likely work but then you may have to deal with redirects and handling 3xx response codes.  I find a dedicated path & logic to be a better fit for my needs.
 

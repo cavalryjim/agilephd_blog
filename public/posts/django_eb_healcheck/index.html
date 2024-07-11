@@ -130,7 +130,9 @@ Although my app was deployed and appeared to be working correctly, the Elastic B
 </span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
 </span></span></code></pre></div><p>This changed the health check responses from 400 to 200!</p>
 <pre tabindex="0"><code>&#34;GET /healthcheck/ HTTP/1.1&#34; 200 186 &#34;-&#34; &#34;ELB-HealthChecker/2.0&#34; &#34;-&#34;
-</code></pre><p>As a final note, I also changed the health check path from the root path &ldquo;<code>/</code>&rdquo; to a dedicated path of &ldquo;<code>/healthcheck/</code>&rdquo;.  Using the root path would likely work but then you may have to deal with redirects and handling 3xx response codes.  I find a dedicated path &amp; logic to be a better fit for my needs.</p>
+</code></pre><p>Seeing the green &ldquo;Ok&rdquo; checkmark in the EB dashboard is a good feeling and makes it much easier to go home in the evening.</p>
+<p><img src="../../health_ok.png" alt="Severe"></p>
+<p>As a final note, I also changed the health check path from the root path &ldquo;<code>/</code>&rdquo; to a dedicated path of &ldquo;<code>/healthcheck/</code>&rdquo;.  Using the root path would likely work but then you may have to deal with redirects and handling 3xx response codes.  I find a dedicated path &amp; logic to be a better fit for my needs.</p>
 
     </div>
     <div class="post-footer">
