@@ -1,5 +1,5 @@
 +++
-title = 'What Does it Mean to "Hash"?'
+title = 'Hashing'
 tags = ["blockchain", "python"]
 date = 2024-03-21
 +++
@@ -101,7 +101,7 @@ else:
     print("Hashes do not match! The file may have been tampered with.")
 ```
 
-In this example, the file is authentic!  Conversely, if the file has been tampered with, we would know because the hash would have been different.  
+In this example, the file is authentic!  Conversely, if the file has been tampered with, we would know because it results in a different hash.  
 
 ### Large Files
 

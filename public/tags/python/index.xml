@@ -16,7 +16,7 @@
       <description>The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work for a Django app without additional setup.&#xA;Although my app was deployed and appeared to be working correctly, the Elastic Beanstalk environment reported Severe/Degraded state.</description>
     </item>
     <item>
-      <title>What Does it Mean to &#34;Hash&#34;?</title>
+      <title>Hashing</title>
       <link>http://localhost:1313/posts/hashing/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/hashing/</guid>
