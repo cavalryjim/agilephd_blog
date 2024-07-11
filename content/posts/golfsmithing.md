@@ -1,5 +1,6 @@
 +++
 title = 'Revitalizing Ping ISI BeCu Irons'
+tags = ["golf"]
 date = 2023-08-15T20:02:58-05:00
 +++
 

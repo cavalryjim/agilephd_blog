@@ -16,6 +16,13 @@
       <description>The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work for a Django app without additional setup.&#xA;Although my app was deployed and appeared to be working correctly, the Elastic Beanstalk environment reported Severe/Degraded state.</description>
     </item>
     <item>
+      <title>What Does it Mean to &#34;Hash&#34;?</title>
+      <link>http://localhost:1313/posts/nonce_hash/</link>
+      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/nonce_hash/</guid>
+      <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
+    </item>
+    <item>
       <title>What is Blockchain?</title>
       <link>http://localhost:1313/posts/what_is_blockchain/</link>
       <pubDate>Thu, 14 Sep 2023 21:25:08 -0500</pubDate>
@@ -30,7 +37,7 @@
       <description>It took me seventeen years to get three thousand hits in baseball. I did it in one afternoon on the golf course.&#xA;&amp;ndash; Hank Aaron&#xA;eBay Find I’m a sucker for classic Ping clubs and found these ISIs on eBay. Most interesting to me was that the clubs were:&#xA;beryllium copper and appeared to be in great shape. Beryllium copper (BeCu) became popular back in the mid/late &amp;rsquo;80s principally because it was advertised as offering a softer feel than many of the equivalent cast steel designs of the time.</description>
     </item>
     <item>
-      <title>Hello World</title>
+      <title>Hello World!</title>
       <link>http://localhost:1313/posts/hello_world/</link>
       <pubDate>Mon, 10 Jul 2023 20:02:58 -0500</pubDate>
       <guid>http://localhost:1313/posts/hello_world/</guid>

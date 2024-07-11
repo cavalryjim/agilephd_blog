@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>What Does it Mean to &#34;Hash&#34;? // AgilePhD</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.128.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dr. James Davis" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
+    
+
+    
+  
+
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="What Does it Mean to &#34;Hash&#34;?">
+  <meta name="twitter:description" content="This post will discuss the concept of hashing and provide examples using the Python programming language.
+The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.
+SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/nonce_hash/">
+  <meta property="og:site_name" content="AgilePhD">
+  <meta property="og:title" content="What Does it Mean to &#34;Hash&#34;?">
+  <meta property="og:description" content="This post will discuss the concept of hashing and provide examples using the Python programming language.
+The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.
+SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-21T00:00:00+00:00">
+    <meta property="article:tag" content="Blockchain">
+    <meta property="article:tag" content="Python">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/tank1.jpg" alt="Dr. James Davis" /></a>
+      <span class="app-header-title">AgilePhD</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Dr. James Davis: data scientist, girl dad, and can&#39;t shutup about Blockchain.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/cavalryjim" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jdavisphd/" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">What Does it Mean to &#34;Hash&#34;?</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 21, 2024
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          5 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="http://localhost:1313/tags/blockchain/">Blockchain</a>
+              <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>This post will discuss the concept of hashing and provide examples using the Python programming language.</p>
+<h3 id="the-hash">The Hash</h3>
+<p>A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length.  This output, or hash, is unique to the information used as the input.  You can think of it as being like a fingerprint.</p>
+<p><a href="https://docs.python.org/3/library/hashlib.html">SHA256</a> is a popular cryptographic hash algorithm that produces a 256-bit hash value. It is commonly used to check the integrity of files and verify the authenticity of files or data. It is also widely used in the cryptocurrency world to secure transactions on the blockchain. In this post, we’ll look at how to generate and use SHA256 hashes in Python.</p>
+<h3 id="what-is-a-sha256-hash">What is a SHA256 Hash?</h3>
+<p>A SHA256 hash is a cryptographic hash algorithm that takes an input of any length and produces a fixed-size 256-bit (32-byte) hash value. The output is known as a hash digest and is used as a one-way function to verify the integrity of a file.</p>
+<p>The SHA256 algorithm is designed to be collision-resistant, meaning it is very difficult to find two different inputs that will produce the same output. This makes it useful for verifying the authenticity of a file or data.</p>
+<h3 id="generating-a-sha256-hash-in-python">Generating a SHA256 Hash in Python</h3>
+<p>Python makes it simple to generate a SHA256 hash. The <code>hashlib</code> package, which is included in the Anaconda distribution of Python, and perhaps most others, provides several hashing algorithms including SHA256.</p>
+<p>To generate a SHA256 hash, we can use the <code>hashlib.sha256()</code> function. This function takes a string as an argument and returns the SHA256 hash of the input string.</p>
+<p>Here’s a simple example of how to generate a SHA256 hash in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> hashlib
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Input string</span>
+</span></span><span style="display:flex;"><span>input_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hello world&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generate SHA256 hash</span>
+</span></span><span style="display:flex;"><span>sha256_hash <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>sha256(input_string<span style="color:#f92672">.</span>encode(<span style="color:#e6db74">&#39;utf-8&#39;</span>))<span style="color:#f92672">.</span>hexdigest()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Print the hash</span>
+</span></span><span style="display:flex;"><span>print(sha256_hash)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># output: b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9</span>
+</span></span></code></pre></div><p>If you run the above code, you should get the exact same hash output.  Also try modifying the <code>input_string</code> and rehashing.  You should notice that the output changes rather significantly.  Even if all you do is add or remove a single space to the input, it is easy to notice the change.  This drastic change is known as the <a href="https://en.wikipedia.org/wiki/Avalanche_effect">Avalance Effect</a>.</p>
+<p>The <code>hashlib.sha256()</code> function also accepts a bytes-like object as an argument, so we can use it to generate the SHA256 hash of a file. Here’s an example of how to do this with a file called <code>text_file.txt</code> containing everyones favorite, lorem ipsum:</p>
+<pre tabindex="0"><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Vivamus condimentum sagittis lacus, laoreet luctus ligula laoreet ut.
+Vestibulum ullamcorper accumsan velit vel vehicula.
+Proin tempor lacus arcu.
+Nunc at elit condimentum, semper nisi et, condimentum mi.
+In venenatis blandit nibh at sollicitudin.
+Vestibulum dapibus mauris at orci maximus pellentesque.
+Nullam id elementum ipsum. Suspendisse cursus lobortis viverra.
+Proin et erat at mauris tincidunt porttitor vitae ac dui.
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Open the file</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;text_file.txt&#34;</span>, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Read the contents of the file</span>
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generate SHA256 hash</span>
+</span></span><span style="display:flex;"><span>sha256_hash <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>sha256(data)<span style="color:#f92672">.</span>hexdigest()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Print the hash</span>
+</span></span><span style="display:flex;"><span>print(sha256_hash)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># output: d16267b56ea53c1b340a3fd9ba7f70d8a6037abf350b492b60264ff32f19faf0</span>
+</span></span></code></pre></div><p>Once again, I would encourage you to try modifying the contents of the text file and rehashing it to observe the Avalance Effect.  Notice that if you have the hash of a file, you can use that to confirm the integrity of the content.</p>
+<h3 id="using-a-sha256-hash-to-verify-file-integrity">Using a SHA256 Hash to Verify File Integrity</h3>
+<p>Once we have the SHA256 hash of a file, we can use it to verify the integrity of a file or other data. This is useful for verifying the authenticity of downloaded files or blocks of data.</p>
+<p>We can do this by comparing the SHA256 hash of the downloaded file with the expected hash. If the hashes match, then we can be sure that the file has not been tampered with.</p>
+<p>Here’s an example of how to do this in Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Expected hash</span>
+</span></span><span style="display:flex;"><span>confirmation_hash <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;d16267b56ea53c1b340a3fd9ba7f70d8a6037abf350b492b60264ff32f19faf0&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Open the file</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;text_file.txt&#34;</span>, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Read the contents of the file</span>
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generate SHA256 hash</span>
+</span></span><span style="display:flex;"><span>sha256_hash <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>sha256(data)<span style="color:#f92672">.</span>hexdigest()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compare hashes</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> sha256_hash <span style="color:#f92672">==</span> confirmation_hash:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Hashes match! The file is authentic.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Hashes do not match! The file may have been tampered with.&#34;</span>)
+</span></span></code></pre></div><p>In this example, the file is authentic!  Conversely, if the file has been tampered with, we would know because the hash would have been different.</p>
+<h3 id="large-files">Large Files</h3>
+<p>Notice that, thus far, the size of the hash remains the same regardless of the size of the item to be hashed.  Let&rsquo;s hash an image file.</p>
+<p><img src="../../mike.png" alt="Mike strolling around"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Open the file</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;mike.png&#34;</span>, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Read the contents of the file</span>
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generate SHA256 hash</span>
+</span></span><span style="display:flex;"><span>sha256_hash <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>sha256(data)<span style="color:#f92672">.</span>hexdigest()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Print the hash</span>
+</span></span><span style="display:flex;"><span>print(sha256_hash)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># output: 74a3d70ac1fe79985c58e76684ea72d69df1024a087f8e0750f8f800df1030ce</span>
+</span></span></code></pre></div><p>How about a video file?</p>
+<p><a href="https://agilephd.s3.amazonaws.com/Afghanistan_homecoming.mov">https://agilephd.s3.amazonaws.com/Afghanistan_homecoming.mov</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Open the file</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;Afghanistan_homecoming.mov&#34;</span>, <span style="color:#e6db74">&#34;rb&#34;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Read the contents of the file</span>
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generate SHA256 hash</span>
+</span></span><span style="display:flex;"><span>sha256_hash <span style="color:#f92672">=</span> hashlib<span style="color:#f92672">.</span>sha256(data)<span style="color:#f92672">.</span>hexdigest()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Print the hash</span>
+</span></span><span style="display:flex;"><span>print(sha256_hash)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># output: 9b6df1e46424704e281ea1b9e933fec9cc599e9f5f75ddba2bf1deed647e6b2d</span>
+</span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
+<p>In these examples, we looked at how to generate and use SHA256 hashes in Python. We saw how to generate a SHA256 hash of a string or a file and how to use it to verify the integrity of a file.</p>
+<p>One of the major takeaways should be that hashing is a powerful mechanism for digitally signing data, such as information in a single block of a Blockchain, that validates the integrity of the data.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
