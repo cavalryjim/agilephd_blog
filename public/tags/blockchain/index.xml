@@ -6,14 +6,21 @@
     <description>Recent content in Blockchain on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Nonce and Hash: Why we do it this way</title>
-      <link>http://localhost:1313/posts/nonce_hash/</link>
-      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/nonce_hash/</guid>
+      <title>Nonce and the Hash</title>
+      <link>http://localhost:1313/posts/nonce_and_hash/</link>
+      <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/nonce_and_hash/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>What Does it Mean to &#34;Hash&#34;?</title>
+      <link>http://localhost:1313/posts/hashing/</link>
+      <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/hashing/</guid>
+      <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
     </item>
     <item>
       <title>What is Blockchain?</title>
