@@ -1,4 +1,45 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://blog.agilephd.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'AgilePhD'
 theme = 'm10c'
+paginate = 8
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[params]
+  author = "Dr. James Davis"
+  avatar = "tank1.jpg"
+  description = "Dr. James Davis: data scientist & girl dad that can't shutup about Blockchain."
+  menu_item_separator = " - "
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/cavalryjim"
+  [[params.social]]
+    icon = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/jdavisphd/"
+
+
+# Green theme
+[params.style]
+  darkestColor = "#315659"
+  darkColor = "#253031"
+  lightColor = "#96a879"
+  lightestColor = "#fff"
+  primaryColor = "#dad865"

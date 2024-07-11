@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <title>Posts // AgilePhD</title>
+    <title>Elastic Beanstalk Healthcheck with a Django App // AgilePhD</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.128.2">
@@ -9,7 +9,6 @@
     <meta name="author" content="Dr. James Davis" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
-    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml" title="AgilePhD">
     
 
     
@@ -18,15 +17,20 @@
 
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Dr. James Davis: data scientist &amp; girl dad that can&#39;t shutup about Blockchain.">
+  <meta name="twitter:title" content="Elastic Beanstalk Healthcheck with a Django App">
+  <meta name="twitter:description" content="The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work as anticipated.">
 
-    <meta property="og:url" content="http://localhost:1313/posts/">
+    <meta property="og:url" content="http://localhost:1313/posts/django_eb_healcheck/">
   <meta property="og:site_name" content="AgilePhD">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Dr. James Davis: data scientist &amp; girl dad that can&#39;t shutup about Blockchain.">
+  <meta property="og:title" content="Elastic Beanstalk Healthcheck with a Django App">
+  <meta property="og:description" content="The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work as anticipated.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-10T20:32:38-05:00">
+    <meta property="article:modified_time" content="2024-07-10T20:32:38-05:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Aws">
 
 
   </head>
@@ -64,49 +68,42 @@
     </header>
     <main class="app-container">
       
-  <article>
-    <h1>Posts</h1>
-    <ul class="posts-list">
-      
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="http://localhost:1313/posts/django_eb_healcheck/">Elastic Beanstalk Healthcheck with a Django App</a>
-          <span class="posts-list-item-description">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Elastic Beanstalk Healthcheck with a Django App</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
   <title>calendar</title>
   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
 </svg>
-            Jul 10, 2024
-            <span class="posts-list-item-separator">-</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+          Jul 10, 2024
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-            1 min read
-          </span>
-        </li>
-      
-        <li class="posts-list-item">
-          <a class="posts-list-item-title" href="http://localhost:1313/posts/hello_world/">Hello World</a>
-          <span class="posts-list-item-description">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
-  <title>calendar</title>
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+          1 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
 </svg>
-            Jul 10, 2024
-            <span class="posts-list-item-separator">-</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
-  <title>clock</title>
-  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
-</svg>
-            1 min read
-          </span>
-        </li>
+              <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
+              <a class="tag" href="http://localhost:1313/tags/aws/">Aws</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h3 id="the-problem">The Problem</h3>
+<p>Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications.  The good think about EB is that it handles much of the setup for you.  The bad thing is that EB also includes services, such as Healthchecks, that do not work as anticipated.</p>
+
+    </div>
+    <div class="post-footer">
       
-    </ul>
-    
-
-
-
+    </div>
   </article>
 
     </main>
