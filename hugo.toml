@@ -24,7 +24,7 @@ paginate = 8
 [params]
   author = "Dr. James Davis"
   avatar = "tank1.jpg"
-  description = "Dr. James Davis: data scientist & girl dad that can't shutup about Blockchain."
+  description = "Dr. James Davis: data scientist, girl dad, and can't shutup about Blockchain."
   menu_item_separator = " - "
   [[params.social]]
     icon = "github"
