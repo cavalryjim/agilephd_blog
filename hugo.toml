@@ -2,7 +2,7 @@ baseURL = 'https://blog.agilephd.com/'
 languageCode = 'en-us'
 title = 'AgilePhD'
 theme = 'm10c'
-paginate = 8
+paginate = 6
 
 [menu]
   [[menu.main]]
