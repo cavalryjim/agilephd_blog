@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Asymmetric Cryptography with Python // AgilePhD</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.128.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dr. James Davis" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
+    
+
+    
+  
+
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Asymmetric Cryptography with Python">
+  <meta name="twitter:description" content="RSA (Rivest-Shamir-Adleman) Cryptography RSA cryptography, named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman, is a widely used asymmetric encryption algorithm. It is a fundamental tool in modern cryptography and is used for secure data transmission, digital signatures, and various other cryptographic applications. RSA relies on the mathematical properties of prime numbers for its security.
+Here’s a simplified explanation of how RSA cryptography works:
+Key Generation: The first step is to generate a pair of keys: a public key and a private key.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/asymmetric_cryptography/">
+  <meta property="og:site_name" content="AgilePhD">
+  <meta property="og:title" content="Asymmetric Cryptography with Python">
+  <meta property="og:description" content="RSA (Rivest-Shamir-Adleman) Cryptography RSA cryptography, named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman, is a widely used asymmetric encryption algorithm. It is a fundamental tool in modern cryptography and is used for secure data transmission, digital signatures, and various other cryptographic applications. RSA relies on the mathematical properties of prime numbers for its security.
+Here’s a simplified explanation of how RSA cryptography works:
+Key Generation: The first step is to generate a pair of keys: a public key and a private key.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-22T00:00:00+00:00">
+    <meta property="article:tag" content="Cryptography">
+    <meta property="article:tag" content="Python">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/tank1.jpg" alt="Dr. James Davis" /></a>
+      <span class="app-header-title">AgilePhD</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Dr. James Davis: data scientist, girl dad, and can&#39;t shutup about Blockchain.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/cavalryjim" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jdavisphd/" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Asymmetric Cryptography with Python</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 22, 2024
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          4 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="http://localhost:1313/tags/cryptography/">Cryptography</a>
+              <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h3 id="rsa-rivest-shamir-adleman-cryptography">RSA (Rivest-Shamir-Adleman) Cryptography</h3>
+<p>RSA cryptography, named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman, is a widely used asymmetric encryption algorithm. It is a fundamental tool in modern cryptography and is used for secure data transmission, digital signatures, and various other cryptographic applications. RSA relies on the mathematical properties of prime numbers for its security.</p>
+<p>Here&rsquo;s a simplified explanation of how RSA cryptography works:</p>
+<h4 id="key-generation">Key Generation:</h4>
+<ul>
+<li>The first step is to generate a pair of keys: a public key and a private key.</li>
+<li>The public key is meant to be shared with anyone who wants to send you encrypted data. It contains two components: the modulus (usually represented as &rsquo;n&rsquo;) and the public exponent (usually represented as &rsquo;e&rsquo;).</li>
+<li>The private key is kept secret and should never be shared. It contains the modulus and a private exponent (usually represented as &rsquo;d&rsquo;).</li>
+</ul>
+<h4 id="encryption">Encryption:</h4>
+<ul>
+<li>When someone wants to send you an encrypted message, they use your public key to encrypt it.</li>
+<li>The encryption process involves converting the plaintext message into a numeric value, raising it to the power of &rsquo;e&rsquo;, and taking the result modulo &rsquo;n'.</li>
+</ul>
+<h4 id="decryption">Decryption:</h4>
+<ul>
+<li>You, as the recipient, use your private key to decrypt the message.</li>
+<li>The decryption process involves taking the encrypted numeric value, raising it to the power of &rsquo;d&rsquo;, and taking the result modulo &rsquo;n'.</li>
+</ul>
+<p>The following example will utilize the pycryptodome package. You can read more about the package here: <a href="https://pycryptodome.readthedocs.io/en/latest/index.html">https://pycryptodome.readthedocs.io/en/latest/index.html</a></p>
+<p>You will likely need to install the package before usage. <code>$ pip install pycryptodome</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Importing necessary modules</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> Crypto.Cipher <span style="color:#f92672">import</span> PKCS1_OAEP
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> Crypto.PublicKey <span style="color:#f92672">import</span> RSA
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> binascii <span style="color:#f92672">import</span> hexlify
+</span></span></code></pre></div><p><code>PKCS1_OAEP</code> is the RSA based cipher using OAEP (Optimal Asymmetric Encryption Padding) padding to bring in non-deterministic and more security to encryption. The <code>RSA</code> class is used to generate the public-private key pairs.</p>
+<h3 id="creating-our-keys">Creating Our Keys</h3>
+<p>Using the RSA class, we will generate a random private key of length 1024-bits using the <code>generate()</code> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Generating private key (RsaKey object) of key length of 1024 bits</span>
+</span></span><span style="display:flex;"><span>private_key <span style="color:#f92672">=</span> RSA<span style="color:#f92672">.</span>generate(<span style="color:#ae81ff">1024</span>)
+</span></span></code></pre></div><p>The public key is derived from the private key.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Generating the public key from the private key</span>
+</span></span><span style="display:flex;"><span>public_key1 <span style="color:#f92672">=</span> private_key<span style="color:#f92672">.</span>publickey()
+</span></span></code></pre></div><p>We can view the keys by converting them to strings.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>private_key_str <span style="color:#f92672">=</span> private_key<span style="color:#f92672">.</span>export_key()<span style="color:#f92672">.</span>decode()
+</span></span><span style="display:flex;"><span>print(private_key_str)
+</span></span></code></pre></div><pre tabindex="0"><code>-----BEGIN RSA PRIVATE KEY-----
+MIICWwIBAAKBgQC5ZNpAtmb8P6o9dgOZdwS9uuYRj6VaKRMzVJZiVF/Nh4QFrC7A
+776shyy8DiMJbiPxizz45OaHicQd5BDHa7Td8qwHmSgcWav1Kqenn6X6n7ULiQ2t
+tXhmLGuCPVpiSkFWfZicoCt1jaeNyK2GFLwTqwgYWfbk2m6n2otrPeXvAQIDAQAB
+AoGAUFVhNVVUfs1fiU5P9PnbthL8inOCJPVTepSWrXj+ImMsVADuKXA5YS0Zt0sw
+528waAP7oaYeNnD96C3hD2iecCjVx5pwngC+Stup03ZyteO99Kx4rI5p53RNSGGd
+w2XUcxHfwmryfjM/neOZa84q5o9cn05BMRAv8xfJNziluzkCQQDJ+zW1oTusz+OT
+SlJM7aLbpzt+JFTTYnWpCr6SM/edFPBdaze/52hpuO4TypJ2aNpinrR+xcByG9Lu
+JwMzPoKnAkEA6vn6uTW0gkV9jUxJCuhDFP1P3hQDfGVAj+I+36aGVlhUHIKGw9fd
+RkekmYGLP+9DEgrR0/CMg90Iq5d06nZ+FwJANJsOARFORpMalakcyFZ4PTdQIml6
+Alg5ht56hf+s9SeX9uzO51dw9WAp+dOf0+E5R8hIAGCm39FpXYehqL4WLwJAKc1d
+AFQAj+hi5J88o1cckABclAqFcDznFnHOc6VBYt0F4aiK5w5hDB60tqZoKnCbQvtv
+xr+Vj+Pjpfskzo1T8wJAHdw+znGu+BfZ8E12osvAhG3NdFtEmHbvypC+wPMM19ks
+E7sMmAWeC7qVTPiCIjRcSzostSeGsZ7ojZEw1TpYLA==
+-----END RSA PRIVATE KEY-----
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>public_key_str <span style="color:#f92672">=</span> public_key1<span style="color:#f92672">.</span>export_key()<span style="color:#f92672">.</span>decode()
+</span></span><span style="display:flex;"><span>print(public_key_str)
+</span></span></code></pre></div><pre tabindex="0"><code>-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC5ZNpAtmb8P6o9dgOZdwS9uuYR
+j6VaKRMzVJZiVF/Nh4QFrC7A776shyy8DiMJbiPxizz45OaHicQd5BDHa7Td8qwH
+mSgcWav1Kqenn6X6n7ULiQ2ttXhmLGuCPVpiSkFWfZicoCt1jaeNyK2GFLwTqwgY
+Wfbk2m6n2otrPeXvAQIDAQAB
+-----END PUBLIC KEY-----
+</code></pre><h3 id="store-our-keys-as-a-file">Store Our Keys as a File</h3>
+<p>Now we will store our keys in a file such that we can save, share, and manage them.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#Writing down the private and public keys to &#39;key&#39; files</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;private.key&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> private_file:
+</span></span><span style="display:flex;"><span>    private_file<span style="color:#f92672">.</span>write(private_key_str)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;public.key&#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>) <span style="color:#66d9ef">as</span> public_file:
+</span></span><span style="display:flex;"><span>    public_file<span style="color:#f92672">.</span>write(public_key_str)
+</span></span></code></pre></div><h3 id="importing-the-stored-key">Importing the Stored Key</h3>
+<p>We can import the keys back as a <code>RsaKey</code> objects by reading the files and using the <code>import_key()</code> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#Importing keys from files, converting it into the RsaKey object   </span>
+</span></span><span style="display:flex;"><span>pr_key <span style="color:#f92672">=</span> RSA<span style="color:#f92672">.</span>import_key(open(<span style="color:#e6db74">&#39;private.key&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>)<span style="color:#f92672">.</span>read())
+</span></span><span style="display:flex;"><span>pu_key <span style="color:#f92672">=</span> RSA<span style="color:#f92672">.</span>import_key(open(<span style="color:#e6db74">&#39;public.key&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>)<span style="color:#f92672">.</span>read())
+</span></span></code></pre></div><h3 id="finally-the-encryption-part">Finally, the Encryption Part</h3>
+<p>Let&rsquo;s find a message to encrypt.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># The message to be encrypted</span>
+</span></span><span style="display:flex;"><span>message <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;Mike the Tiger is the mascot of Louisiana State University.  Boom!&#39;</span>
+</span></span></code></pre></div><p>Instantiate an object from <code>PKCS1_OAEP.new()</code> by taking in the argument public key <code>pu_key</code> so as to encrypt the message with the public key of the receiver and later the receiver can decrypt the encrypted message using their private key.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#Instantiating PKCS1_OAEP object with the public key for encryption</span>
+</span></span><span style="display:flex;"><span>cipher <span style="color:#f92672">=</span> PKCS1_OAEP<span style="color:#f92672">.</span>new(key<span style="color:#f92672">=</span>pu_key)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Encrypting the message with the PKCS1_OAEP object</span>
+</span></span><span style="display:flex;"><span>cipher_text <span style="color:#f92672">=</span> cipher<span style="color:#f92672">.</span>encrypt(message)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(hexlify(cipher_text))
+</span></span></code></pre></div><pre tabindex="0"><code>b&#39;1a460bfc2f4bc17d19f9be576bbe83cb47664279cbc8d20436757b0bc423b0f5d9849428de70f38be831813407b2306ae1d9c241411e5e41dfa5991ff6208fd92280c5439553162b9a7be42f5d9347c14f7e485793649a3a7a6824271ece81b470d4e23f4d8c293cc723a7680f995aee116620cc45bdced4943d61e86abda9a6&#39;
+</code></pre><p>The encrypted message is sent to receiver after the encrypting the message using the receiver’s public key. So, the receiver can decrypt the encrypted message using their private key.</p>
+<p>For decryption, instantiate <code>new()</code> funciton from <code>PKCS1_OAEP</code> with the private key as the argument. With the <code>decrypt()</code> method, taking in the encrypted message as the argument, we can get the original message back as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#Instantiating PKCS1_OAEP object with the private key for decryption</span>
+</span></span><span style="display:flex;"><span>decrypt <span style="color:#f92672">=</span> PKCS1_OAEP<span style="color:#f92672">.</span>new(key<span style="color:#f92672">=</span>pr_key)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Decrypting the message with the PKCS1_OAEP object</span>
+</span></span><span style="display:flex;"><span>decrypted_message <span style="color:#f92672">=</span> decrypt<span style="color:#f92672">.</span>decrypt(cipher_text)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(decrypted_message)
+</span></span></code></pre></div><pre tabindex="0"><code>b&#39;Mike the Tiger is the mascot of Louisiana State University.  Boom!&#39;
+</code></pre>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

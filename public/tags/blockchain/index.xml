@@ -13,7 +13,14 @@
       <link>http://localhost:1313/posts/nonce_and_hash/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/nonce_and_hash/</guid>
-      <description></description>
+      <description>Why we do it this way.&#xA;Hash: a quick review If needed, I would encourage you to review my earlier post on hashing. Long story -&amp;gt; short, a hash is a short &amp;amp; unique representation of data. Using SHA256 and the hashlib.sha256() function, any data can be represented with a unique 32-byte hash value.&#xA;In Blockchain, each block will contain the hash of the previous block and the hash signature for it&amp;rsquo;s own data.</description>
+    </item>
+    <item>
+      <title>Asymmetric Cryptography with Python</title>
+      <link>http://localhost:1313/posts/asymmetric_cryptography/</link>
+      <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/asymmetric_cryptography/</guid>
+      <description>RSA (Rivest-Shamir-Adleman) Cryptography RSA cryptography, named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman, is a widely used asymmetric encryption algorithm. It is a fundamental tool in modern cryptography and is used for secure data transmission, digital signatures, and various other cryptographic applications. RSA relies on the mathematical properties of prime numbers for its security.&#xA;Here&amp;rsquo;s a simplified explanation of how RSA cryptography works:&#xA;Key Generation: The first step is to generate a pair of keys: a public key and a private key.</description>
     </item>
     <item>
       <title>Hashing</title>
