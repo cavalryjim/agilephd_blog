@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blockchain on AgilePhD</title>
+    <link>http://localhost:1313/tags/blockchain/</link>
+    <description>Recent content in Blockchain on AgilePhD</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jul 2024 21:25:08 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What is Blockchain?</title>
+      <link>http://localhost:1313/posts/what_is_blockchain/</link>
+      <pubDate>Wed, 10 Jul 2024 21:25:08 -0500</pubDate>
+      <guid>http://localhost:1313/posts/what_is_blockchain/</guid>
+      <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
+    </item>
+  </channel>
+</rss>
