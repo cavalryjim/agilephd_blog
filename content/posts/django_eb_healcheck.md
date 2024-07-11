@@ -16,7 +16,7 @@ Although my app was deployed and appeared to be working correctly, the Elastic B
 "GET /healthcheck/ HTTP/1.1" 400 154 "-" "ELB-HealthChecker/2.0" "-"
 ```
 
-For my environment, the issue was caused because the ELB-HealthChecker was pinging the local IP address of the EC2 server hosting my app.  This is an issue for two reasons.  First, Django requires the IP address to be added to `ALLOWED_HOSTS`.  Second, the troublesome IP address is dynamically assigned (meaning you can't just manually add it in `settings.py`) In this post I will go over my experience, and how I managed to resolve this issue.
+For my environment, the issue was caused because the ELB-HealthChecker was pinging the local IP address of the EC2 server hosting my app.  This is an issue for two reasons.  First, Django requires the IP address to be added to `ALLOWED_HOSTS`.  Second, the troublesome IP address is dynamically assigned (meaning you can't just manually add it in `settings.py`). In this post I will go over my experience, and how I managed to resolve this issue.
 
 For the record, despite the health check constantly failing, the application was indeed working and running fine.
 
