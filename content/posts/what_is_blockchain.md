@@ -1,7 +1,7 @@
 +++
 title = 'What is Blockchain?'
 tags = ["blockchain"]
-date = 2024-07-10T21:25:08-05:00
+date = 2023-09-14T21:25:08-05:00
 +++
 
 Blockchain is a distributed ledger technology.  That said, let’s first

@@ -6,26 +6,33 @@
     <description>Recent content in Posts on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jul 2024 21:25:08 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jul 2024 20:32:38 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What is Blockchain?</title>
-      <link>http://localhost:1313/posts/what_is_blockchain/</link>
-      <pubDate>Wed, 10 Jul 2024 21:25:08 -0500</pubDate>
-      <guid>http://localhost:1313/posts/what_is_blockchain/</guid>
-      <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
-    </item>
     <item>
       <title>Elastic Beanstalk Healthcheck with a Django App</title>
       <link>http://localhost:1313/posts/django_eb_healcheck/</link>
       <pubDate>Wed, 10 Jul 2024 20:32:38 -0500</pubDate>
       <guid>http://localhost:1313/posts/django_eb_healcheck/</guid>
-      <description>The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work as anticipated.</description>
+      <description>The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work for a Django app without additional setup.&#xA;Although my app was deployed and appeared to be working correctly, the Elastic Beanstalk environment reported Severe/Degraded state.</description>
+    </item>
+    <item>
+      <title>What is Blockchain?</title>
+      <link>http://localhost:1313/posts/what_is_blockchain/</link>
+      <pubDate>Thu, 14 Sep 2023 21:25:08 -0500</pubDate>
+      <guid>http://localhost:1313/posts/what_is_blockchain/</guid>
+      <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
+    </item>
+    <item>
+      <title>Revitalizing Ping ISI BeCu Irons</title>
+      <link>http://localhost:1313/posts/golfsmithing/</link>
+      <pubDate>Tue, 15 Aug 2023 20:02:58 -0500</pubDate>
+      <guid>http://localhost:1313/posts/golfsmithing/</guid>
+      <description> It took me seventeen years to get three thousand hits in baseball. I did it in one afternoon on the golf course.&#xA;&amp;ndash; Hank Aaron&#xA;I’m a sucker for classic Ping clubs and found these ISIs on eBay. Most interesting to me was that the clubs were:&#xA;beryllium copper and appeared to be in great shape. </description>
     </item>
     <item>
       <title>Hello World</title>
       <link>http://localhost:1313/posts/hello_world/</link>
-      <pubDate>Wed, 10 Jul 2024 20:02:58 -0500</pubDate>
+      <pubDate>Mon, 10 Jul 2023 20:02:58 -0500</pubDate>
       <guid>http://localhost:1313/posts/hello_world/</guid>
       <description>Welcome to what will hopefully be the first of many posts about cool or interesting technology topics.</description>
     </item>

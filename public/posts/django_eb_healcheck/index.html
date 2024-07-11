@@ -18,12 +18,14 @@
     
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Elastic Beanstalk Healthcheck with a Django App">
-  <meta name="twitter:description" content="The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work as anticipated.">
+  <meta name="twitter:description" content="The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work for a Django app without additional setup.
+Although my app was deployed and appeared to be working correctly, the Elastic Beanstalk environment reported Severe/Degraded state.">
 
     <meta property="og:url" content="http://localhost:1313/posts/django_eb_healcheck/">
   <meta property="og:site_name" content="AgilePhD">
   <meta property="og:title" content="Elastic Beanstalk Healthcheck with a Django App">
-  <meta property="og:description" content="The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work as anticipated.">
+  <meta property="og:description" content="The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good think about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work for a Django app without additional setup.
+Although my app was deployed and appeared to be working correctly, the Elastic Beanstalk environment reported Severe/Degraded state.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -84,7 +86,7 @@
   <title>clock</title>
   <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
 </svg>
-          1 min read
+          2 min read
         </div>
         <div>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
@@ -98,7 +100,37 @@
     </header>
     <div class="post-content">
       <h3 id="the-problem">The Problem</h3>
-<p>Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications.  The good think about EB is that it handles much of the setup for you.  The bad thing is that EB also includes services, such as Healthchecks, that do not work as anticipated.</p>
+<p>Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications.  The good think about EB is that it handles much of the setup for you.  The bad thing is that EB also includes services, such as Healthchecks, that do not work for a Django app without additional setup.</p>
+<p><img src="../../eb_severe.png" alt="Severe"></p>
+<p>Although my app was deployed and appeared to be working correctly, the Elastic Beanstalk environment reported Severe/Degraded state. The health monitoring was reporting that 100% of the requests to the load balancer were 4xx requests:</p>
+<pre tabindex="0"><code>&#34;GET /healthcheck/ HTTP/1.1&#34; 400 154 &#34;-&#34; &#34;ELB-HealthChecker/2.0&#34; &#34;-&#34;
+</code></pre><p>For my environment, the issue was caused because the ELB-HealthChecker was pinging the local IP address of the EC2 server hosting my app.  This is an issue for two reasons.  First, Django requires the IP address to be added to <code>ALLOWED_HOSTS</code>.  Second, the troublesome IP address is dynamically assigned (meaning you can&rsquo;t just manually add it in <code>settings.py</code>) In this post I will go over my experience, and how I managed to resolve this issue.</p>
+<p>For the record, despite the health check constantly failing, the application was indeed working and running fine.</p>
+<h3 id="finding-a-solution">Finding a Solution</h3>
+<p>As with many errors of this type, I took to the Internet conducting searches on <em>Django</em>, <em>Elastic Beanstalk</em>, and <em>HealthCheck</em>.  StackOverflow provided several useful snippets but this <a href="https://aalvarez.me/posts/setting-up-elastic-beanstalk-health-checks-with-a-django-application/">post</a> looked promising.  Unfortunately, that post was from 2019 and the solution did not work because AWS had updated their <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html">EC2 metadata service</a> to require a token.</p>
+<h3 id="this-is-the-way">This Is The Way</h3>
+<p>After reading more about using tokens to obtain the needed IP address, I was able to produce this code for the <code>settings.py</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># settings.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    IMDSv2_TOKEN <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>put(<span style="color:#e6db74">&#39;http://169.254.169.254/latest/api/token&#39;</span>, headers<span style="color:#f92672">=</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;X-aws-ec2-metadata-token-ttl-seconds&#39;</span>: <span style="color:#e6db74">&#39;3600&#39;</span>
+</span></span><span style="display:flex;"><span>    })<span style="color:#f92672">.</span>text
+</span></span><span style="display:flex;"><span>    EC2_PRIVATE_IP <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;http://169.254.169.254/latest/meta-data/local-ipv4&#39;</span>, timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">0.01</span>, headers<span style="color:#f92672">=</span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;X-aws-ec2-metadata-token&#39;</span>: IMDSv2_TOKEN
+</span></span><span style="display:flex;"><span>    })<span style="color:#f92672">.</span>text
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># print(&#39;EC2_PRIVATE_IP&#39;, EC2_PRIVATE_IP)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> requests<span style="color:#f92672">.</span>exceptions<span style="color:#f92672">.</span>RequestException:
+</span></span><span style="display:flex;"><span>    EC2_PRIVATE_IP <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ALLOWED_HOSTS <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;YourDomain.com&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> EC2_PRIVATE_IP:
+</span></span><span style="display:flex;"><span>    ALLOWED_HOSTS<span style="color:#f92672">.</span>append(EC2_PRIVATE_IP)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>This changed the health check responses from 400 to 200!</p>
+<pre tabindex="0"><code>&#34;GET /healthcheck/ HTTP/1.1&#34; 200 186 &#34;-&#34; &#34;ELB-HealthChecker/2.0&#34; &#34;-&#34;
+</code></pre><p>As a final note, I also changed the health check path from the root path &ldquo;<code>/</code>&rdquo; to a dedicated path of &ldquo;<code>/healthcheck/</code>&rdquo;.  Using the root path would likely work but then you may have to deal with redirects and handling 3xx response codes.  I find a dedicated path &amp; logic to be a better fit for my needs.</p>
 
     </div>
     <div class="post-footer">
