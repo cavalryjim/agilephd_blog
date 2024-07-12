@@ -1,5 +1,5 @@
 +++
-title = 'Scrum: Brazilian Jiu-Jitsu of Software Development'
+title = 'Going Back to School in a Technology Related Field: MBA vs MS'
 tags = ["scrum"]
 date = 2014-08-22
 +++
