@@ -37,13 +37,6 @@
       <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
     </item>
     <item>
-      <title>What is Blockchain?</title>
-      <link>http://localhost:1313/posts/what_is_blockchain/</link>
-      <pubDate>Thu, 14 Sep 2023 21:25:08 -0500</pubDate>
-      <guid>http://localhost:1313/posts/what_is_blockchain/</guid>
-      <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
-    </item>
-    <item>
       <title>Revitalizing Ping ISI BeCu Irons</title>
       <link>http://localhost:1313/posts/golfsmithing/</link>
       <pubDate>Tue, 15 Aug 2023 20:02:58 -0500</pubDate>
@@ -51,18 +44,46 @@
       <description>It took me seventeen years to get three thousand hits in baseball. I did it in one afternoon on the golf course.&#xA;&amp;ndash; Hank Aaron&#xA;eBay Find I’m a sucker for classic Ping clubs and found these ISIs on eBay. Most interesting to me was that the clubs were:&#xA;beryllium copper and appeared to be in great shape. Beryllium copper (BeCu) became popular back in the mid/late &amp;rsquo;80s principally because it was advertised as offering a softer feel than many of the equivalent cast steel designs of the time.</description>
     </item>
     <item>
-      <title>Hello World!</title>
-      <link>http://localhost:1313/posts/hello_world/</link>
-      <pubDate>Mon, 10 Jul 2023 20:02:58 -0500</pubDate>
-      <guid>http://localhost:1313/posts/hello_world/</guid>
-      <description>Welcome to what will hopefully be the first of many posts about cool or interesting technology topics.</description>
+      <title>What is Blockchain?</title>
+      <link>http://localhost:1313/posts/what_is_blockchain/</link>
+      <pubDate>Wed, 14 Sep 2022 21:25:08 -0500</pubDate>
+      <guid>http://localhost:1313/posts/what_is_blockchain/</guid>
+      <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
     </item>
     <item>
-      <title></title>
+      <title>Dates and Times and Strings, Oh My!</title>
+      <link>http://localhost:1313/posts/python_datetime/</link>
+      <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/python_datetime/</guid>
+      <description>Working with dates &amp;amp; times can be frustrating. Many systems that you may encounter require various formatting for the datetime object. Luckily, Python is really good at handling this.&#xA;Lions and tigers and bears, oh my!&#xA;datetime Python has a module called datetime for working with date and time objects.&#xA;import datetime now = datetime.datetime.now() print(type(now)) print(&amp;#34;Current datetime = &amp;#34;, now) today = datetime.datetime.now().date() print(type(today)) print(&amp;#34;Current date = &amp;#34;, today) current_time = datetime.</description>
+    </item>
+    <item>
+      <title>Python Files</title>
+      <link>http://localhost:1313/posts/python_files/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/python_files/</guid>
+      <description>In many situations, we will need to work with larger sets of data. Python easily allows for reading from and writing to files.&#xA;The open() method returns a file object, and is most commonly used with two arguments: open(filename, mode).&#xA;The first argument is a string containing the filename. The second argument is another string containing a few characters describing the way in which the file will be used. mode can be &#39;r&#39; when the file will only be read, &#39;w&#39; for only writing, and &#39;a&#39; opens the file for appending; any data written to the file is automatically added to the end.</description>
+    </item>
+    <item>
+      <title>Python Dictionary</title>
+      <link>http://localhost:1313/posts/python_dictionary/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/python_dictionary/</guid>
+      <description>A dictionary is a collection which is unordered, changeable and indexed.&#xA;Dictionary structure A dictionary, or dict, organizes data values by association with other data values rather than by sequential position. A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values. Dictionaries are initialized using curly braces { }.&#xA;&amp;gt;&amp;gt;&amp;gt; capitals = {&amp;#39;United States&amp;#39;: &amp;#39;Washington, DC&amp;#39;,&amp;#39;France&amp;#39;: &amp;#39;Paris&amp;#39;,&amp;#39;Italy&amp;#39;: &amp;#39;Rome&amp;#39;} &amp;gt;&amp;gt;&amp;gt; capitals {&amp;#39;United States&amp;#39;: &amp;#39;Washington, DC&amp;#39;, &amp;#39;France&amp;#39;: &amp;#39;Paris&amp;#39;, &amp;#39;Italy&amp;#39;: &amp;#39;Rome&amp;#39;} &amp;gt;&amp;gt;&amp;gt; type(capitals) &amp;lt;class &amp;#39;dict&amp;#39;&amp;gt; &amp;gt;&amp;gt;&amp;gt; capitals[&amp;#39;Italy&amp;#39;] &amp;#39;Rome&amp;#39; &amp;gt;&amp;gt;&amp;gt; capitals[&amp;#39;Spain&amp;#39;] = &amp;#39;Madrid&amp;#39; &amp;gt;&amp;gt;&amp;gt; capitals {&amp;#39;United States&amp;#39;: &amp;#39;Washington, DC&amp;#39;, &amp;#39;France&amp;#39;: &amp;#39;Paris&amp;#39;, &amp;#39;Italy&amp;#39;: &amp;#39;Rome&amp;#39;, &amp;#39;Spain&amp;#39;: &amp;#39;Madrid&amp;#39;} &amp;gt;&amp;gt;&amp;gt; &amp;#39;Germany&amp;#39; in capitals False &amp;gt;&amp;gt;&amp;gt; &amp;#39;Italy&amp;#39; in capitals True &amp;gt;&amp;gt;&amp;gt; morecapitals = {&amp;#39;Germany&amp;#39;: &amp;#39;Berlin&amp;#39;,&amp;#39;United Kingdom&amp;#39;: &amp;#39;London&amp;#39;} &amp;gt;&amp;gt;&amp;gt; capitals.</description>
+    </item>
+    <item>
+      <title>Python Lists</title>
       <link>http://localhost:1313/posts/python_lists/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/python_lists/</guid>
-      <description></description>
+      <description>In Python, a list is a sequence of data values called items or elements. An item can be of any type.&#xA;A Python list is similar to a list you would make in the real-world:&#xA;shopping list to-do list roster for a team guest list for a party List structure The logical structure of a list resembles the structure of a string. Items in a list are ordered by position. Each list item has a unique index specifying its position.</description>
+    </item>
+    <item>
+      <title>Hello World!</title>
+      <link>http://localhost:1313/posts/hello_world/</link>
+      <pubDate>Wed, 10 Jan 2018 20:02:58 -0500</pubDate>
+      <guid>http://localhost:1313/posts/hello_world/</guid>
+      <description>Welcome to what will hopefully be the first of many posts about cool or interesting technology topics.</description>
     </item>
   </channel>
 </rss>

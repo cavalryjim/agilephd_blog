@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Dates and Times and Strings, Oh My! // AgilePhD</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.128.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dr. James Davis" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
+    
+
+    
+  
+
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dates and Times and Strings, Oh My!">
+  <meta name="twitter:description" content="Working with dates &amp; times can be frustrating. Many systems that you may encounter require various formatting for the datetime object. Luckily, Python is really good at handling this.
+Lions and tigers and bears, oh my!
+datetime Python has a module called datetime for working with date and time objects.
+import datetime now = datetime.datetime.now() print(type(now)) print(&#34;Current datetime = &#34;, now) today = datetime.datetime.now().date() print(type(today)) print(&#34;Current date = &#34;, today) current_time = datetime.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/python_datetime/">
+  <meta property="og:site_name" content="AgilePhD">
+  <meta property="og:title" content="Dates and Times and Strings, Oh My!">
+  <meta property="og:description" content="Working with dates &amp; times can be frustrating. Many systems that you may encounter require various formatting for the datetime object. Luckily, Python is really good at handling this.
+Lions and tigers and bears, oh my!
+datetime Python has a module called datetime for working with date and time objects.
+import datetime now = datetime.datetime.now() print(type(now)) print(&#34;Current datetime = &#34;, now) today = datetime.datetime.now().date() print(type(today)) print(&#34;Current date = &#34;, today) current_time = datetime.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2019-10-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2019-10-23T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/tank1.jpg" alt="Dr. James Davis" /></a>
+      <span class="app-header-title">AgilePhD</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Dr. James Davis: data scientist, girl dad, combat veteran, and can&#39;t shutup about Blockchain.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/cavalryjim" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jdavisphd/" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Dates and Times and Strings, Oh My!</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Oct 23, 2019
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Working with dates &amp; times can be frustrating.  Many systems that you may encounter require various formatting for the datetime object.  Luckily, Python is really good at handling this.</p>
+<p><img src="../../oz.jpg" alt="Wizard of Oz"></p>
+<p><a href="https://www.youtube.com/watch?v=-HrfbV16-FQ">Lions and tigers and bears, oh my!</a></p>
+<h3 id="datetime">datetime</h3>
+<p>Python has a module called <code>datetime</code> for working with date and time objects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>now <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()
+</span></span><span style="display:flex;"><span>print(type(now))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Current datetime = &#34;</span>, now)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>today <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>date()
+</span></span><span style="display:flex;"><span>print(type(today))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Current date = &#34;</span>, today)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>current_time <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>time()
+</span></span><span style="display:flex;"><span>print(type(current_time))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Current time = &#34;</span>, current_time)
+</span></span></code></pre></div><p>You can also create date and time objects by designating the date or time.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># year, month, day</span>
+</span></span><span style="display:flex;"><span>d <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>date(<span style="color:#ae81ff">2018</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">13</span>)
+</span></span><span style="display:flex;"><span>print(d)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># hour, minute, second</span>
+</span></span><span style="display:flex;"><span>t <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>time(<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">22</span>)
+</span></span><span style="display:flex;"><span>print(t)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#75715e"># year, month, day, hour, minute, second</span>
+</span></span><span style="display:flex;"><span>dt <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>datetime(<span style="color:#ae81ff">2018</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">22</span>)
+</span></span><span style="display:flex;"><span>print(dt)
+</span></span></code></pre></div><p>We can also create date objects from a Unix timestamp. A Unix timestamp is the number of seconds since January 1, 1970 at UTC. You can convert a timestamp to date using <code>fromtimestamp()</code> method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>timestamp <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>fromtimestamp(<span style="color:#ae81ff">1326244364</span>)
+</span></span><span style="display:flex;"><span>print( <span style="color:#e6db74">&#34;Date =&#34;</span>, timestamp )
+</span></span></code></pre></div><h3 id="strptime">strptime</h3>
+<p>There are times when you may receive the datetime object as a string.  No worries, Python has a robust package for turning a string into a Python datetime object.</p>
+<p>The <code>strptime()</code> method takes two arguments:</p>
+<ul>
+<li>a string representing date and time</li>
+<li>format code for the first argument</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>date_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;21 June, 2018&#34;</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;date_string =&#34;</span>, date_string)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>date_object <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>strptime(date_string, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %B, %Y&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;date_object =&#34;</span>, date_object)
+</span></span></code></pre></div><h3 id="strftime">strftime</h3>
+<p>Likewise, we can take the Python datetime object and turn it into a string.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># current date and time</span>
+</span></span><span style="display:flex;"><span>now <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>t <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%H:%M:%S&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;time:&#34;</span>, t)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>s1 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y, %H:%M:%S&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># mm/dd/YY H:M:S format</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;s1:&#34;</span>, s1)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>s2 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%b/%Y, %H:%M:%S&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># dd/MMM/YY H:M:S format</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;s2:&#34;</span>, s2)
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Directive</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%a</td>
+<td>Abbreviated weekday name.</td>
+<td>Sun, Mon, &hellip;</td>
+</tr>
+<tr>
+<td>%A</td>
+<td>Full weekday name.</td>
+<td>Sunday, Monday, &hellip;</td>
+</tr>
+<tr>
+<td>%w</td>
+<td>Weekday as a decimal number.</td>
+<td>0, 1, &hellip;, 6</td>
+</tr>
+<tr>
+<td>%d</td>
+<td>Day of the month as a zero-padded decimal.</td>
+<td>01, 02, &hellip;, 31</td>
+</tr>
+<tr>
+<td>%-d</td>
+<td>Day of the month as a number.</td>
+<td>1, 2, &hellip;, 30</td>
+</tr>
+<tr>
+<td>%b</td>
+<td>Abbreviated month name.</td>
+<td>Jan, Feb, &hellip;, Dec</td>
+</tr>
+<tr>
+<td>%B</td>
+<td>Full month name.</td>
+<td>January, February, &hellip;</td>
+</tr>
+<tr>
+<td>%m</td>
+<td>Month as a zero-padded number.</td>
+<td>01, 02, &hellip;, 12</td>
+</tr>
+<tr>
+<td>%-</td>
+<td>m	Month as a number.</td>
+<td>1, 2, &hellip;, 12</td>
+</tr>
+<tr>
+<td>%y</td>
+<td>Year without century as a zero-padded number.</td>
+<td>00, 01, &hellip;, 99</td>
+</tr>
+<tr>
+<td>%-y</td>
+<td>Year without century as a number.</td>
+<td>0, 1, &hellip;, 99</td>
+</tr>
+<tr>
+<td>%Y</td>
+<td>Year with century as a number.</td>
+<td>2013, 2019 etc.</td>
+</tr>
+<tr>
+<td>%H</td>
+<td>Hour (24-hour clock) as a zero-padded number.</td>
+<td>00, 01, &hellip;, 23</td>
+</tr>
+<tr>
+<td>%-H</td>
+<td>Hour (24-hour clock) as a number.</td>
+<td>0, 1, &hellip;, 23</td>
+</tr>
+<tr>
+<td>%I</td>
+<td>Hour (12-hour clock) as a zero-padded number.</td>
+<td>01, 02, &hellip;, 12</td>
+</tr>
+<tr>
+<td>%-I</td>
+<td>Hour (12-hour clock) as a number.</td>
+<td>1, 2, &hellip; 12</td>
+</tr>
+<tr>
+<td>%p</td>
+<td>Locale’s AM or PM.</td>
+<td>AM, PM</td>
+</tr>
+<tr>
+<td>%M</td>
+<td>Minute as a zero-padded number.</td>
+<td>00, 01, &hellip;, 59</td>
+</tr>
+<tr>
+<td>%-M</td>
+<td>Minute as a number.</td>
+<td>0, 1, &hellip;, 59</td>
+</tr>
+<tr>
+<td>%S</td>
+<td>Second as a zero-padded number.</td>
+<td>00, 01, &hellip;, 59</td>
+</tr>
+<tr>
+<td>%-S</td>
+<td>Second as a number.</td>
+<td>0, 1, &hellip;, 59</td>
+</tr>
+<tr>
+<td>%f</td>
+<td>Microsecond as a number, zero-padded on the left.</td>
+<td>000000 - 999999</td>
+</tr>
+<tr>
+<td>%z</td>
+<td>UTC offset in the form</td>
+<td>+HHMM or -HHMM.</td>
+</tr>
+<tr>
+<td>%Z</td>
+<td>Time zone name.</td>
+<td></td>
+</tr>
+<tr>
+<td>%j</td>
+<td>Day of the year as a zero-padded number.</td>
+<td>001, 002, &hellip;, 366</td>
+</tr>
+<tr>
+<td>%-j</td>
+<td>Day of the year as a decimal number.</td>
+<td>1, 2, &hellip;, 366</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="relativedelta">relativedelta</h3>
+<p>Find the difference between two datetime or date objects.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dateutil.relativedelta <span style="color:#f92672">import</span> relativedelta
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    birth_date <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#39;Enter your DOB as mm/dd/YYYY: &#39;</span>)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#39;your age is&#39;</span>, age(birth_date))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">age</span>(d):
+</span></span><span style="display:flex;"><span>    dob <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>strptime(d, <span style="color:#e6db74">&#39;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y&#39;</span>)
+</span></span><span style="display:flex;"><span>    today <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>today()
+</span></span><span style="display:flex;"><span>    age <span style="color:#f92672">=</span> relativedelta(today, dob)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> age<span style="color:#f92672">.</span>years
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>main()
+</span></span></code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
