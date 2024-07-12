@@ -2,7 +2,7 @@
 title = "About"
 +++
 
-Dr. James Davis is an experienced software developer, entrepreneur, combat veteran, and professor. He has a PhD in Information Systems & Decision Science from Louisiana State University along with the PMP, SPC, SSM, CSP, and CSM project management certifications.
+Dr. James Davis is an experienced software developer, data scientist, entrepreneur, combat veteran, and professor. He has a PhD in Information Systems & Decision Science from Louisiana State University along with the PMP, SPC, SSM, CSP, and CSM project management certifications.
 
 Dr. Davis is a retired lieutenant colonel with his military service split between the active army and army reserve to include combat tours in Iraq and Afghanistan.  His career involved commanding at the company and battalion levels and he is a recipient of the Bronze Star and the Meritorious Service Medals.
 

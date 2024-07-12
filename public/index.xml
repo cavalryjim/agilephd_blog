@@ -79,6 +79,13 @@
       <description>In Python, a list is a sequence of data values called items or elements. An item can be of any type.&#xA;A Python list is similar to a list you would make in the real-world:&#xA;shopping list to-do list roster for a team guest list for a party List structure The logical structure of a list resembles the structure of a string. Items in a list are ordered by position. Each list item has a unique index specifying its position.</description>
     </item>
     <item>
+      <title>Sprint Zero for a Data Scientist</title>
+      <link>http://localhost:1313/posts/sprint_zero/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/sprint_zero/</guid>
+      <description>In agile software development frameworks, such as Scrum, development is conducted in time-boxed work iterations called Sprints. Sprint Zero is all the work that needs to happen before you can start actually development1.&#xA;Python versions Technology is constantly changing. That the great thing about our industry and the frustrating thing about our industry. In Python, there was a bit of a riff when the language went from version 2.x to 3.</description>
+    </item>
+    <item>
       <title>Hello World!</title>
       <link>http://localhost:1313/posts/hello_world/</link>
       <pubDate>Wed, 10 Jan 2018 20:02:58 -0500</pubDate>
@@ -90,7 +97,7 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>Dr. James Davis is an experienced software developer, entrepreneur, combat veteran, and professor. He has a PhD in Information Systems &amp;amp; Decision Science from Louisiana State University along with the PMP, SPC, SSM, CSP, and CSM project management certifications.&#xA;Dr. Davis is a retired lieutenant colonel with his military service split between the active army and army reserve to include combat tours in Iraq and Afghanistan. His career involved commanding at the company and battalion levels and he is a recipient of the Bronze Star and the Meritorious Service Medals.</description>
+      <description>Dr. James Davis is an experienced software developer, data scientist, entrepreneur, combat veteran, and professor. He has a PhD in Information Systems &amp;amp; Decision Science from Louisiana State University along with the PMP, SPC, SSM, CSP, and CSM project management certifications.&#xA;Dr. Davis is a retired lieutenant colonel with his military service split between the active army and army reserve to include combat tours in Iraq and Afghanistan. His career involved commanding at the company and battalion levels and he is a recipient of the Bronze Star and the Meritorious Service Medals.</description>
     </item>
   </channel>
 </rss>
