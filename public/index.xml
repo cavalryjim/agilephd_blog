@@ -51,9 +51,30 @@
       <description>It took me seventeen years to get three thousand hits in baseball. I did it in one afternoon on the golf course.&#xA;&amp;ndash; Hank Aaron&#xA;eBay Find I’m a sucker for classic Ping clubs and found these ISIs on eBay. Most interesting to me was that the clubs were:&#xA;beryllium copper and appeared to be in great shape. Beryllium copper (BeCu) became popular back in the mid/late &amp;rsquo;80s principally because it was advertised as offering a softer feel than many of the equivalent cast steel designs of the time.</description>
     </item>
     <item>
+      <title>Python Files</title>
+      <link>http://localhost:1313/posts/python_files/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/python_files/</guid>
+      <description>In many situations, we will need to work with larger sets of data. Python easily allows for reading from and writing to files.&#xA;The open() method returns a file object, and is most commonly used with two arguments: open(filename, mode).&#xA;The first argument is a string containing the filename. The second argument is another string containing a few characters describing the way in which the file will be used. mode can be &#39;r&#39; when the file will only be read, &#39;w&#39; for only writing, and &#39;a&#39; opens the file for appending; any data written to the file is automatically added to the end.</description>
+    </item>
+    <item>
+      <title>Python Dictionary</title>
+      <link>http://localhost:1313/posts/python_dictionary/</link>
+      <pubDate>Thu, 22 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/python_dictionary/</guid>
+      <description>A dictionary is a collection which is unordered, changeable and indexed.&#xA;Dictionary structure A dictionary, or dict, organizes data values by association with other data values rather than by sequential position. A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values. Dictionaries are initialized using curly braces { }.&#xA;&amp;gt;&amp;gt;&amp;gt; capitals = {&amp;#39;United States&amp;#39;: &amp;#39;Washington, DC&amp;#39;,&amp;#39;France&amp;#39;: &amp;#39;Paris&amp;#39;,&amp;#39;Italy&amp;#39;: &amp;#39;Rome&amp;#39;} &amp;gt;&amp;gt;&amp;gt; capitals {&amp;#39;United States&amp;#39;: &amp;#39;Washington, DC&amp;#39;, &amp;#39;France&amp;#39;: &amp;#39;Paris&amp;#39;, &amp;#39;Italy&amp;#39;: &amp;#39;Rome&amp;#39;} &amp;gt;&amp;gt;&amp;gt; type(capitals) &amp;lt;class &amp;#39;dict&amp;#39;&amp;gt; &amp;gt;&amp;gt;&amp;gt; capitals[&amp;#39;Italy&amp;#39;] &amp;#39;Rome&amp;#39; &amp;gt;&amp;gt;&amp;gt; capitals[&amp;#39;Spain&amp;#39;] = &amp;#39;Madrid&amp;#39; &amp;gt;&amp;gt;&amp;gt; capitals {&amp;#39;United States&amp;#39;: &amp;#39;Washington, DC&amp;#39;, &amp;#39;France&amp;#39;: &amp;#39;Paris&amp;#39;, &amp;#39;Italy&amp;#39;: &amp;#39;Rome&amp;#39;, &amp;#39;Spain&amp;#39;: &amp;#39;Madrid&amp;#39;} &amp;gt;&amp;gt;&amp;gt; &amp;#39;Germany&amp;#39; in capitals False &amp;gt;&amp;gt;&amp;gt; &amp;#39;Italy&amp;#39; in capitals True &amp;gt;&amp;gt;&amp;gt; morecapitals = {&amp;#39;Germany&amp;#39;: &amp;#39;Berlin&amp;#39;,&amp;#39;United Kingdom&amp;#39;: &amp;#39;London&amp;#39;} &amp;gt;&amp;gt;&amp;gt; capitals.</description>
+    </item>
+    <item>
+      <title>Python Lists</title>
+      <link>http://localhost:1313/posts/python_lists/</link>
+      <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/python_lists/</guid>
+      <description>In Python, a list is a sequence of data values called items or elements. An item can be of any type.&#xA;A Python list is similar to a list you would make in the real-world:&#xA;shopping list to-do list roster for a team guest list for a party List structure The logical structure of a list resembles the structure of a string. Items in a list are ordered by position. Each list item has a unique index specifying its position.</description>
+    </item>
+    <item>
       <title>Hello World!</title>
       <link>http://localhost:1313/posts/hello_world/</link>
-      <pubDate>Mon, 10 Jul 2023 20:02:58 -0500</pubDate>
+      <pubDate>Wed, 10 Jan 2018 20:02:58 -0500</pubDate>
       <guid>http://localhost:1313/posts/hello_world/</guid>
       <description>Welcome to what will hopefully be the first of many posts about cool or interesting technology topics.</description>
     </item>

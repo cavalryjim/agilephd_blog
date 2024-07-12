@@ -57,5 +57,12 @@
       <guid>http://localhost:1313/posts/hello_world/</guid>
       <description>Welcome to what will hopefully be the first of many posts about cool or interesting technology topics.</description>
     </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/posts/python_lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/python_lists/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

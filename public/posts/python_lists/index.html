@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Python Lists // AgilePhD</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.128.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dr. James Davis" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
+    
+
+    
+  
+
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Python Lists">
+  <meta name="twitter:description" content="In Python, a list is a sequence of data values called items or elements. An item can be of any type.
+A Python list is similar to a list you would make in the real-world:
+shopping list to-do list roster for a team guest list for a party List structure The logical structure of a list resembles the structure of a string. Items in a list are ordered by position. Each list item has a unique index specifying its position.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/python_lists/">
+  <meta property="og:site_name" content="AgilePhD">
+  <meta property="og:title" content="Python Lists">
+  <meta property="og:description" content="In Python, a list is a sequence of data values called items or elements. An item can be of any type.
+A Python list is similar to a list you would make in the real-world:
+shopping list to-do list roster for a team guest list for a party List structure The logical structure of a list resembles the structure of a string. Items in a list are ordered by position. Each list item has a unique index specifying its position.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-03-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2018-03-21T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/tank1.jpg" alt="Dr. James Davis" /></a>
+      <span class="app-header-title">AgilePhD</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Dr. James Davis: data scientist, girl dad, combat veteran, and can&#39;t shutup about Blockchain.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/cavalryjim" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jdavisphd/" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Python Lists</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 21, 2018
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          5 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>In Python, a <strong>list</strong> is a sequence of data values called items or elements.  An item can be of any type.</p>
+<p>A Python list is similar to a list you would make in the real-world:</p>
+<ul>
+<li>shopping list</li>
+<li>to-do list</li>
+<li>roster for a team</li>
+<li>guest list for a party</li>
+</ul>
+<h3 id="list-structure">List structure</h3>
+<p>The logical structure of a list resembles the structure of a string.  Items in a list are ordered by position.  Each list item has a unique index specifying its position.  Like many programming languages, Python is 0-index based, meaning list indexes start at 0, not 1.  The index for a list starts with 0 and counts upward.</p>
+<p>A list is written as a bracketed sequence of data separated by commas.  Here are some examples:</p>
+<p>[1971, 1989, 1994]                # A list of integers<br>
+[&lsquo;bananas&rsquo;, &lsquo;apples&rsquo;, &lsquo;oranges&rsquo;]  # A list of strings<br>
+[[4, 5], [200, 343]]              # A list containing two other lists</p>
+<p>When using variables, a list is defined by either using the bracket notation <strong>[]</strong> or by casting any iterable sequence with the <strong>list()</strong> function.</p>
+<p>Start an interactive Python session by using the <code>python</code> command in a terminal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> a
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> type(a)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">list</span><span style="color:#e6db74">&#39;&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> list(<span style="color:#e6db74">&#34;Hello world!&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> b
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;H&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39;l&#39;</span>, <span style="color:#e6db74">&#39;l&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39; &#39;</span>, <span style="color:#e6db74">&#39;w&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;l&#39;</span>, <span style="color:#e6db74">&#39;d&#39;</span>, <span style="color:#e6db74">&#39;!&#39;</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> type(b)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">list</span><span style="color:#e6db74">&#39;&gt;</span>
+</span></span></code></pre></div><p>For convenience, we will be using the <strong>range()</strong> function to assist with list creation.  The range function takes one to three arguments.</p>
+<ul>
+<li>list(range(4))        # create a list up to, but not including, the integer 4.</li>
+<li>list(range(2, 6))     # create a list of integers starting at 2 and going to, but not including, 6.</li>
+<li>list(range(3, 18, 3)) # create a list starting at 3, going to 18, and using steps of 3.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> r <span style="color:#f92672">=</span> list(range(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> r
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">15</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> type(r)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">list</span><span style="color:#e6db74">&#39;&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> len(r)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#ae81ff">12</span> <span style="color:#f92672">in</span> r
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#ae81ff">13</span> <span style="color:#f92672">in</span> r
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">False</span>
+</span></span></code></pre></div><h3 id="modifying-lists">Modifying lists</h3>
+<p>At any point in a list&rsquo;s existence, elements can be inserted, removed, or changed.  The list will maintain its identity but the contents can change.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t <span style="color:#f92672">=</span> [<span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">24</span>, <span style="color:#ae81ff">77</span>, <span style="color:#ae81ff">234</span>, <span style="color:#ae81ff">65</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> type(t)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">list</span><span style="color:#e6db74">&#39;&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> t
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">24</span>, <span style="color:#ae81ff">77</span>, <span style="color:#ae81ff">234</span>, <span style="color:#ae81ff">65</span>]
+</span></span></code></pre></div><p>Note that the subscript operation <code>t[1]</code> refers to the element&rsquo;s position and the target of the assignment.</p>
+<p>Use the <strong>split</strong> function to extract a list of words from a sentence.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> s <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;This is a sentence with seven words.&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> words <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span>split()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> words
+</span></span><span style="display:flex;"><span>[<span style="color:#e6db74">&#39;This&#39;</span>, <span style="color:#e6db74">&#39;is&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;sentence&#39;</span>, <span style="color:#e6db74">&#39;with&#39;</span>, <span style="color:#e6db74">&#39;seven&#39;</span>, <span style="color:#e6db74">&#39;words.&#39;</span>]
+</span></span></code></pre></div><p>The <strong>list</strong> object includes several methods for inserting and removing elements.</p>
+<table>
+<thead>
+<tr>
+<th>List Method</th>
+<th>Results</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>list.append(element)</td>
+<td>Adds element to the end of the list</td>
+</tr>
+<tr>
+<td>list.extend(a_list)</td>
+<td>Adds another list to the list</td>
+</tr>
+<tr>
+<td>list.insert(index, element)</td>
+<td>Inserts element at index</td>
+</tr>
+<tr>
+<td>list.pop()</td>
+<td>Removes and returns the element at the end of the list</td>
+</tr>
+<tr>
+<td>list.pop(index)</td>
+<td>Removes and returns the element at index</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>append</strong> method takes the new element as an argument and adds it the the end of the list.  The method <strong>insert</strong> does something similar but it takes the index and new element as arguments and adds the element to the given position by shifting the remaining elements to the right.  The <strong>extend</strong> method takes another list and adds those elements to the end of the list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">7</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e<span style="color:#f92672">.</span>extend([<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>])
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5.5</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5.5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
+</span></span></code></pre></div><p>The <strong>pop</strong> method is used to remove an element from a list.  If the index position is not specified, <strong>pop</strong> removes and returns the last element of the list.  If a position is specified, <strong>pop</strong> removes the element at that location and returns it.  Remaining elements would then be shifted one position to the left.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5.5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">5.5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e<span style="color:#f92672">.</span>pop()
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> e
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5.5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]
+</span></span></code></pre></div><h3 id="sorting">Sorting</h3>
+<p>The <strong>list</strong> object has a <strong>sort</strong> method that will arrange its elements in numeric or alphabetical order.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f <span style="color:#f92672">=</span> [<span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">3.3</span>, <span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">7</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">3.3</span>, <span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">7</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f<span style="color:#f92672">.</span>sort()
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> f
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">3.3</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">92</span>, <span style="color:#ae81ff">500</span>]
+</span></span></code></pre></div><h3 id="aliasing">Aliasing</h3>
+<p>Not all variable names refer to different variables. When two identifiers refer to the same variable (and therefore value), this is known as an <strong>alias</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> first <span style="color:#f92672">=</span> [<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">42</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> second <span style="color:#f92672">=</span> first
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> first
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">42</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> second
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">42</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> second<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">53</span>)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> second
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">53</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> first
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">53</span>]
+</span></span></code></pre></div><p>In the example above, a single list object is created with two names, or aliases.  When an element is appended to the <strong>second</strong> list, the <strong>first</strong> list changed also.  This happens because the variables <strong>first</strong> and <strong>second</strong> refer to the exact same list object.</p>
+<p><img src="../../list_alias.png" alt="List Aliases"></p>
+<p>If you do not want an alias, you can pass the source list to a call of the <strong>list</strong> function.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> third <span style="color:#f92672">=</span> list(first)
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> third
+</span></span><span style="display:flex;"><span>[<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">42</span>, <span style="color:#ae81ff">53</span>]
+</span></span></code></pre></div><p><img src="../../list_copy.png" alt="List Copy"></p>
+<h3 id="equality">Equality</h3>
+<p>Frequently, programmers need to check for equality between variables (are the values equal).  There could also be circumstances when you need to know not only if the values are equal but do the variables refer to the same object.</p>
+<p>The <strong>==</strong> operator returns <strong>True</strong> if two values are equal, or the lists have the same structural equivalence.  The Python <strong>is</strong> operator returns <strong>True</strong> if two variables refer to the same object.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> first <span style="color:#f92672">==</span> second
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> first <span style="color:#f92672">==</span> third
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> first <span style="color:#f92672">is</span> second
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> first <span style="color:#f92672">is</span> third
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">False</span>
+</span></span></code></pre></div>
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
