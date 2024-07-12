@@ -23,6 +23,20 @@
       <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
     </item>
     <item>
+      <title>Health Passport</title>
+      <link>http://localhost:1313/posts/health_passport/</link>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/health_passport/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blockchain: The Brazilian Jiu-Jitsu of Web 3.0</title>
+      <link>http://localhost:1313/posts/blockchain_bjj/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/blockchain_bjj/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>What is Blockchain?</title>
       <link>http://localhost:1313/posts/what_is_blockchain/</link>
       <pubDate>Wed, 14 Sep 2022 21:25:08 -0500</pubDate>

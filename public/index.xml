@@ -37,6 +37,20 @@
       <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
     </item>
     <item>
+      <title>Blockchain: Poised to Revolutionize Personal Health Management</title>
+      <link>http://localhost:1313/posts/health_passport/</link>
+      <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/health_passport/</guid>
+      <description>Oﬃce of the National Coordinator for Health Information Technology&#xA;Blockchain technology, widely known for its applications in cryptocurrency, is experiencing a paradigm shift, moving beyond financial transactions to personal and social applications. This transition is particularly evident in the healthcare sector, where blockchain&amp;rsquo;s potential to transform health data management is gaining traction.&#xA;Health Data Accessibility and Security One of the primary applications of Blockchain in healthcare is enhancing access to personal health data.</description>
+    </item>
+    <item>
+      <title>Blockchain: The Brazilian Jiu-Jitsu of Web 3.0</title>
+      <link>http://localhost:1313/posts/blockchain_bjj/</link>
+      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/blockchain_bjj/</guid>
+      <description>If you are not a mixed maritial arts (MMA) fan, you might not recognize the photo above. Royce Gracie, a man of relatively slender stature and weighing a modest 170 lbs, won the first two Ultimate Fighting Championship (UFC) tourniments. In the early days of the UFC, there were no weight divisions and Royce Gracie routinely competed againt opponents that were 40 lbs or more larger than him.&#xA;How was he able to defeat these larger competitors?</description>
+    </item>
+    <item>
       <title>What is Blockchain?</title>
       <link>http://localhost:1313/posts/what_is_blockchain/</link>
       <pubDate>Wed, 14 Sep 2022 21:25:08 -0500</pubDate>
