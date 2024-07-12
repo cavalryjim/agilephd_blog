@@ -1,7 +1,7 @@
 +++
 title = 'Revitalizing Ping ISI BeCu Irons'
 tags = ["golf"]
-date = 2023-08-15T20:02:58-05:00
+date = 2019-08-15T20:02:58-05:00
 +++
 
 > It took me seventeen years to get three thousand hits in baseball. I did it in one afternoon on the golf course.
