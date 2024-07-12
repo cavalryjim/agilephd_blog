@@ -9,18 +9,11 @@
     <lastBuildDate>Tue, 12 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/healthcare/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Health Passport</title>
+      <title>Blockchain: Poised to Revolutionize Personal Health Management</title>
       <link>http://localhost:1313/posts/health_passport/</link>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/health_passport/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Blockchain: The Brazilian Jiu-Jitsu of Web 3.0</title>
-      <link>http://localhost:1313/posts/blockchain_bjj/</link>
-      <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blockchain_bjj/</guid>
-      <description></description>
+      <description>Oﬃce of the National Coordinator for Health Information Technology&#xA;Blockchain technology, widely known for its applications in cryptocurrency, is experiencing a paradigm shift, moving beyond financial transactions to personal and social applications. This transition is particularly evident in the healthcare sector, where blockchain&amp;rsquo;s potential to transform health data management is gaining traction.&#xA;Health Data Accessibility and Security One of the primary applications of Blockchain in healthcare is enhancing access to personal health data.</description>
     </item>
   </channel>
 </rss>
