@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Django Rest Framework: API Permissions // AgilePhD</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.128.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dr. James Davis" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
+    
+
+    
+  
+
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Django Rest Framework: API Permissions">
+  <meta name="twitter:description" content="Note: This post is an extract from a demo project to build a simplistic Twitter app with API support.
+At the moment, any anonymous, non-authorized user can access our API endpoints. Although we might not mind anonymous viewing, anyone can create, edit, update, or delete a tweet.
+As an example, the tweet detail page http://localhost:8000/api/v1/tweets/1/ displays the tweet information, which is fine, except any random user, anonymous or otherwise, can update or delete an existing tweet.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/api_permissions/">
+  <meta property="og:site_name" content="AgilePhD">
+  <meta property="og:title" content="Django Rest Framework: API Permissions">
+  <meta property="og:description" content="Note: This post is an extract from a demo project to build a simplistic Twitter app with API support.
+At the moment, any anonymous, non-authorized user can access our API endpoints. Although we might not mind anonymous viewing, anyone can create, edit, update, or delete a tweet.
+As an example, the tweet detail page http://localhost:8000/api/v1/tweets/1/ displays the tweet information, which is fine, except any random user, anonymous or otherwise, can update or delete an existing tweet.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2020-01-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2020-01-22T00:00:00+00:00">
+    <meta property="article:tag" content="Django">
+    <meta property="article:tag" content="Python">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/tank1.jpg" alt="Dr. James Davis" /></a>
+      <span class="app-header-title">AgilePhD</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Dr. James Davis: data scientist, girl dad, combat veteran, and can&#39;t shutup about Blockchain.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/cavalryjim" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jdavisphd/" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Django Rest Framework: API Permissions</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jan 22, 2020
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          2 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="http://localhost:1313/tags/django/">Django</a>
+              <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><img src="../../permissions.png" alt="permissions"></p>
+<p><strong>Note: This post is an extract from a demo project to build a simplistic Twitter app with API support.</strong></p>
+<p>At the moment, any anonymous, non-authorized user can access our API endpoints. Although we might not mind anonymous viewing, anyone can create, edit, update, or delete a tweet.</p>
+<p>As an example, the tweet detail page <a href="http://localhost:8000/api/v1/tweets/1/">http://localhost:8000/api/v1/tweets/1/</a> displays the tweet information, which is fine, except any random user, anonymous or otherwise, can update or delete an existing tweet.  This is not secure!</p>
+<h3 id="project-level-permissions">Project-Level Permissions</h3>
+<p>If you are thinking &ldquo;I bet DRF has a setting handling permissions&rdquo;, you are absolutely correct.  Django REST Framework (DRF) comes with the ability to set a project-level permission policy.  If needed, we can loosen the permissions at the view-level for certain situations.</p>
+<p>Fortunately Django REST Framework ships with a number of built-in project-level permissions settings we can use, including:</p>
+<ul>
+<li>AllowAny: any user, including anonymous users, have full access</li>
+<li>IsAuthenticated: only registered &amp; authenticated users have access</li>
+<li>IsAdminUser: only admins users have access</li>
+<li>IsAuthenticatedOrReadOnly: anyone can view, but only authenticated users have write, edit, &amp; delete privileges</li>
+</ul>
+<p>To use the project-level permission settings, update the REST_FRAMEWORK section of the <code>tweeter_app/settings.py</code> file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># settings.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>REST_FRAMEWORK <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;DEFAULT_PERMISSION_CLASSES&#39;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;rest_framework.permissions.IsAuthenticatedOrReadOnly&#39;</span>, <span style="color:#75715e"># new</span>
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>Now if you view the <a href="http://localhost:8000/api/v1/tweets/1/">first tweet</a>, the user&rsquo;s options are based on their authentication status.</p>
+<p><img src="../../drf_api_permission1.png" alt="api permissions1"></p>
+<h3 id="custom-permissions">Custom Permissions</h3>
+<p>If needed, we can create custom permission classes to tighten or loosen the project-level permission settings.  For the tweets API, let&rsquo;s create a custom permission that will only allow the user that created a tweet to modify or delete the tweet.</p>
+<p>We do this by creating a <code>api/permissions.py</code> file and adding the content below.  From the <code>BasePermission</code> class, we are overwriting the <code>has_object_permission</code> function.  Our updated function will return <code>True</code> if the request is &lsquo;safe&rsquo; and does not attempt to create or delete the tweet, such as a <code>GET</code> request, or if the request is comes from the user that created the tweet.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># api/permissions.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> rest_framework <span style="color:#f92672">import</span> permissions
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IsTweetAuthorOrReadOnly</span>(permissions<span style="color:#f92672">.</span>BasePermission):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">has_object_permission</span>(self, request, view, obj):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># SAFE_METHODS are: GET, OPTIONS, HEAD</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> request<span style="color:#f92672">.</span>method <span style="color:#f92672">in</span> permissions<span style="color:#f92672">.</span>SAFE_METHODS:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Otherwise, only the tweet author can change a tweet</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> obj<span style="color:#f92672">.</span>user <span style="color:#f92672">==</span> request<span style="color:#f92672">.</span>user
+</span></span></code></pre></div><h3 id="next-up">Next Up</h3>
+<p>Good job!  Next we will create the ability for our API users to authenticate via tokens.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

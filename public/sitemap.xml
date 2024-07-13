@@ -8,6 +8,9 @@
     <loc>http://localhost:1313/tags/aws/</loc>
     <lastmod>2024-07-10T20:32:38-05:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/django/</loc>
+    <lastmod>2024-07-10T20:32:38-05:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/django_eb_healcheck/</loc>
     <lastmod>2024-07-10T20:32:38-05:00</lastmod>
   </url><url>
@@ -46,6 +49,18 @@
   </url><url>
     <loc>http://localhost:1313/posts/what_is_blockchain/</loc>
     <lastmod>2022-09-14T21:25:08-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/drf_token_authentication/</loc>
+    <lastmod>2020-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/api_permissions/</loc>
+    <lastmod>2020-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/django_email/</loc>
+    <lastmod>2020-01-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/heroku/</loc>
+    <lastmod>2020-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/python_datetime/</loc>
     <lastmod>2019-10-23T00:00:00+00:00</lastmod>

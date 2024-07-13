@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Heroku on AgilePhD</title>
+    <link>http://localhost:1313/tags/heroku/</link>
+    <description>Recent content in Heroku on AgilePhD</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/heroku/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add Email to a Django App</title>
+      <link>http://localhost:1313/posts/django_email/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/django_email/</guid>
+      <description>Email Adding email to an application allows us to provide a better user experience. Users have come to expect certain features such as account confirmation and password reset which are usually accomplished via email.&#xA;A version of this code can be viewed on GitHub.&#xA;SendGrid You could acquire email services through dozens of reputable providers but one of the easiest, and free-ist, methods is to use the Sendgrid add-on via Heroku.</description>
+    </item>
+  </channel>
+</rss>

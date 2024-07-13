@@ -58,6 +58,34 @@
       <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
     </item>
     <item>
+      <title>The Product Owner</title>
+      <link>http://localhost:1313/posts/scrum_product_owner/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/scrum_product_owner/</guid>
+      <description>Note: Portions of this posts were previously published as a book chapter about the Product Owner role in a Scrum team.&#xA;Software development during the 1990s experienced a fundamental shift in respect to the planning and management techniques. With accusations such as the Chaos Report, the field of IT project management was under attack and innovative approaches were emerging from industry.1 One of the main instigations causing new development approaches was the requirement of substantial upfront planning and the inability of traditional methods to handle frequent changes.</description>
+    </item>
+    <item>
+      <title>Django Rest Framework: Token Authentication</title>
+      <link>http://localhost:1313/posts/drf_token_authentication/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/drf_token_authentication/</guid>
+      <description>A version of the code for this iteration of Tweeter can be viewed on GitHub.&#xA;Django REST Framework comes with several built-in authentication solutions. Most APIs will use one of these authentication types:&#xA;BasicAuthentication: each request is authenticated with a username and password. Basic authentication is inefficient and generally not used with production APIs. TokenAuthentication: users are assigned a complex token that is added to the header of each request.</description>
+    </item>
+    <item>
+      <title>Django Rest Framework: API Permissions</title>
+      <link>http://localhost:1313/posts/api_permissions/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/api_permissions/</guid>
+      <description>Note: This post is an extract from a demo project to build a simplistic Twitter app with API support.&#xA;At the moment, any anonymous, non-authorized user can access our API endpoints. Although we might not mind anonymous viewing, anyone can create, edit, update, or delete a tweet.&#xA;As an example, the tweet detail page http://localhost:8000/api/v1/tweets/1/ displays the tweet information, which is fine, except any random user, anonymous or otherwise, can update or delete an existing tweet.</description>
+    </item>
+    <item>
+      <title>Add Email to a Django App</title>
+      <link>http://localhost:1313/posts/django_email/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/django_email/</guid>
+      <description>Email Adding email to an application allows us to provide a better user experience. Users have come to expect certain features such as account confirmation and password reset which are usually accomplished via email.&#xA;A version of this code can be viewed on GitHub.&#xA;SendGrid You could acquire email services through dozens of reputable providers but one of the easiest, and free-ist, methods is to use the Sendgrid add-on via Heroku.</description>
+    </item>
+    <item>
       <title>Dates and Times and Strings, Oh My!</title>
       <link>http://localhost:1313/posts/python_datetime/</link>
       <pubDate>Wed, 23 Oct 2019 00:00:00 +0000</pubDate>

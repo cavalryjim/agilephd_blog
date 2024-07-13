@@ -1,0 +1,36 @@
++++
+title = 'The Product Owner'
+tags = ["scrum"]
+date = 2020-02-09
++++
+
+***Note: Portions of this posts were previously published as a book chapter about the Product Owner role in a Scrum team.***
+
+Software development during the 1990s experienced a fundamental shift in respect to the planning and management techniques.  With accusations such as the Chaos Report, the field of IT project management was under attack and innovative approaches were emerging from industry.[^mulder_1994]  One of the main instigations causing new development approaches was the requirement of substantial upfront planning and the inability of traditional methods to handle frequent changes.  Jeff Sutherland and Ken Schwaber, the co-creators of the Scrum framework, sought to create a software development framework that embraced change.
+
+Borrowing from the sport of Rugby where interlocked teams attempt to move the ball down field, the term ‘Scrum’ was first used by professors Hirotaka Takeuchi and Ikujiro Nonaka in their seminal 1986 Harvard Business Review paper “The New New Product Development Game“.  Building on the observations of Takeuchi and Nonoka, Sutherland and Schwaber codified several new agile practices in their 1995 presentation at the Association of Computing Machinery research conference.[^verheyen_2019]  Thus, the ‘inspect and adapt’ foundation of Scrum was born.
+
+The Scrum framework only has three roles.  Team members are either a worker, consisting of the members actually creating the product, the Scum Master, a servant leader keen to removing impediments and facilitating teamwork, or the Product Owner, laying out the vision and prioritizing work.[^schwaber_sutherland_2012]  This post will focus on the Product Owner and the importance of the role to project success.  
+
+As the title may imply, the Product Owner ‘owns’ the product by setting the vision and ensuring a valuable result.  Reflecting on his past experiences with software development, Sutherland articulates the need for a team role that focuses marketing plans, engages with stakeholders, and product strategy.  He compares the notion of a Product Owner to the Chief Engineer in an automotive company.  At Toyota, the Chief Engineer is responsible for a product line, such as the Camry.[^sutherland_2014]  Deriving their leadership from experience and market knowledge, the Chief Engineer provides direction and vision for their product line. 
+
+In Scrum, a Product Owner provides a connection to the customer.  The Product Owner understands the market, competing technologies, and stakeholder expectations.  While the Scrum Master and team are focused on quality and speed, the Product Owner is a conduit that renders the team’s effort into value.[^sutherland_2014_ibid]  As a fighter pilot flying missions over Vietnam, Sutherland uses analogies about aircraft “dogfights” to describe the Product Owner role.  When compared, competing aircraft have strengths and weaknesses.  Maneuverability at various altitudes, speed, and armament, are used to describe what the aircraft can do but it was the pilot’s ability to “see” the enemy along with his or her situational awareness that ultimately decided the winner.  According to Sutherland, the design of an aircraft’s canopy was of the upmost importance and allowed the winning pilot to get inside of, figuratively and literally, an enemy’s decision loops.  He called this “observation translated into action”.
+
+Developing and sharing a vision can be difficult.  For Product Owners, the first step is prioritizing the Product Backlog.  A Product Backlog is a list of all the features needed to make the vision a reality.  It is an evolving roadmap that spans the life of a project.[^leffingwell_2012]  Prioritizing the Product Backlog means ordering the features from most important to least important.  Scrum development is conducted in time boxed work increments, called Sprints, usually between 1 – 4 weeks.  Immediately before it begins, the team selects features from the top of the Product Backlog that will be completed during the Sprint.  This ensures that the most valuable features are completed sooner than lesser value features.  This also maximizes the value produced by the team during each Sprint.[^sutherland_2014_ibid2]
+
+In software development, there is a non-scientific observation that 20% of the features provide 80% of the value for a product.[^sutherland_2014_ibid3]  As an example, think about hundreds of features in Microsoft Excel and how many of those features are used by most users.  The goal of articulating this 80 / 20 observation in to focus development toward the minimally viable version of a product, or MVP.  The purpose of an MVP is to put your product in front of users and receive feedback sooner rather than later.[^schwaber_2009]  With Scrum, the framework comes with a built-in feedback loop.  Each Sprint ends with a ceremony called the Sprint Review.  During the Sprint Review, the team openly demonstrates the completed features as a working increment of the Product Owner’s vision.[^sutherland_2014_ibid4]  Stakeholders are welcome to attend the Sprint Review and provide feedback on the features and the status of the product.  As part of the feedback loop, the Product Owner evaluates the value created, incorporates reactions, and continually grooms the Product Backlog with the most valuable features (re)prioritized at the top.[^law_larusdottir_2015]  Sutherland describes this change embracing process and getting “your change for free”.
+
+As stated earlier, this post intends to focus on the Product Owner and the role of Product Owner in regards to project success.  As the visionary, the Product Owner sets the direction for the team.  If that direction and vision happen to be misaligned or wrong, the team would have little hope of obtaining project success.  Although slower, even mediocre performing teams will complete features and create value as long as they are working on features selected from a properly priorities Product Backlog. 
+
+[^mulder_1994]: Mulder, H. (1994). The Chaos Report.
+[^verheyen_2019]: Verheyen, G. (2019) Scrum: A Pocket Guide (2nd edition), Van Haren Publishing, Hetogenbosch, NL.
+[^schwaber_sutherland_2012]: Schwaber, K. and Sutherland, J. (2012) Software in 30 Days: How agile managers beat the odds, delight their customers, and leave competitors in the dust, John Wiley & Sons, Hoboken, NJ.
+[^sutherland_2014]: Sutherland, J. (2014) Scrum: The Art of Doing Twice the Work in Half the Time, Crown Publishing, NYC, NY.
+[^sutherland_2014_ibid]: Sutherland (2014).
+[^leffingwell_2012]: Leffingwell, D (2012) Agile Software Requirements: Lean Requirements Practices for Teams, Programs, and the Enterprise, Pearson Education, Boston, MA.
+[^sutherland_2014_ibid2]: Sutherland (2014).
+[^sutherland_2014_ibid3]: Sutherland (2014).
+[^schwaber_2009]: Schwaber, K. (2009) Agile Project Management with Scrum. Microsoft Press.
+[^sutherland_2014_ibid4]: Sutherland (2014).
+[^law_larusdottir_2015]: Law, E. and Larusdottir, M. (2015) “Whose Experience Do We Care About? Analysis of the Fitness of Scrum and Kanban to User Experience”, International Journal of Human Computer Interactions, 31, pp. 584-602.
+

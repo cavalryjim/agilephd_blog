@@ -1,6 +1,6 @@
 +++
 title = 'Elastic Beanstalk Healthcheck with a Django App'
-tags = ["python", "aws"]
+tags = ["python", "aws", "django"]
 date = 2024-07-10T20:32:38-05:00
 +++
 
