@@ -37,8 +37,9 @@ sha256_hash = hashlib.sha256(input_string.encode('utf-8')).hexdigest()
 
 # Print the hash
 print(sha256_hash)
-
-# output: b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
+```
+```
+b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
 ```
 
 If you run the above code, you should get the exact same hash output.  Also try modifying the `input_string` and rehashing.  You should notice that the output changes rather significantly.  Even if all you do is add or remove a single space to the input, it is easy to notice the change.  This drastic change is known as the [Avalance Effect](https://en.wikipedia.org/wiki/Avalanche_effect).
@@ -68,8 +69,9 @@ sha256_hash = hashlib.sha256(data).hexdigest()
 
 # Print the hash
 print(sha256_hash)
-
-# output: d16267b56ea53c1b340a3fd9ba7f70d8a6037abf350b492b60264ff32f19faf0
+```
+```
+d16267b56ea53c1b340a3fd9ba7f70d8a6037abf350b492b60264ff32f19faf0
 ```
 
 Once again, I would encourage you to try modifying the contents of the text file and rehashing it to observe the Avalance Effect.  Notice that if you have the hash of a file, you can use that to confirm the integrity of the content.
@@ -100,6 +102,9 @@ if sha256_hash == confirmation_hash:
 else:
     print("Hashes do not match! The file may have been tampered with.")
 ```
+```
+Hashes match! The file is authentic.
+```
 
 In this example, the file is authentic!  Conversely, if the file has been tampered with, we would know because it results in a different hash.  
 
@@ -120,8 +125,9 @@ sha256_hash = hashlib.sha256(data).hexdigest()
 
 # Print the hash
 print(sha256_hash)
-
-# output: 74a3d70ac1fe79985c58e76684ea72d69df1024a087f8e0750f8f800df1030ce
+```
+```
+74a3d70ac1fe79985c58e76684ea72d69df1024a087f8e0750f8f800df1030ce
 ```
 
 How about a video file?
@@ -139,8 +145,9 @@ sha256_hash = hashlib.sha256(data).hexdigest()
 
 # Print the hash
 print(sha256_hash)
-
-# output: 9b6df1e46424704e281ea1b9e933fec9cc599e9f5f75ddba2bf1deed647e6b2d
+```
+```
+9b6df1e46424704e281ea1b9e933fec9cc599e9f5f75ddba2bf1deed647e6b2d
 ```
 
 ### Conclusion

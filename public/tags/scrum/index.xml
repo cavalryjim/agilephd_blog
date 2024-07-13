@@ -6,8 +6,15 @@
     <description>Recent content in Scrum on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Apr 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Product Owner</title>
+      <link>http://localhost:1313/posts/scrum_product_owner/</link>
+      <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/scrum_product_owner/</guid>
+      <description>Note: Portions of this posts were previously published as a book chapter about the Product Owner role in a Scrum team.&#xA;Software development during the 1990s experienced a fundamental shift in respect to the planning and management techniques. With accusations such as the Chaos Report, the field of IT project management was under attack and innovative approaches were emerging from industry.1 One of the main instigations causing new development approaches was the requirement of substantial upfront planning and the inability of traditional methods to handle frequent changes.</description>
+    </item>
     <item>
       <title>Scrum: Brazilian Jiu-Jitsu of Software Development</title>
       <link>http://localhost:1313/posts/scrum_bjj/</link>
