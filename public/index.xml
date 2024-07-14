@@ -6,8 +6,15 @@
     <description>Recent content on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jul 2024 20:32:38 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Harnessing the Power of AI with Prompt Engineering</title>
+      <link>http://localhost:1313/posts/prompt_engineering/</link>
+      <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/prompt_engineering/</guid>
+      <description>In the ever-evolving landscape of artificial intelligence (AI), prompt engineering has emerged as a critical skill for harnessing the full potential of large language models (LLMs) like OpenAI’s GPT-4. This burgeoning field involves crafting precise inputs, or &amp;ldquo;prompts,&amp;rdquo; to guide these models in generating accurate, relevant, and contextually appropriate outputs. Whether you are a developer, data scientist, or AI enthusiast, understanding prompt engineering can significantly enhance your ability to leverage AI for various applications.</description>
+    </item>
     <item>
       <title>Elastic Beanstalk Healthcheck with a Django App</title>
       <link>http://localhost:1313/posts/django_eb_healcheck/</link>
@@ -35,6 +42,13 @@
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/hashing/</guid>
       <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
+    </item>
+    <item>
+      <title>Consensus Algorithms</title>
+      <link>http://localhost:1313/posts/consensus_algorithms/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/consensus_algorithms/</guid>
+      <description>In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger&amp;rsquo;s state. Here are some of the most common consensus algorithms:&#xA;Proof of Work (PoW) Used by: Bitcoin, Ethereum (until it moved to PoS). Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.</description>
     </item>
     <item>
       <title>Blockchain: Poised to Revolutionize Personal Health Management</title>
@@ -77,6 +91,13 @@
       <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/api_permissions/</guid>
       <description>Note: This post is an extract from a demo project to build a simplistic Twitter app with API support.&#xA;At the moment, any anonymous, non-authorized user can access our API endpoints. Although we might not mind anonymous viewing, anyone can create, edit, update, or delete a tweet.&#xA;As an example, the tweet detail page http://localhost:8000/api/v1/tweets/1/ displays the tweet information, which is fine, except any random user, anonymous or otherwise, can update or delete an existing tweet.</description>
+    </item>
+    <item>
+      <title>Django REST Framework</title>
+      <link>http://localhost:1313/posts/django_rest_framework/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/django_rest_framework/</guid>
+      <description>Django and the Django REST Framework are a popular combination for building and maintaining robust Web APIs. The term API is a bit dated and stands for Application Program Interface. The important word is &amp;ldquo;Interface&amp;rdquo; in that the ability to communicate with other applications gives our web app value.&#xA;A version of this code can be found on GitHub.&#xA;HTTP The HTTP (Hypertext Transfer Protocol) protocol provides the structure for communicating files across the Internet.</description>
     </item>
     <item>
       <title>Add Email to a Django App</title>

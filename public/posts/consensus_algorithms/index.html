@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Consensus Algorithms // AgilePhD</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.128.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dr. James Davis" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
+    
+
+    
+  
+
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Consensus Algorithms">
+  <meta name="twitter:description" content="In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger’s state. Here are some of the most common consensus algorithms:
+Proof of Work (PoW) Used by: Bitcoin, Ethereum (until it moved to PoS). Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/consensus_algorithms/">
+  <meta property="og:site_name" content="AgilePhD">
+  <meta property="og:title" content="Consensus Algorithms">
+  <meta property="og:description" content="In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger’s state. Here are some of the most common consensus algorithms:
+Proof of Work (PoW) Used by: Bitcoin, Ethereum (until it moved to PoS). Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-03-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-03-18T00:00:00+00:00">
+    <meta property="article:tag" content="Django">
+    <meta property="article:tag" content="Python">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/tank1.jpg" alt="Dr. James Davis" /></a>
+      <span class="app-header-title">AgilePhD</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Dr. James Davis: data scientist, girl dad, combat veteran, and can&#39;t shutup about Blockchain.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/cavalryjim" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jdavisphd/" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Consensus Algorithms</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 18, 2024
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="http://localhost:1313/tags/django/">Django</a>
+              <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger&rsquo;s state. Here are some of the most common consensus algorithms:</p>
+<ol>
+<li>
+<p>Proof of Work (PoW)
+Used by: Bitcoin, Ethereum (until it moved to PoS).
+Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.</p>
+</li>
+<li>
+<p>Proof of Stake (PoS)
+Used by: Ethereum 2.0, Cardano, Tezos.
+Mechanism: Validators are chosen to create new blocks and validate transactions based on the number of coins they hold and are willing to &ldquo;stake&rdquo; as collateral. This is more energy-efficient compared to PoW.</p>
+</li>
+<li>
+<p>Delegated Proof of Stake (DPoS)
+Used by: EOS, Tron, BitShares.
+Mechanism: Stakeholders vote to elect a small number of delegates who are responsible for validating transactions and creating blocks. This aims to increase efficiency and scalability.</p>
+</li>
+<li>
+<p>Proof of Authority (PoA)
+Used by: VeChain, POA Network.
+Mechanism: A limited number of pre-approved nodes (authorities) validate transactions and create new blocks. This is typically used in private or consortium blockchains.</p>
+</li>
+<li>
+<p>Byzantine Fault Tolerance (BFT)
+Variants: Practical Byzantine Fault Tolerance (PBFT), Federated Byzantine Agreement (FBA).
+Used by: Hyperledger Fabric (PBFT), Stellar (FBA).
+Mechanism: Nodes reach consensus through a multi-round process where they exchange messages to agree on the next block, even if some nodes act maliciously.</p>
+</li>
+<li>
+<p>Proof of Elapsed Time (PoET)
+Used by: Hyperledger Sawtooth.
+Mechanism: Nodes wait for a randomly assigned time before producing a block. The first node to finish its waiting period creates the block. This is often implemented using trusted execution environments.</p>
+</li>
+<li>
+<p>Proof of Burn (PoB)
+Used by: Counterparty, Slimcoin.
+Mechanism: Participants burn (destroy) a portion of their cryptocurrency to gain the right to mine new blocks. This reduces supply and aims to show long-term commitment to the network.</p>
+</li>
+<li>
+<p>Proof of Capacity (PoC) or Proof of Space (PoSpace)
+Used by: Burstcoin, Chia.
+Mechanism: Miners allocate hard drive space for mining. The more space allocated, the higher the chances of creating a new block.</p>
+</li>
+<li>
+<p>Proof of Activity (PoA)
+Used by: Decred.
+Mechanism: Combines PoW and PoS. Miners (PoW) create empty blocks, and validators (PoS) confirm transactions within those blocks.</p>
+</li>
+<li>
+<p>Proof of Importance (PoI)
+Used by: NEM.
+Mechanism: Nodes are selected to create new blocks based on their activity in the network, such as transaction history and the number of coins held.</p>
+</li>
+<li>
+<p>Proof of Coverage (PoC)
+Used by: Helium.
+Mechanism: Proof of Coverage is a unique consensus mechanism designed to verify the location and coverage provided by Hotspots in the Helium network. It utilizes radio frequency to validate that Hotspots are accurately representing their coverage area.</p>
+</li>
+</ol>
+<p>These consensus algorithms each have their advantages and trade-offs, including considerations of security, scalability, energy efficiency, and centralization. The choice of consensus algorithm often depends on the specific requirements and goals of the blockchain network.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

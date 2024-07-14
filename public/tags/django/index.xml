@@ -36,5 +36,12 @@
       <guid>http://localhost:1313/posts/django_email/</guid>
       <description>Email Adding email to an application allows us to provide a better user experience. Users have come to expect certain features such as account confirmation and password reset which are usually accomplished via email.&#xA;A version of this code can be viewed on GitHub.&#xA;SendGrid You could acquire email services through dozens of reputable providers but one of the easiest, and free-ist, methods is to use the Sendgrid add-on via Heroku.</description>
     </item>
+    <item>
+      <title>Django REST Framework</title>
+      <link>http://localhost:1313/posts/django_rest_framework/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/django_rest_framework/</guid>
+      <description>Django and the Django REST Framework are a popular combination for building and maintaining robust Web APIs. The term API is a bit dated and stands for Application Program Interface. The important word is &amp;ldquo;Interface&amp;rdquo; in that the ability to communicate with other applications gives our web app value.&#xA;A version of this code can be found on GitHub.&#xA;HTTP The HTTP (Hypertext Transfer Protocol) protocol provides the structure for communicating files across the Internet.</description>
+    </item>
   </channel>
 </rss>
