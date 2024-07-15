@@ -6,8 +6,22 @@
     <description>Recent content in Posts on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Jul 2024 20:32:38 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Avoid Cheating with ChatGPT</title>
+      <link>http://localhost:1313/posts/cheating_chatgpt/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheating_chatgpt/</guid>
+      <description>In the age of advanced artificial intelligence, tools like ChatGPT have revolutionized how we access information, complete tasks, and enhance our productivity. However, with great power comes great responsibility. It&amp;rsquo;s crucial to understand how to use AI ethically and avoid falling into the trap of cheating. This blog post will guide you on the ethical use of ChatGPT and how to avoid misusing this powerful tool.&#xA;The Temptation of AI ChatGPT can assist with writing essays, solving complex problems, generating creative content, and much more.</description>
+    </item>
+    <item>
+      <title>Harnessing the Power of AI with Prompt Engineering</title>
+      <link>http://localhost:1313/posts/prompt_engineering/</link>
+      <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/prompt_engineering/</guid>
+      <description>In the ever-evolving landscape of artificial intelligence (AI), prompt engineering has emerged as a critical skill for harnessing the full potential of large language models (LLMs) like OpenAI’s GPT-4. This burgeoning field involves crafting precise inputs, or &amp;ldquo;prompts,&amp;rdquo; to guide these models in generating accurate, relevant, and contextually appropriate outputs. Whether you are a developer, data scientist, or AI enthusiast, understanding prompt engineering can significantly enhance your ability to leverage AI for various applications.</description>
+    </item>
     <item>
       <title>Elastic Beanstalk Healthcheck with a Django App</title>
       <link>http://localhost:1313/posts/django_eb_healcheck/</link>
@@ -37,6 +51,13 @@
       <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
     </item>
     <item>
+      <title>Consensus Algorithms</title>
+      <link>http://localhost:1313/posts/consensus_algorithms/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/consensus_algorithms/</guid>
+      <description>In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger&amp;rsquo;s state. Here are some of the most common consensus algorithms:&#xA;Proof of Work (PoW) Used by: Bitcoin, Ethereum (until it moved to PoS). Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.</description>
+    </item>
+    <item>
       <title>Blockchain: Poised to Revolutionize Personal Health Management</title>
       <link>http://localhost:1313/posts/health_passport/</link>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
@@ -56,6 +77,13 @@
       <pubDate>Wed, 14 Sep 2022 21:25:08 -0500</pubDate>
       <guid>http://localhost:1313/posts/what_is_blockchain/</guid>
       <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
+    </item>
+    <item>
+      <title>Intro to Web Scraping with the Scrapy Package</title>
+      <link>http://localhost:1313/posts/scrapy_quotes/</link>
+      <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/scrapy_quotes/</guid>
+      <description>Web scraping is the automated process of extracting data from one, or more, websites. Automation allows for the collection and analysis of large volumes of web-based information efficiently. Utilizing tools and programming languages such as Python, web scraping involves sending requests to websites, parsing the HTML content, and retrieving specific data points like text, images, or links. This technique is widely used in various fields, including data analysis, market research, and content aggregation, allowing businesses and individuals to gather valuable insights and make informed decisions based on real-time web data.</description>
     </item>
     <item>
       <title>The Product Owner</title>
@@ -79,18 +107,18 @@
       <description>Note: This post is an extract from a demo project to build a simplistic Twitter app with API support.&#xA;At the moment, any anonymous, non-authorized user can access our API endpoints. Although we might not mind anonymous viewing, anyone can create, edit, update, or delete a tweet.&#xA;As an example, the tweet detail page http://localhost:8000/api/v1/tweets/1/ displays the tweet information, which is fine, except any random user, anonymous or otherwise, can update or delete an existing tweet.</description>
     </item>
     <item>
+      <title>Django REST Framework</title>
+      <link>http://localhost:1313/posts/django_rest_framework/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/django_rest_framework/</guid>
+      <description>Django and the Django REST Framework are a popular combination for building and maintaining robust Web APIs. The term API is a bit dated and stands for Application Program Interface. The important word is &amp;ldquo;Interface&amp;rdquo; in that the ability to communicate with other applications gives our web app value.&#xA;A version of this code can be found on GitHub.&#xA;HTTP The HTTP (Hypertext Transfer Protocol) protocol provides the structure for communicating files across the Internet.</description>
+    </item>
+    <item>
       <title>Add Email to a Django App</title>
       <link>http://localhost:1313/posts/django_email/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/django_email/</guid>
       <description>Email Adding email to an application allows us to provide a better user experience. Users have come to expect certain features such as account confirmation and password reset which are usually accomplished via email.&#xA;A version of this code can be viewed on GitHub.&#xA;SendGrid You could acquire email services through dozens of reputable providers but one of the easiest, and free-ist, methods is to use the Sendgrid add-on via Heroku.</description>
-    </item>
-    <item>
-      <title>Django REST Framework</title>
-      <link>http://localhost:1313/posts/django_rest_framework/</link>
-      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/django_rest_framework/</guid>
-      <description>Django and the Django REST Framework are a popular combination for building and maintaining robust Web APIs. The term API is a bit dated and stands for Application Program Interface. The important word is &amp;ldquo;Interface&amp;rdquo; in that the ability to communicate with other applications gives our web app value.&#xA;A version of this code can be found on GitHub.&#xA;HTTP The HTTP (Hypertext Transfer Protocol) protocol provides the structure for communicating files across the Internet.</description>
     </item>
     <item>
       <title>Dates and Times and Strings, Oh My!</title>

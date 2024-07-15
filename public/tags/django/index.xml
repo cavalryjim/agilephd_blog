@@ -16,6 +16,13 @@
       <description>The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good thing about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work for a Django app without additional setup.&#xA;Although my app was deployed and appeared to be working correctly, the Elastic Beanstalk environment reported Severe/Degraded state.</description>
     </item>
     <item>
+      <title>Consensus Algorithms</title>
+      <link>http://localhost:1313/posts/consensus_algorithms/</link>
+      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/consensus_algorithms/</guid>
+      <description>In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger&amp;rsquo;s state. Here are some of the most common consensus algorithms:&#xA;Proof of Work (PoW) Used by: Bitcoin, Ethereum (until it moved to PoS). Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.</description>
+    </item>
+    <item>
       <title>Django Rest Framework: Token Authentication</title>
       <link>http://localhost:1313/posts/drf_token_authentication/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
@@ -30,18 +37,18 @@
       <description>Note: This post is an extract from a demo project to build a simplistic Twitter app with API support.&#xA;At the moment, any anonymous, non-authorized user can access our API endpoints. Although we might not mind anonymous viewing, anyone can create, edit, update, or delete a tweet.&#xA;As an example, the tweet detail page http://localhost:8000/api/v1/tweets/1/ displays the tweet information, which is fine, except any random user, anonymous or otherwise, can update or delete an existing tweet.</description>
     </item>
     <item>
+      <title>Django REST Framework</title>
+      <link>http://localhost:1313/posts/django_rest_framework/</link>
+      <pubDate>Sat, 18 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/django_rest_framework/</guid>
+      <description>Django and the Django REST Framework are a popular combination for building and maintaining robust Web APIs. The term API is a bit dated and stands for Application Program Interface. The important word is &amp;ldquo;Interface&amp;rdquo; in that the ability to communicate with other applications gives our web app value.&#xA;A version of this code can be found on GitHub.&#xA;HTTP The HTTP (Hypertext Transfer Protocol) protocol provides the structure for communicating files across the Internet.</description>
+    </item>
+    <item>
       <title>Add Email to a Django App</title>
       <link>http://localhost:1313/posts/django_email/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/django_email/</guid>
       <description>Email Adding email to an application allows us to provide a better user experience. Users have come to expect certain features such as account confirmation and password reset which are usually accomplished via email.&#xA;A version of this code can be viewed on GitHub.&#xA;SendGrid You could acquire email services through dozens of reputable providers but one of the easiest, and free-ist, methods is to use the Sendgrid add-on via Heroku.</description>
-    </item>
-    <item>
-      <title>Django REST Framework</title>
-      <link>http://localhost:1313/posts/django_rest_framework/</link>
-      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/django_rest_framework/</guid>
-      <description>Django and the Django REST Framework are a popular combination for building and maintaining robust Web APIs. The term API is a bit dated and stands for Application Program Interface. The important word is &amp;ldquo;Interface&amp;rdquo; in that the ability to communicate with other applications gives our web app value.&#xA;A version of this code can be found on GitHub.&#xA;HTTP The HTTP (Hypertext Transfer Protocol) protocol provides the structure for communicating files across the Internet.</description>
     </item>
   </channel>
 </rss>

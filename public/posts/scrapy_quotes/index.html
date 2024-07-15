@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Intro to Web Scraping with the Scrapy Package // AgilePhD</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.128.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dr. James Davis" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
+    
+
+    
+  
+
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Intro to Web Scraping with the Scrapy Package">
+  <meta name="twitter:description" content="Web scraping is the automated process of extracting data from one, or more, websites. Automation allows for the collection and analysis of large volumes of web-based information efficiently. Utilizing tools and programming languages such as Python, web scraping involves sending requests to websites, parsing the HTML content, and retrieving specific data points like text, images, or links. This technique is widely used in various fields, including data analysis, market research, and content aggregation, allowing businesses and individuals to gather valuable insights and make informed decisions based on real-time web data.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/scrapy_quotes/">
+  <meta property="og:site_name" content="AgilePhD">
+  <meta property="og:title" content="Intro to Web Scraping with the Scrapy Package">
+  <meta property="og:description" content="Web scraping is the automated process of extracting data from one, or more, websites. Automation allows for the collection and analysis of large volumes of web-based information efficiently. Utilizing tools and programming languages such as Python, web scraping involves sending requests to websites, parsing the HTML content, and retrieving specific data points like text, images, or links. This technique is widely used in various fields, including data analysis, market research, and content aggregation, allowing businesses and individuals to gather valuable insights and make informed decisions based on real-time web data.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2022-07-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2022-07-25T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Web Scraping">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="/tank1.jpg" alt="Dr. James Davis" /></a>
+      <span class="app-header-title">AgilePhD</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Dr. James Davis: data scientist, girl dad, combat veteran, and can&#39;t shutup about Blockchain.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/cavalryjim" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jdavisphd/" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Intro to Web Scraping with the Scrapy Package</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 25, 2022
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          5 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
+              <a class="tag" href="http://localhost:1313/tags/web-scraping/">Web Scraping</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>Web scraping is the automated process of extracting data from one, or more, websites.  Automation allows for the collection and analysis of large volumes of web-based information efficiently. Utilizing tools and programming languages such as Python, web scraping involves sending requests to websites, parsing the HTML content, and retrieving specific data points like text, images, or links. This technique is widely used in various fields, including data analysis, market research, and content aggregation, allowing businesses and individuals to gather valuable insights and make informed decisions based on real-time web data.</p>
+<p>A version of the code mentioned in this post can be viewed on <a href="https://github.com/cavalryjim/scrapy_quotes">GitHub</a>.</p>
+<h3 id="scrapy-package">Scrapy Package</h3>
+<p>While I have tried several different packages &amp; methods for web scraping, my current favorite is the <a href="https://scrapy.org/">Scrapy package</a>.  Scrapy is nn open-source, collaborative framework for effortlessly extracting the data you need from websites, offering a fast, simple, and highly extensible solution.  The package is well documented and I would encourage you to visit their website link above.</p>
+<h3 id="prerequisite-knowledge">Prerequisite Knowledge</h3>
+<p>Since we are looking to extract data returned in an HTTP request, it would be helpful to have some foundational knowledge about:</p>
+<ul>
+<li>HTML: need to know common tags</li>
+<li>CSS: recognize styling selectors</li>
+<li>HTTP requests
+<ul>
+<li>GET</li>
+<li>POST</li>
+<li>Status codes</li>
+</ul>
+</li>
+</ul>
+<p>If you are not familiar with HTTP requests, here is a quick review. A <code>GET</code> request is what happens when your browser requests an HTML page from a server.  A <code>POST</code> request is what happens when you submit a form.  Status code 200 is good; 300-level indicates some type of redirect; 400-level means there is an error with the request; 500-level means there is an error with the server.  Of course, there&rsquo;s much more to the <a href="https://en.wikipedia.org/wiki/HTTP">Hypertext Transfer Protocol (HTTP)</a> but this will get us started.</p>
+<h3 id="finding-something-to-scrape">Finding Something to Scrape</h3>
+<p>For this post, we are going to use an easy target for scraping. These two website were created explicitly for developers to practice:</p>
+<ul>
+<li><a href="https://quotes.toscrape.com/">https://quotes.toscrape.com/</a></li>
+<li><a href="https://books.toscrape.com/">https://books.toscrape.com/</a></li>
+</ul>
+<p>Of the two, the quotes is a bit easier so we will use that one.</p>
+<p><img src="../../quotes_website.png" alt="Quotes website"></p>
+<p>Looking at the website, notice that there appear to be 10 quotes on the page. Further scrolling to the bottom, we can also see there is pagination and more quotes on subsequent pages.</p>
+<p><img src="../../quotes_source.png" alt="Quotes source"></p>
+<p>Additionally, take a look at the source code for the website (usually viewable by selecting <code>view - source</code>).  The source code contains <code>div</code> tags with <code>class=&quot;quote&quot;</code>, <code>span</code> tags with <code>class=&quot;text&quot;</code>, and <code>small</code> tags with <code>class=&quot;author&quot;</code>.  I think we will find these items useful.</p>
+<h3 id="starting-the-project">Starting the Project</h3>
+<p>To get started, we need to create a folder for this project, spinup a virtual environment, and install Scrapy.</p>
+<pre tabindex="0"><code>$ mkdir scrapy_quotes
+$ cd scrapy_quotes
+$ pipenv shell
+$ pipenv install scrapy
+</code></pre><p>Next, we need to run a command that will create the infrastructure for the project.  Please note that the folling command ends with a &ldquo;period&rdquo; or &ldquo;dot&rdquo;.  That is important as we are already inside the folder for this project.</p>
+<pre tabindex="0"><code>$ scrapy startproject quotes .
+</code></pre><p>The above command creates this structure:</p>
+<pre tabindex="0"><code>scrapy_quotes/
+    scrapy.cfg            # deploy configuration file
+
+    quotes/               # project&#39;s Python module
+        __init__.py
+
+        items.py          # project items definition file
+
+        middlewares.py    # project middlewares file
+
+        pipelines.py      # project pipelines file
+
+        settings.py       # project settings file
+
+        spiders/          # a directory where you&#39;ll later put your spiders
+            __init__.py
+</code></pre><h3 id="a-little-exploration">A Little Exploration</h3>
+<p>Let&rsquo;s confirm we can obtain a HTTP response and see what it contains.  To do that, we enter an interactive shell environment and send a request.</p>
+<pre tabindex="0"><code>$ scrapy shell 
+</code></pre><p>Inside the interactive environment, we can use specific Scrapy commands.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://quotes.toscrape.com/&#39;</span>
+</span></span><span style="display:flex;"><span>fetch(url)
+</span></span></code></pre></div><p>Notice that the <code>fetch</code> command returns the following output:</p>
+<pre tabindex="0"><code>[asyncio] DEBUG: Using selector: KqueueSelector
+[scrapy.core.engine] INFO: Spider opened
+[scrapy.core.engine] DEBUG: Crawled (404) &lt;GET https://quotes.toscrape.com/robots.txt&gt; (referer: None)
+[scrapy.core.engine] DEBUG: Crawled (200) &lt;GET https://quotes.toscrape.com/&gt; (referer: None)
+</code></pre><p>And we now have a <code>response</code> object that contains the HTTP response.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>response<span style="color:#f92672">.</span>status
+</span></span></code></pre></div><pre tabindex="0"><code>200
+</code></pre><p>Remembering that the HTML source code for the quotes website had certain tags with useful information about the quotes and authors, we can access those items.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;div.quote&#39;</span>)
+</span></span></code></pre></div><p>Notice that there are 10 items.  This is expected and we are on the right track.</p>
+<p>I am going to put the quotes into a list and then select a single quote for further data extraction.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>quotes <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;div.quote&#39;</span>)
+</span></span><span style="display:flex;"><span>quote <span style="color:#f92672">=</span> quotes[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>quote<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;small.author::text&#39;</span>)<span style="color:#f92672">.</span>get()
+</span></span></code></pre></div><pre tabindex="0"><code>&#39;Albert Einstein&#39;
+</code></pre><p>I also want to extract the quote text but it has a weird character at the beginning and ending of the text so I will use the <code>replace()</code> method to remove those.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>quote<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;span.text::text&#39;</span>)<span style="color:#f92672">.</span>get()<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;“&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;”&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)
+</span></span></code></pre></div><pre tabindex="0"><code>&#39;The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.&#39;
+</code></pre><p>Leave the interactive environment using the <code>exit()</code> command.</p>
+<h3 id="creating-a-spider">Creating a Spider</h3>
+<p>Now to create a spider that will crawl the website.  We do this by creating a class that will inherit from the <code>scrapy.Spider</code> class.  Our class will need at least three pieces of information:</p>
+<ul>
+<li>name of the spider</li>
+<li>url or urls to scrape</li>
+<li>a <code>parse()</code> method with logic for parsing the response.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># quotes/spiders/quote_spider.py</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> scrapy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">QuoteSpider</span>(scrapy<span style="color:#f92672">.</span>Spider):
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;quotes&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    start_urls <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;https://quotes.toscrape.com/&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse</span>(self, response):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        quotes <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;div.quote&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> quote <span style="color:#f92672">in</span> quotes:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> {
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;author&#39;</span>: quote<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;small.author::text&#39;</span>)<span style="color:#f92672">.</span>get(),
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;text&#39;</span>: quote<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;span.text::text&#39;</span>)<span style="color:#f92672">.</span>get()<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;“&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)<span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;”&#39;</span>, <span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>            }  
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        next_page <span style="color:#f92672">=</span> response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;li.next a&#39;</span>)<span style="color:#f92672">.</span>attrib[<span style="color:#e6db74">&#39;href&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> next_page <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> response<span style="color:#f92672">.</span>follow(next_page, callback<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>parse)
+</span></span></code></pre></div><h3 id="pagination">Pagination</h3>
+<p>After the <code>for</code> loop, notice that our <code>parse()</code> method looks for a <code>li</code> tag with the <code>next</code> class.  This logic will let us know if there is a next button which indicates there are more quotes to scrape in a following page.</p>
+<p>If the next button exists, our logic will follow that link by requesting the next page and contining to parse the new response.</p>
+<h3 id="crawling-the-website">Crawling the Website</h3>
+<p>From the command line, we can issue the <code>crawl</code> command.  Let&rsquo;s break down the command:</p>
+<ul>
+<li>scrapy crawl  &lt;- this is the crawl command</li>
+<li>quotes        &lt;- the name we gave the spider</li>
+<li>-O quotes.csv &lt;- this indicates we want the output placed in csv file</li>
+</ul>
+<pre tabindex="0"><code>$ scrapy crawl quotes -O quotes.csv
+</code></pre><p>As a closing note, we could have also designated to create a <code>quotes.json</code> file instead of a csv file.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

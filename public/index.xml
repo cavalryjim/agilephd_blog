@@ -6,8 +6,15 @@
     <description>Recent content on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Avoid Cheating with ChatGPT</title>
+      <link>http://localhost:1313/posts/cheating_chatgpt/</link>
+      <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cheating_chatgpt/</guid>
+      <description>In the age of advanced artificial intelligence, tools like ChatGPT have revolutionized how we access information, complete tasks, and enhance our productivity. However, with great power comes great responsibility. It&amp;rsquo;s crucial to understand how to use AI ethically and avoid falling into the trap of cheating. This blog post will guide you on the ethical use of ChatGPT and how to avoid misusing this powerful tool.&#xA;The Temptation of AI ChatGPT can assist with writing essays, solving complex problems, generating creative content, and much more.</description>
+    </item>
     <item>
       <title>Harnessing the Power of AI with Prompt Engineering</title>
       <link>http://localhost:1313/posts/prompt_engineering/</link>
@@ -72,7 +79,14 @@
       <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
     </item>
     <item>
-      <title>The Product Owner</title>
+      <title>Intro to Web Scraping with the Scrapy Package</title>
+      <link>http://localhost:1313/posts/scrapy_quotes/</link>
+      <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/scrapy_quotes/</guid>
+      <description>Web scraping is the automated process of extracting data from one, or more, websites. Automation allows for the collection and analysis of large volumes of web-based information efficiently. Utilizing tools and programming languages such as Python, web scraping involves sending requests to websites, parsing the HTML content, and retrieving specific data points like text, images, or links. This technique is widely used in various fields, including data analysis, market research, and content aggregation, allowing businesses and individuals to gather valuable insights and make informed decisions based on real-time web data.</description>
+    </item>
+    <item>
+      <title>Scrum: The Product Owner</title>
       <link>http://localhost:1313/posts/scrum_product_owner/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/scrum_product_owner/</guid>

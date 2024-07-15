@@ -51,5 +51,4 @@ Mechanism: Nodes are selected to create new blocks based on their activity in th
 Used by: Helium.
 Mechanism: Proof of Coverage is a unique consensus mechanism designed to verify the location and coverage provided by Hotspots in the Helium network. It utilizes radio frequency to validate that Hotspots are accurately representing their coverage area. 
 
-
 These consensus algorithms each have their advantages and trade-offs, including considerations of security, scalability, energy efficiency, and centralization. The choice of consensus algorithm often depends on the specific requirements and goals of the blockchain network.

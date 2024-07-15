@@ -104,7 +104,6 @@ GMAIL_PASSWORD='yupxxxxxxxxxxxx'
 ### Git Ignore
 Now that we have created a `.env` file, it would be a good opportunity to define a `.gitignore` file.  This file specifies any files that will not be tracked as part of our Git repository.  Thus, this list of files will be ignored.
 
-\codecaption{.gitignore}
 ```
 staticfiles
 .env
