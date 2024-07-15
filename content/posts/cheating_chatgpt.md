@@ -1,5 +1,5 @@
 +++
-title = 'How to Avoid Cheating with ChatGPT'
+title = 'Students: How to Avoid Cheating with ChatGPT'
 tags = ["AI"]
 date = 2024-07-15
 +++
