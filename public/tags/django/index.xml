@@ -16,13 +16,6 @@
       <description>The Problem Elastic Beanstalk (EB) is an orchestration service offered by AWS for deploying web applications. The good thing about EB is that it handles much of the setup for you. The bad thing is that EB also includes services, such as Healthchecks, that do not work for a Django app without additional setup.&#xA;Although my app was deployed and appeared to be working correctly, the Elastic Beanstalk environment reported Severe/Degraded state.</description>
     </item>
     <item>
-      <title>Consensus Algorithms</title>
-      <link>http://localhost:1313/posts/consensus_algorithms/</link>
-      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/consensus_algorithms/</guid>
-      <description>In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger&amp;rsquo;s state. Here are some of the most common consensus algorithms:&#xA;Proof of Work (PoW) Used by: Bitcoin, Ethereum (until it moved to PoS). Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.</description>
-    </item>
-    <item>
       <title>Django Rest Framework: Token Authentication</title>
       <link>http://localhost:1313/posts/drf_token_authentication/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>

@@ -30,13 +30,6 @@
       <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
     </item>
     <item>
-      <title>Consensus Algorithms</title>
-      <link>http://localhost:1313/posts/consensus_algorithms/</link>
-      <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/consensus_algorithms/</guid>
-      <description>In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger&amp;rsquo;s state. Here are some of the most common consensus algorithms:&#xA;Proof of Work (PoW) Used by: Bitcoin, Ethereum (until it moved to PoS). Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.</description>
-    </item>
-    <item>
       <title>Intro to Web Scraping with the Scrapy Package</title>
       <link>http://localhost:1313/posts/scrapy_quotes/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>

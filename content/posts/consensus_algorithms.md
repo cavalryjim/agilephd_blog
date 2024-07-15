@@ -1,6 +1,6 @@
 +++
 title = 'Consensus Algorithms'
-tags = ["django", "python"]
+tags = ["blockchain"]
 date = 2024-03-18
 +++
 
