@@ -86,7 +86,7 @@
       <description>Web scraping is the automated process of extracting data from one, or more, websites. Automation allows for the collection and analysis of large volumes of web-based information efficiently. Utilizing tools and programming languages such as Python, web scraping involves sending requests to websites, parsing the HTML content, and retrieving specific data points like text, images, or links. This technique is widely used in various fields, including data analysis, market research, and content aggregation, allowing businesses and individuals to gather valuable insights and make informed decisions based on real-time web data.</description>
     </item>
     <item>
-      <title>The Product Owner</title>
+      <title>Scrum: The Product Owner</title>
       <link>http://localhost:1313/posts/scrum_product_owner/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/scrum_product_owner/</guid>

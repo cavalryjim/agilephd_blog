@@ -210,14 +210,15 @@ $ pipenv install scrapy
 <p>After the <code>for</code> loop, notice that our <code>parse()</code> method looks for a <code>li</code> tag with the <code>next</code> class.  This logic will let us know if there is a next button which indicates there are more quotes to scrape in a following page.</p>
 <p>If the next button exists, our logic will follow that link by requesting the next page and contining to parse the new response.</p>
 <h3 id="crawling-the-website">Crawling the Website</h3>
-<p>From the command line, we can issue the <code>crawl</code> command.  Let&rsquo;s break down the command:</p>
+<p>From the command line, we can issue the <code>crawl</code> command.</p>
+<pre tabindex="0"><code>$ scrapy crawl quotes -O quotes.csv
+</code></pre><p>Let&rsquo;s break down the command:</p>
 <ul>
 <li>scrapy crawl  &lt;- this is the crawl command</li>
 <li>quotes        &lt;- the name we gave the spider</li>
 <li>-O quotes.csv &lt;- this indicates we want the output placed in csv file</li>
 </ul>
-<pre tabindex="0"><code>$ scrapy crawl quotes -O quotes.csv
-</code></pre><p>As a closing note, we could have also designated to create a <code>quotes.json</code> file instead of a csv file.</p>
+<p>As a final note, we could have also designated to create a <code>quotes.json</code> file instead of a csv file.</p>
 
     </div>
     <div class="post-footer">

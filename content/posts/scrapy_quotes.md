@@ -184,14 +184,16 @@ If the next button exists, our logic will follow that link by requesting the nex
 
 ### Crawling the Website
 
-From the command line, we can issue the `crawl` command.  Let's break down the command:
-- scrapy crawl  <- this is the crawl command
-- quotes        <- the name we gave the spider
-- -O quotes.csv <- this indicates we want the output placed in csv file
+From the command line, we can issue the `crawl` command.  
 
 ```
 $ scrapy crawl quotes -O quotes.csv
 ```
 
-As a closing note, we could have also designated to create a `quotes.json` file instead of a csv file.  
+Let's break down the command:
+- scrapy crawl  <- this is the crawl command
+- quotes        <- the name we gave the spider
+- -O quotes.csv <- this indicates we want the output placed in csv file
+
+As a final note, we could have also designated to create a `quotes.json` file instead of a csv file.  
 
