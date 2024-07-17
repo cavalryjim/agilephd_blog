@@ -160,7 +160,7 @@ print(sha256_hash)
 9b6df1e46424704e281ea1b9e933fec9cc599e9f5f75ddba2bf1deed647e6b2d
 ```
 
- As we moved from a simple "hello world" string to text files, images, and video files the size of the hash remained consistent at 64 hexidecimal characters.
+ As we moved from a simple "hello world" string to larger text, image, and video files the size of the hash remained consistent at 64 hexidecimal characters.
 
 ```python
 len(sha256_hash)
