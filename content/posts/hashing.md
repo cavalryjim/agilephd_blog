@@ -42,7 +42,16 @@ print(sha256_hash)
 b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
 ```
 
+
 If you run the above code, you should get the exact same hash output.  Also try modifying the `input_string` and rehashing.  You should notice that the output changes rather significantly.  Even if all you do is add or remove a single space to the input, it is easy to notice the change.  This drastic change is known as the [Avalance Effect](https://en.wikipedia.org/wiki/Avalanche_effect).
+
+Also notice the length of the hash, 64 hexidecimal characters.
+
+```python
+# what is the length of this hash?
+len(sha256_hash)
+# returns 64
+```
 
 The `hashlib.sha256()` function also accepts a bytes-like object as an argument, so we can use it to generate the SHA256 hash of a file. Here’s an example of how to do this with a file called `text_file.txt` containing everyones favorite, lorem ipsum:
 
@@ -75,6 +84,7 @@ d16267b56ea53c1b340a3fd9ba7f70d8a6037abf350b492b60264ff32f19faf0
 ```
 
 Once again, I would encourage you to try modifying the contents of the text file and rehashing it to observe the Avalance Effect.  Notice that if you have the hash of a file, you can use that to confirm the integrity of the content.
+
 
 ### Using a SHA256 Hash to Verify File Integrity
 
@@ -148,6 +158,13 @@ print(sha256_hash)
 ```
 ```
 9b6df1e46424704e281ea1b9e933fec9cc599e9f5f75ddba2bf1deed647e6b2d
+```
+
+Also notice that as we moved from a simple "hello world" string to text files, images, and video files the size of the hash remained consistent at 64 hexidecimal characters.
+
+```python
+len(sha256_hash)
+# returns 64
 ```
 
 ### Conclusion

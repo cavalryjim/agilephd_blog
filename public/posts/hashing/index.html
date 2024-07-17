@@ -124,7 +124,11 @@ SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash va
 </span></span><span style="display:flex;"><span>print(sha256_hash)
 </span></span></code></pre></div><pre tabindex="0"><code>b94d27b9934d3e08a52e52d7da7dabfac484efe37a5380ee9088f7ace2efcde9
 </code></pre><p>If you run the above code, you should get the exact same hash output.  Also try modifying the <code>input_string</code> and rehashing.  You should notice that the output changes rather significantly.  Even if all you do is add or remove a single space to the input, it is easy to notice the change.  This drastic change is known as the <a href="https://en.wikipedia.org/wiki/Avalanche_effect">Avalance Effect</a>.</p>
-<p>The <code>hashlib.sha256()</code> function also accepts a bytes-like object as an argument, so we can use it to generate the SHA256 hash of a file. Here’s an example of how to do this with a file called <code>text_file.txt</code> containing everyones favorite, lorem ipsum:</p>
+<p>Also notice the length of the hash, 64 hexidecimal characters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># what is the length of this hash?</span>
+</span></span><span style="display:flex;"><span>len(sha256_hash)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># returns 64</span>
+</span></span></code></pre></div><p>The <code>hashlib.sha256()</code> function also accepts a bytes-like object as an argument, so we can use it to generate the SHA256 hash of a file. Here’s an example of how to do this with a file called <code>text_file.txt</code> containing everyones favorite, lorem ipsum:</p>
 <pre tabindex="0"><code>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Vivamus condimentum sagittis lacus, laoreet luctus ligula laoreet ut.
 Vestibulum ullamcorper accumsan velit vel vehicula.
@@ -195,7 +199,10 @@ Proin et erat at mauris tincidunt porttitor vitae ac dui.
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Print the hash</span>
 </span></span><span style="display:flex;"><span>print(sha256_hash)
 </span></span></code></pre></div><pre tabindex="0"><code>9b6df1e46424704e281ea1b9e933fec9cc599e9f5f75ddba2bf1deed647e6b2d
-</code></pre><h3 id="conclusion">Conclusion</h3>
+</code></pre><p>Also notice that as we moved from a simple &ldquo;hello world&rdquo; string to text files, images, and video files the size of the hash remained consistent at 64 hexidecimal characters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>len(sha256_hash)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># returns 64</span>
+</span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
 <p>In these examples, we looked at how to generate and use SHA256 hashes in Python. We saw how to generate a SHA256 hash of a string or a file and how to use it to verify the integrity of a file.</p>
 <p>One of the major takeaways should be that hashing is a powerful mechanism for digitally signing data, such as information in a single block of a Blockchain, that validates the integrity of the data.</p>
 
