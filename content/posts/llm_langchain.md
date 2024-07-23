@@ -92,7 +92,7 @@ docstorage = Chroma.from_texts(docs, embedding_function)
 
 Here, we retrieve the OpenAI API key from environment variables and initialize the `OpenAIEmbeddings` function to convert text into embeddings. We then use `Chroma` to create a vector database, storing the embeddings of our text chunks, making it easier to retrieve relevant information later.
 
-As a note, Chroma creates a SQLite file inside your project in a subfolder designated by the `persist_directory` input.  In my case, it would be a subfolder called "LSU".
+As a note, Chroma creates a SQLite database file inside your project in a subfolder designated by the `persist_directory` input.  In my case, it would be a subfolder called "LSU".
 
 ### Fine-Tune a Language Model
 

@@ -151,7 +151,7 @@ $ pip install -r requirements.txt
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>docstorage <span style="color:#f92672">=</span> Chroma<span style="color:#f92672">.</span>from_texts(docs, embedding_function)
 </span></span></code></pre></div><p>Here, we retrieve the OpenAI API key from environment variables and initialize the <code>OpenAIEmbeddings</code> function to convert text into embeddings. We then use <code>Chroma</code> to create a vector database, storing the embeddings of our text chunks, making it easier to retrieve relevant information later.</p>
-<p>As a note, Chroma creates a SQLite file inside your project in a subfolder designated by the <code>persist_directory</code> input.  In my case, it would be a subfolder called &ldquo;LSU&rdquo;.</p>
+<p>As a note, Chroma creates a SQLite database file inside your project in a subfolder designated by the <code>persist_directory</code> input.  In my case, it would be a subfolder called &ldquo;LSU&rdquo;.</p>
 <h3 id="fine-tune-a-language-model">Fine-Tune a Language Model</h3>
 <p>We then configure the language model to interact with our vector database:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>llm<span style="color:#f92672">=</span>OpenAI(model_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-3.5-turbo-instruct&#34;</span>, openai_api_key<span style="color:#f92672">=</span>api_key)
