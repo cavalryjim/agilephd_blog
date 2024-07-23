@@ -1,6 +1,6 @@
 +++
 title = 'Building an LLM Application with Langchain'
-tags = ["python", "AI", "Langchain"]
+tags = ["python", "AI", "LangChain"]
 date = 2024-07-22
 +++
 
@@ -12,7 +12,20 @@ Let's dive into building an LLM-based application!
 
 In this example, we will create a foundational LLM-based application that ingests information from a PDF file and enables interactive questioning about its content.
 
-You can the code for this post on [GitHub](https://github.com/cavalryjim/langchain_llm_app).  Depending on your experience with LangChain, you might need to run a few `pip install` commands or simply use my `requirements.txt` file. Feel free to use a PDF file of your choice; I have also included a policy memo, PM-11, from the university where I teach.
+You can find the code for this post on [GitHub](https://github.com/cavalryjim/langchain_llm_app).  Depending on your experience with LangChain, you might need to run a few `pip install` commands or simply use my `requirements.txt` file. Feel free to use a PDF file of your choice; I have also included a policy memo, PM-11, from the university where I teach.
+
+The smart play would also be to create a virtual envrionment for this project.  I like pipenv but you are welcome to use something different.
+
+```
+$ pipenv shell
+$ pip install -r requirements.txt
+```
+
+Use whatever manner you want to edit & run the code.  For projects like this, I usually boot up a session using Jupyter Notebooks.
+
+```
+$ jupyter notebook
+```
 
 First, we need to import the necessary libraries and load environment variables:
 
@@ -31,7 +44,7 @@ from langchain_openai import OpenAI
 load_dotenv()
 ```
 
-In this block, we're importing essential modules for handling PDFs, text processing, embeddings, vector storage, and the language model. The `load_dotenv` function loads environment variables from a `.env` file, which is useful for securely managing API keys.
+In above block, we're importing essential modules for handling PDFs, text processing, embeddings, vector storage, and the language model. The `load_dotenv` function loads environment variables from a `.env` file, which is useful for securely managing API keys.
 
 ### Extract Contents from PDF
 
@@ -78,6 +91,8 @@ docstorage = Chroma.from_texts(docs, embedding_function)
 ```
 
 Here, we retrieve the OpenAI API key from environment variables and initialize the `OpenAIEmbeddings` function to convert text into embeddings. We then use `Chroma` to create a vector database, storing the embeddings of our text chunks, making it easier to retrieve relevant information later.
+
+As a note, Chroma creates a SQLite file inside your project in a subfolder designated by the `persist_directory` input.  In my case, it would be a subfolder called "LSU".
 
 ### Fine-Tune a Language Model
 

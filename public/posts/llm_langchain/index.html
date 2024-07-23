@@ -31,7 +31,7 @@
     <meta property="article:modified_time" content="2024-07-22T00:00:00+00:00">
     <meta property="article:tag" content="Python">
     <meta property="article:tag" content="AI">
-    <meta property="article:tag" content="Langchain">
+    <meta property="article:tag" content="LangChain">
 
 
   </head>
@@ -94,7 +94,7 @@
 </svg>
               <a class="tag" href="http://localhost:1313/tags/python/">Python</a>
               <a class="tag" href="http://localhost:1313/tags/ai/">AI</a>
-              <a class="tag" href="http://localhost:1313/tags/langchain/">Langchain</a>
+              <a class="tag" href="http://localhost:1313/tags/langchain/">LangChain</a>
         </div>
       </div>
     </header>
@@ -103,8 +103,13 @@
 <p>Let&rsquo;s dive into building an LLM-based application!</p>
 <h3 id="getting-started">Getting Started</h3>
 <p>In this example, we will create a foundational LLM-based application that ingests information from a PDF file and enables interactive questioning about its content.</p>
-<p>You can the code for this post on <a href="https://github.com/cavalryjim/langchain_llm_app">GitHub</a>.  Depending on your experience with LangChain, you might need to run a few <code>pip install</code> commands or simply use my <code>requirements.txt</code> file. Feel free to use a PDF file of your choice; I have also included a policy memo, PM-11, from the university where I teach.</p>
-<p>First, we need to import the necessary libraries and load environment variables:</p>
+<p>You can find the code for this post on <a href="https://github.com/cavalryjim/langchain_llm_app">GitHub</a>.  Depending on your experience with LangChain, you might need to run a few <code>pip install</code> commands or simply use my <code>requirements.txt</code> file. Feel free to use a PDF file of your choice; I have also included a policy memo, PM-11, from the university where I teach.</p>
+<p>The smart play would also be to create a virtual envrionment for this project.  I like pipenv but you are welcome to use something different.</p>
+<pre tabindex="0"><code>$ pipenv shell
+$ pip install -r requirements.txt
+</code></pre><p>Use whatever manner you want to edit &amp; run the code.  For projects like this, I usually boot up a session using Jupyter Notebooks.</p>
+<pre tabindex="0"><code>$ jupyter notebook
+</code></pre><p>First, we need to import the necessary libraries and load environment variables:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Import necessary libraries</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dotenv <span style="color:#f92672">import</span> load_dotenv
@@ -117,7 +122,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_openai <span style="color:#f92672">import</span> OpenAI
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>load_dotenv()
-</span></span></code></pre></div><p>In this block, we&rsquo;re importing essential modules for handling PDFs, text processing, embeddings, vector storage, and the language model. The <code>load_dotenv</code> function loads environment variables from a <code>.env</code> file, which is useful for securely managing API keys.</p>
+</span></span></code></pre></div><p>In above block, we&rsquo;re importing essential modules for handling PDFs, text processing, embeddings, vector storage, and the language model. The <code>load_dotenv</code> function loads environment variables from a <code>.env</code> file, which is useful for securely managing API keys.</p>
 <h3 id="extract-contents-from-pdf">Extract Contents from PDF</h3>
 <p>Next, we&rsquo;ll load the PDF and extract its contents:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>loader <span style="color:#f92672">=</span> PyPDFLoader(<span style="color:#e6db74">&#34;pm-11.pdf&#34;</span>)
@@ -146,6 +151,7 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>docstorage <span style="color:#f92672">=</span> Chroma<span style="color:#f92672">.</span>from_texts(docs, embedding_function)
 </span></span></code></pre></div><p>Here, we retrieve the OpenAI API key from environment variables and initialize the <code>OpenAIEmbeddings</code> function to convert text into embeddings. We then use <code>Chroma</code> to create a vector database, storing the embeddings of our text chunks, making it easier to retrieve relevant information later.</p>
+<p>As a note, Chroma creates a SQLite file inside your project in a subfolder designated by the <code>persist_directory</code> input.  In my case, it would be a subfolder called &ldquo;LSU&rdquo;.</p>
 <h3 id="fine-tune-a-language-model">Fine-Tune a Language Model</h3>
 <p>We then configure the language model to interact with our vector database:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>llm<span style="color:#f92672">=</span>OpenAI(model_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-3.5-turbo-instruct&#34;</span>, openai_api_key<span style="color:#f92672">=</span>api_key)
