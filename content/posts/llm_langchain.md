@@ -1,6 +1,6 @@
 +++
 title = 'Building an LLM Application with Langchain'
-tags = ["python", "AI", "LangChain"]
+tags = ["python", "AI", "langchain"]
 date = 2024-07-22
 +++
 
