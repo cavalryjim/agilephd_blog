@@ -2,134 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://blog.agilephd.com/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>http://blog.agilephd.com/tags/ai/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/llm_langchain/</loc>
+    <loc>http://blog.agilephd.com/posts/llm_langchain/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/langchain/</loc>
+    <loc>http://blog.agilephd.com/tags/langchain/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://blog.agilephd.com/posts/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>http://blog.agilephd.com/tags/python/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://blog.agilephd.com/tags/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/cheating_chatgpt/</loc>
+    <loc>http://blog.agilephd.com/posts/cheating_chatgpt/</loc>
     <lastmod>2024-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/prompt_engineering/</loc>
+    <loc>http://blog.agilephd.com/posts/prompt_engineering/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/aws/</loc>
+    <loc>http://blog.agilephd.com/tags/aws/</loc>
     <lastmod>2024-07-10T20:32:38-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/django/</loc>
+    <loc>http://blog.agilephd.com/tags/django/</loc>
     <lastmod>2024-07-10T20:32:38-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/django_eb_healcheck/</loc>
+    <loc>http://blog.agilephd.com/posts/django_eb_healcheck/</loc>
     <lastmod>2024-07-10T20:32:38-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blockchain/</loc>
+    <loc>http://blog.agilephd.com/tags/blockchain/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/nonce_and_hash/</loc>
+    <loc>http://blog.agilephd.com/posts/nonce_and_hash/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/asymmetric_cryptography/</loc>
+    <loc>http://blog.agilephd.com/posts/asymmetric_cryptography/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cryptography/</loc>
+    <loc>http://blog.agilephd.com/tags/cryptography/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/hashing/</loc>
+    <loc>http://blog.agilephd.com/posts/hashing/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/consensus_algorithms/</loc>
+    <loc>http://blog.agilephd.com/posts/consensus_algorithms/</loc>
     <lastmod>2024-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/health_passport/</loc>
+    <loc>http://blog.agilephd.com/posts/health_passport/</loc>
     <lastmod>2023-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/healthcare/</loc>
+    <loc>http://blog.agilephd.com/tags/healthcare/</loc>
     <lastmod>2023-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ethereum_merge/</loc>
+    <loc>http://blog.agilephd.com/posts/ethereum_merge/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/blockchain_bjj/</loc>
+    <loc>http://blog.agilephd.com/posts/blockchain_bjj/</loc>
     <lastmod>2022-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/what_is_blockchain/</loc>
+    <loc>http://blog.agilephd.com/posts/what_is_blockchain/</loc>
     <lastmod>2022-09-14T21:25:08-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/scrapy_quotes/</loc>
+    <loc>http://blog.agilephd.com/posts/scrapy_quotes/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web-scraping/</loc>
+    <loc>http://blog.agilephd.com/tags/web-scraping/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/scrum/</loc>
+    <loc>http://blog.agilephd.com/tags/scrum/</loc>
     <lastmod>2020-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/scrum_product_owner/</loc>
+    <loc>http://blog.agilephd.com/posts/scrum_product_owner/</loc>
     <lastmod>2020-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/drf_token_authentication/</loc>
+    <loc>http://blog.agilephd.com/posts/drf_token_authentication/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/api_permissions/</loc>
+    <loc>http://blog.agilephd.com/posts/api_permissions/</loc>
     <lastmod>2020-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/django_rest_framework/</loc>
+    <loc>http://blog.agilephd.com/posts/django_rest_framework/</loc>
     <lastmod>2020-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/django_email/</loc>
+    <loc>http://blog.agilephd.com/posts/django_email/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/heroku/</loc>
+    <loc>http://blog.agilephd.com/tags/heroku/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python_datetime/</loc>
+    <loc>http://blog.agilephd.com/posts/python_datetime/</loc>
     <lastmod>2019-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/golf/</loc>
+    <loc>http://blog.agilephd.com/tags/golf/</loc>
     <lastmod>2019-08-15T20:02:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/golfsmithing/</loc>
+    <loc>http://blog.agilephd.com/posts/golfsmithing/</loc>
     <lastmod>2019-08-15T20:02:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python_files/</loc>
+    <loc>http://blog.agilephd.com/posts/python_files/</loc>
     <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python_dictionary/</loc>
+    <loc>http://blog.agilephd.com/posts/python_dictionary/</loc>
     <lastmod>2018-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python_lists/</loc>
+    <loc>http://blog.agilephd.com/posts/python_lists/</loc>
     <lastmod>2018-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/sprint_zero/</loc>
+    <loc>http://blog.agilephd.com/posts/sprint_zero/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/hello_world/</loc>
+    <loc>http://blog.agilephd.com/posts/hello_world/</loc>
     <lastmod>2018-01-10T20:02:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/scrum_bjj/</loc>
+    <loc>http://blog.agilephd.com/posts/scrum_bjj/</loc>
     <lastmod>2015-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/graduate_school/</loc>
+    <loc>http://blog.agilephd.com/posts/graduate_school/</loc>
     <lastmod>2014-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://blog.agilephd.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://blog.agilephd.com/categories/</loc>
   </url>
 </urlset>

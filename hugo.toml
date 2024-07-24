@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'AgilePhD'
 theme = 'm10c'
 paginate = 6
-relativeURLs = true
 
 [menu]
   [[menu.main]]

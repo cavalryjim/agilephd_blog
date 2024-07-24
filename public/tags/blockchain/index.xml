@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blockchain on AgilePhD</title>
-    <link>http://localhost:1313/tags/blockchain/</link>
+    <link>http://blog.agilephd.com/tags/blockchain/</link>
     <description>Recent content in Blockchain on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.agilephd.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nonce and the Hash</title>
-      <link>http://localhost:1313/posts/nonce_and_hash/</link>
+      <link>http://blog.agilephd.com/posts/nonce_and_hash/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/nonce_and_hash/</guid>
+      <guid>http://blog.agilephd.com/posts/nonce_and_hash/</guid>
       <description>Why we do it this way.&#xA;Hash: a quick review If needed, I would encourage you to review my earlier post on hashing. Long story -&amp;gt; short, a hash is a short &amp;amp; unique representation of data. Using SHA256 and the hashlib.sha256() function, any data can be represented with a unique 32-byte hash value.&#xA;In Blockchain, each block will contain the hash of the previous block and the hash signature for it&amp;rsquo;s own data.</description>
     </item>
     <item>
       <title>Hashing</title>
-      <link>http://localhost:1313/posts/hashing/</link>
+      <link>http://blog.agilephd.com/posts/hashing/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hashing/</guid>
+      <guid>http://blog.agilephd.com/posts/hashing/</guid>
       <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
     </item>
     <item>
       <title>Consensus Algorithms</title>
-      <link>http://localhost:1313/posts/consensus_algorithms/</link>
+      <link>http://blog.agilephd.com/posts/consensus_algorithms/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/consensus_algorithms/</guid>
+      <guid>http://blog.agilephd.com/posts/consensus_algorithms/</guid>
       <description>In blockchain technology, consensus algorithms are crucial for ensuring all participants in a network agree on the shared ledger&amp;rsquo;s state. Here are some of the most common consensus algorithms:&#xA;Proof of Work (PoW) Used by: Bitcoin, Ethereum (until it moved to PoS). Mechanism: Miners solve complex mathematical problems to validate transactions and create new blocks. The first to solve the problem gets to add the block to the blockchain and is rewarded with cryptocurrency.</description>
     </item>
     <item>
       <title>Blockchain: Poised to Revolutionize Personal Health Management</title>
-      <link>http://localhost:1313/posts/health_passport/</link>
+      <link>http://blog.agilephd.com/posts/health_passport/</link>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/health_passport/</guid>
+      <guid>http://blog.agilephd.com/posts/health_passport/</guid>
       <description>Oﬃce of the National Coordinator for Health Information Technology&#xA;Blockchain technology, widely known for its applications in cryptocurrency, is experiencing a paradigm shift, moving beyond financial transactions to personal and social applications. This transition is particularly evident in the healthcare sector, where blockchain&amp;rsquo;s potential to transform health data management is gaining traction.&#xA;Health Data Accessibility and Security One of the primary applications of Blockchain in healthcare is enhancing access to personal health data.</description>
     </item>
     <item>
       <title>Reflecting on the Ethereum Merge</title>
-      <link>http://localhost:1313/posts/ethereum_merge/</link>
+      <link>http://blog.agilephd.com/posts/ethereum_merge/</link>
       <pubDate>Thu, 05 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/ethereum_merge/</guid>
+      <guid>http://blog.agilephd.com/posts/ethereum_merge/</guid>
       <description>The Ethereum Merge was a monumental event in the blockchain world, transforming the Ethereum network from a Proof of Work (PoW) to a Proof of Stake (PoS) system. Full disclosure: I followed the &amp;ldquo;Merge&amp;rdquo; as an academic, investor, and Ethereum miner. Because of financial reasons, I did not particularly want it to happen but the transition was both significant and impactful and deserve reflection.&#xA;What Was the Ethereum Merge? The Ethereum Merge marked the transition from PoW, where miners like us solved complex puzzles to validate transactions, to PoS, where validators staked Ether (ETH) to propose and validate new blocks.</description>
     </item>
     <item>
       <title>Blockchain: The Brazilian Jiu-Jitsu of Web 3.0</title>
-      <link>http://localhost:1313/posts/blockchain_bjj/</link>
+      <link>http://blog.agilephd.com/posts/blockchain_bjj/</link>
       <pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/blockchain_bjj/</guid>
+      <guid>http://blog.agilephd.com/posts/blockchain_bjj/</guid>
       <description>If you are not a mixed maritial arts (MMA) fan, you might not recognize the photo above. Royce Gracie, a man of relatively slender stature and weighing a modest 170 lbs, won the first two Ultimate Fighting Championship (UFC) tourniments. In the early days of the UFC, there were no weight divisions and Royce Gracie routinely competed againt opponents that were 40 lbs or more larger than him.&#xA;How was he able to defeat these larger competitors?</description>
     </item>
     <item>
       <title>What is Blockchain?</title>
-      <link>http://localhost:1313/posts/what_is_blockchain/</link>
+      <link>http://blog.agilephd.com/posts/what_is_blockchain/</link>
       <pubDate>Wed, 14 Sep 2022 21:25:08 -0500</pubDate>
-      <guid>http://localhost:1313/posts/what_is_blockchain/</guid>
+      <guid>http://blog.agilephd.com/posts/what_is_blockchain/</guid>
       <description>Blockchain is a distributed ledger technology. That said, let’s first review what is a “ledger”. In accounting, a ledger is an on-going list of bookkeeping records. A written ledger is maintained using a bound book with transactions recorded as a line on the page. This is very similar to the small “check register” booklets that would come with a new box of personal checks. Before online banking, checking account owners would record the check number, recipient, and amount when writing a check.</description>
     </item>
   </channel>
