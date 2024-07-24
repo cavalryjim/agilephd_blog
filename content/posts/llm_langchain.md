@@ -2,7 +2,6 @@
 title = 'Building an LLM Application with Langchain'
 tags = ["python", "AI", "langchain"]
 date = 2024-07-22
-url = 'blog.agilephd.com/posts/llm_langchain/'
 +++
 
 Primarily developed in Python, LangChain is a robust framework designed to simplify the development of applications that utilize large language models (LLMs). It enables developers to connect these models with various data sources and external APIs, facilitating the integration of advanced natural language processing capabilities into their applications. LangChain provides tools for constructing LLM-powered workflows, handling memory and state management, and ensuring scalability and efficiency. By offering a streamlined interface for working with LLMs, LangChain empowers developers to create sophisticated AI-driven solutions in areas such as chatbots, data analysis, content generation, and more, without needing extensive expertise in machine learning or AI model development. 
