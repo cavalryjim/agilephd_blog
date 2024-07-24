@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golf on AgilePhD</title>
-    <link>//localhost:1313/tags/golf/</link>
+    <link>http://localhost:1313/tags/golf/</link>
     <description>Recent content in Golf on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Aug 2019 20:02:58 -0500</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/golf/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/golf/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Revitalizing Ping ISI BeCu Irons</title>
-      <link>//localhost:1313/posts/golfsmithing/</link>
+      <link>http://localhost:1313/posts/golfsmithing/</link>
       <pubDate>Thu, 15 Aug 2019 20:02:58 -0500</pubDate>
-      <guid>//localhost:1313/posts/golfsmithing/</guid>
+      <guid>http://localhost:1313/posts/golfsmithing/</guid>
       <description>It took me seventeen years to get three thousand hits in baseball. I did it in one afternoon on the golf course.&#xA;&amp;ndash; Hank Aaron&#xA;eBay Find I’m a sucker for classic Ping clubs and found these ISIs on eBay. Most interesting to me was that the clubs were:&#xA;beryllium copper and appeared to be in great shape. Beryllium copper (BeCu) became popular back in the mid/late &amp;rsquo;80s principally because it was advertised as offering a softer feel than many of the equivalent cast steel designs of the time.</description>
     </item>
   </channel>

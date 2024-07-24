@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on AgilePhD</title>
-    <link>//localhost:1313/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>//localhost:1313/tags/ai/</link>
+      <link>http://localhost:1313/tags/ai/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/ai/</guid>
+      <guid>http://localhost:1313/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Langchain</title>
-      <link>//localhost:1313/tags/langchain/</link>
+      <link>http://localhost:1313/tags/langchain/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/langchain/</guid>
+      <guid>http://localhost:1313/tags/langchain/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>//localhost:1313/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Aws</title>
-      <link>//localhost:1313/tags/aws/</link>
+      <link>http://localhost:1313/tags/aws/</link>
       <pubDate>Wed, 10 Jul 2024 20:32:38 -0500</pubDate>
-      <guid>//localhost:1313/tags/aws/</guid>
+      <guid>http://localhost:1313/tags/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>Django</title>
-      <link>//localhost:1313/tags/django/</link>
+      <link>http://localhost:1313/tags/django/</link>
       <pubDate>Wed, 10 Jul 2024 20:32:38 -0500</pubDate>
-      <guid>//localhost:1313/tags/django/</guid>
+      <guid>http://localhost:1313/tags/django/</guid>
       <description></description>
     </item>
     <item>
       <title>Blockchain</title>
-      <link>//localhost:1313/tags/blockchain/</link>
+      <link>http://localhost:1313/tags/blockchain/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/blockchain/</guid>
+      <guid>http://localhost:1313/tags/blockchain/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>//localhost:1313/tags/cryptography/</link>
+      <link>http://localhost:1313/tags/cryptography/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/cryptography/</guid>
+      <guid>http://localhost:1313/tags/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Healthcare</title>
-      <link>//localhost:1313/tags/healthcare/</link>
+      <link>http://localhost:1313/tags/healthcare/</link>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/healthcare/</guid>
+      <guid>http://localhost:1313/tags/healthcare/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Scraping</title>
-      <link>//localhost:1313/tags/web-scraping/</link>
+      <link>http://localhost:1313/tags/web-scraping/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/web-scraping/</guid>
+      <guid>http://localhost:1313/tags/web-scraping/</guid>
       <description></description>
     </item>
     <item>
       <title>Scrum</title>
-      <link>//localhost:1313/tags/scrum/</link>
+      <link>http://localhost:1313/tags/scrum/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/scrum/</guid>
+      <guid>http://localhost:1313/tags/scrum/</guid>
       <description></description>
     </item>
     <item>
       <title>Heroku</title>
-      <link>//localhost:1313/tags/heroku/</link>
+      <link>http://localhost:1313/tags/heroku/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/heroku/</guid>
+      <guid>http://localhost:1313/tags/heroku/</guid>
       <description></description>
     </item>
     <item>
       <title>Golf</title>
-      <link>//localhost:1313/tags/golf/</link>
+      <link>http://localhost:1313/tags/golf/</link>
       <pubDate>Thu, 15 Aug 2019 20:02:58 -0500</pubDate>
-      <guid>//localhost:1313/tags/golf/</guid>
+      <guid>http://localhost:1313/tags/golf/</guid>
       <description></description>
     </item>
   </channel>
