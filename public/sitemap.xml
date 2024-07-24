@@ -2,134 +2,134 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>//localhost:1313/tags/ai/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/llm_langchain/</loc>
+    <loc>//localhost:1313/blog.agilephd.com/posts/llm_langchain/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/langchain/</loc>
+    <loc>//localhost:1313/tags/langchain/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>//localhost:1313/tags/python/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <lastmod>2024-07-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/cheating_chatgpt/</loc>
+    <loc>//localhost:1313/posts/cheating_chatgpt/</loc>
     <lastmod>2024-07-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/prompt_engineering/</loc>
+    <loc>//localhost:1313/posts/prompt_engineering/</loc>
     <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/aws/</loc>
+    <loc>//localhost:1313/tags/aws/</loc>
     <lastmod>2024-07-10T20:32:38-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/django/</loc>
+    <loc>//localhost:1313/tags/django/</loc>
     <lastmod>2024-07-10T20:32:38-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/django_eb_healcheck/</loc>
+    <loc>//localhost:1313/posts/django_eb_healcheck/</loc>
     <lastmod>2024-07-10T20:32:38-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/blockchain/</loc>
+    <loc>//localhost:1313/tags/blockchain/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/nonce_and_hash/</loc>
+    <loc>//localhost:1313/posts/nonce_and_hash/</loc>
     <lastmod>2024-04-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/asymmetric_cryptography/</loc>
+    <loc>//localhost:1313/posts/asymmetric_cryptography/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cryptography/</loc>
+    <loc>//localhost:1313/tags/cryptography/</loc>
     <lastmod>2024-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/hashing/</loc>
+    <loc>//localhost:1313/posts/hashing/</loc>
     <lastmod>2024-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/consensus_algorithms/</loc>
+    <loc>//localhost:1313/posts/consensus_algorithms/</loc>
     <lastmod>2024-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/health_passport/</loc>
+    <loc>//localhost:1313/posts/health_passport/</loc>
     <lastmod>2023-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/healthcare/</loc>
+    <loc>//localhost:1313/tags/healthcare/</loc>
     <lastmod>2023-12-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/ethereum_merge/</loc>
+    <loc>//localhost:1313/posts/ethereum_merge/</loc>
     <lastmod>2023-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/blockchain_bjj/</loc>
+    <loc>//localhost:1313/posts/blockchain_bjj/</loc>
     <lastmod>2022-10-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/what_is_blockchain/</loc>
+    <loc>//localhost:1313/posts/what_is_blockchain/</loc>
     <lastmod>2022-09-14T21:25:08-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/scrapy_quotes/</loc>
+    <loc>//localhost:1313/posts/scrapy_quotes/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web-scraping/</loc>
+    <loc>//localhost:1313/tags/web-scraping/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/scrum/</loc>
+    <loc>//localhost:1313/tags/scrum/</loc>
     <lastmod>2020-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/scrum_product_owner/</loc>
+    <loc>//localhost:1313/posts/scrum_product_owner/</loc>
     <lastmod>2020-02-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/drf_token_authentication/</loc>
+    <loc>//localhost:1313/posts/drf_token_authentication/</loc>
     <lastmod>2020-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/api_permissions/</loc>
+    <loc>//localhost:1313/posts/api_permissions/</loc>
     <lastmod>2020-01-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/django_rest_framework/</loc>
+    <loc>//localhost:1313/posts/django_rest_framework/</loc>
     <lastmod>2020-01-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/django_email/</loc>
+    <loc>//localhost:1313/posts/django_email/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/heroku/</loc>
+    <loc>//localhost:1313/tags/heroku/</loc>
     <lastmod>2020-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python_datetime/</loc>
+    <loc>//localhost:1313/posts/python_datetime/</loc>
     <lastmod>2019-10-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/golf/</loc>
+    <loc>//localhost:1313/tags/golf/</loc>
     <lastmod>2019-08-15T20:02:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/golfsmithing/</loc>
+    <loc>//localhost:1313/posts/golfsmithing/</loc>
     <lastmod>2019-08-15T20:02:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python_files/</loc>
+    <loc>//localhost:1313/posts/python_files/</loc>
     <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python_dictionary/</loc>
+    <loc>//localhost:1313/posts/python_dictionary/</loc>
     <lastmod>2018-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/python_lists/</loc>
+    <loc>//localhost:1313/posts/python_lists/</loc>
     <lastmod>2018-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/sprint_zero/</loc>
+    <loc>//localhost:1313/posts/sprint_zero/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/hello_world/</loc>
+    <loc>//localhost:1313/posts/hello_world/</loc>
     <lastmod>2018-01-10T20:02:58-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/scrum_bjj/</loc>
+    <loc>//localhost:1313/posts/scrum_bjj/</loc>
     <lastmod>2015-04-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/graduate_school/</loc>
+    <loc>//localhost:1313/posts/graduate_school/</loc>
     <lastmod>2014-08-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>//localhost:1313/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url>
 </urlset>
