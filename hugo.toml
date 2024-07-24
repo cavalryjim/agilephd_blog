@@ -1,4 +1,4 @@
-baseURL = 'blog.agilephd.com'
+baseURL = 'blog.agilephd.com/'
 languageCode = 'en-us'
 title = 'AgilePhD'
 theme = 'm10c'
