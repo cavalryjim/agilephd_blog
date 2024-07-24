@@ -27,6 +27,7 @@ To use the project-level permission settings, update the REST_FRAMEWORK section 
 
 ```python
 # settings.py
+
 ...
 
 REST_FRAMEWORK = {
