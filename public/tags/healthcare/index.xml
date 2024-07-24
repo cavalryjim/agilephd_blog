@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Healthcare on AgilePhD</title>
-    <link>http://blog.agilephd.com/tags/healthcare/</link>
+    <link>https://blog.agilephd.com/tags/healthcare/</link>
     <description>Recent content in Healthcare on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Dec 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.agilephd.com/tags/healthcare/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.agilephd.com/tags/healthcare/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blockchain: Poised to Revolutionize Personal Health Management</title>
-      <link>http://blog.agilephd.com/posts/health_passport/</link>
+      <link>https://blog.agilephd.com/posts/health_passport/</link>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://blog.agilephd.com/posts/health_passport/</guid>
+      <guid>https://blog.agilephd.com/posts/health_passport/</guid>
       <description>Oﬃce of the National Coordinator for Health Information Technology&#xA;Blockchain technology, widely known for its applications in cryptocurrency, is experiencing a paradigm shift, moving beyond financial transactions to personal and social applications. This transition is particularly evident in the healthcare sector, where blockchain&amp;rsquo;s potential to transform health data management is gaining traction.&#xA;Health Data Accessibility and Security One of the primary applications of Blockchain in healthcare is enhancing access to personal health data.</description>
     </item>
   </channel>
