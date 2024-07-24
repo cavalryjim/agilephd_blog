@@ -138,7 +138,7 @@ $ pip install -r requirements.txt
 </span></span><span style="display:flex;"><span>        policy_text <span style="color:#f92672">+=</span> repr(doc)
 </span></span></code></pre></div><p>Here, we use <code>PyPDFLoader</code> to load the PDF file. We then iterate through the loaded data, concatenating text from the document into a single string. This step ensures we have all the text content in a manageable format.</p>
 <h3 id="preprocess-the-text">Preprocess the Text</h3>
-<p>Now, we preprocess the extracted text to prepare it for further processing:</p>
+<p>Now, we preprocess the extracted text and prepare it for further processing:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ct_splitter <span style="color:#f92672">=</span> CharacterTextSplitter(separator<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;.&#39;</span>, chunk_size<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>, chunk_overlap<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>)
 </span></span><span style="display:flex;"><span>docs <span style="color:#f92672">=</span> ct_splitter<span style="color:#f92672">.</span>split_text(policy_text)
 </span></span></code></pre></div><p>In this section, <code>CharacterTextSplitter</code> is used to split the text into smaller chunks. By specifying a separator, chunk size, and overlap, we ensure that the text is divided into manageable pieces, which helps in handling large documents effectively.</p>

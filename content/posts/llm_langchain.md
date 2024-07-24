@@ -68,7 +68,7 @@ Here, we use `PyPDFLoader` to load the PDF file. We then iterate through the loa
 
 ### Preprocess the Text
 
-Now, we preprocess the extracted text to prepare it for further processing:
+Now, we preprocess the extracted text and prepare it for further processing:
 
 ```python
 ct_splitter = CharacterTextSplitter(separator='.', chunk_size=1000, chunk_overlap=200)
