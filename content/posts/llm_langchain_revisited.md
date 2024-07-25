@@ -97,5 +97,6 @@ Notice that we can now pass two additional strings: 1) the question to be answer
 $ python llm_faiss_vectorstore.py "Can I receive a blanket approval for outside work?" "pm-11.pdf"
 ```
 ```
- No, blanket approvals for outside employment will not be granted. Approval for outside work must be obtained through normal administrative channels by the Chancellor or a designated campus administrative officer. ```
+ No, blanket approvals for outside employment will not be granted. Approval for outside work must be obtained through normal administrative channels by the Chancellor or a designated campus administrative officer. 
+ ```
 
