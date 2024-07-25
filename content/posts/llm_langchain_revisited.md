@@ -19,11 +19,11 @@ While there are several database options, I decided to use [Facebook AI Similari
 
 ### Passing Arguments
 
-When demoing the previous version of this code, I was immediately challenged with "How can we pass arguments?".  First, I gave a psuedo explanation mentioning Flask & Heroku or Django & Elastic Beanstalk.  Next, I add `import sys` and a `print(sys.argv)` to the code.  If you have never used `sys.argv`, it is provides a list of the script name and any other objects that happen to be part of the python call to the script.
+When demoing the previous version of this code, I was immediately challenged with "How can we pass arguments?".  First, I gave a psuedo explanation mentioning Flask & Heroku or Django & Elastic Beanstalk.  Next, I added `import sys` and `print(sys.argv)` to the code.  If you have never used `sys.argv`, it provides a list of the script name and any other objects that happen to be part of the python call to the script.
 
 ### Adding Structure
 
-When writing code, things can quickly get out of hand.  Structured code is always preferred over unstructured code.  Structured code is much easier to maintain, test, use, and maintain...did I say "maintain"?  Unstructured code is fine for doing exploritory research or something agilist might call a [spike](https://scaledagileframework.com/spikes/).
+When writing code, things can quickly get out of hand.  Structured code is always preferred over unstructured code.  Structured code is much easier to maintain, test, use, and maintain...did I say "maintain"?  Unstructured code is fine for doing exploritory research or something agilist might call a [spike](https://scaledagileframework.com/spikes/) but any code that will persist should be kept tidy and dry.  With a new structured version, I could even test portions of the script without getting charged by OpenAI!
 
 ### Udated Version
 
