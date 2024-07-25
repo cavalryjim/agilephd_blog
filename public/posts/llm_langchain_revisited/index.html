@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>Building an LLM Application with Langchain (revisited) // AgilePhD</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.128.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Dr. James Davis" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.562871a81790ee61fbc41ddb89eacf3bc0967ee9bde46cf8764c66fe91f0e6fc.css" />
+    
+
+    
+  
+
+
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Building an LLM Application with Langchain (revisited)">
+  <meta name="twitter:description" content="This is updated code from an earlier post on Langchain.
+The code is being updated for three main reasons:
+Some Windows users were having issues with Chroma. I wanted to pass arguments to the script. The script need more structure. Vectorstore In the earlier version, I used Chroma for storing the vectors. I liked this solution because it was easy and stored the results in a SQLite database. Unfortunately, one or more students using Windows had an issue with Chroma that we tried to overcome but decided to try another solution.">
+
+    <meta property="og:url" content="http://blog.agilephd.com/posts/llm_langchain_revisited/">
+  <meta property="og:site_name" content="AgilePhD">
+  <meta property="og:title" content="Building an LLM Application with Langchain (revisited)">
+  <meta property="og:description" content="This is updated code from an earlier post on Langchain.
+The code is being updated for three main reasons:
+Some Windows users were having issues with Chroma. I wanted to pass arguments to the script. The script need more structure. Vectorstore In the earlier version, I used Chroma for storing the vectors. I liked this solution because it was easy and stored the results in a SQLite database. Unfortunately, one or more students using Windows had an issue with Chroma that we tried to overcome but decided to try another solution.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-07-25T00:00:00+00:00">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="AI">
+    <meta property="article:tag" content="Langchain">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="http://blog.agilephd.com/"><img class="app-header-avatar" src="/tank1.jpg" alt="Dr. James Davis" /></a>
+      <span class="app-header-title">AgilePhD</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">Home</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/tags/">Tags</a>
+             - 
+          
+          <a class="app-header-menu-item" href="/about/">About</a>
+      </nav>
+      <p>Dr. James Davis: data scientist, girl dad, combat veteran, and can&#39;t shutup about Blockchain.</p>
+      <div class="app-header-social">
+        
+          <a href="https://github.com/cavalryjim" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-github">
+  <title>Github</title>
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+</svg>
+          </a>
+        
+          <a href="https://www.linkedin.com/in/jdavisphd/" target="_blank" rel="noreferrer noopener me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-linkedin">
+  <title>LinkedIn</title>
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+</svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Building an LLM Application with Langchain (revisited)</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Jul 25, 2024
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
+  <title>tag</title>
+  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line>
+</svg>
+              <a class="tag" href="http://blog.agilephd.com/tags/python/">Python</a>
+              <a class="tag" href="http://blog.agilephd.com/tags/ai/">AI</a>
+              <a class="tag" href="http://blog.agilephd.com/tags/langchain/">Langchain</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>This is updated code from an <a href="https://blog.agilephd.com/posts/llm_langchain/">earlier post on Langchain</a>.</p>
+<p>The code is being updated for three main reasons:</p>
+<ul>
+<li>Some Windows users were having issues with Chroma.</li>
+<li>I wanted to pass arguments to the script.</li>
+<li>The script need more structure.</li>
+</ul>
+<h3 id="vectorstore">Vectorstore</h3>
+<p>In the earlier version, I used Chroma for storing the vectors.  I liked this solution because it was easy and stored the results in a SQLite database.  Unfortunately, one or more students using Windows had an issue with Chroma that we tried to overcome but decided to try another solution.</p>
+<p>While there are several database options, I decided to use <a href="https://python.langchain.com/v0.2/docs/integrations/vectorstores/faiss/">Facebook AI Similarity Search (FAISS)</a>.  One of the main attributes of FAISS is that it is an in-memory vectorstore which, to me, reduces the complexity of installing any additional software such as Postgres.  The refactor for this was relatively simple with an additional import, removing a couple lines, and changing the word <code>Chroma</code> to <code>FAISS</code>.</p>
+<h3 id="passing-arguments">Passing Arguments</h3>
+<p>When I demoing the previous version of this code, I was immediately challenged with &ldquo;How can we pass arguments?&rdquo;.  First, I gave a psuedo explanation mentioning Flask &amp; Heroku or Django &amp; Elastic Beanstalk.  Next, I add <code>import sys</code> and a <code>print(sys.argv)</code> to the code.  If you have never used <code>sys.argv</code>, it is provides a list of the script name and any other objects that happen to be part of the python call to the script.</p>
+<h3 id="adding-structure">Adding Structure</h3>
+<p>When writing code, things can quickly get out of hand.  Structured code is always preferred over unstructured code.  Structured code is much easier to maintain, test, use, and maintain&hellip;did I say &ldquo;maintain&rdquo;?  Unstructured code is fine for doing exploritory research or something agilist might call a <a href="https://scaledagileframework.com/spikes/">spike</a>.</p>
+<h3 id="udated-version">Udated Version</h3>
+<p>Here is the updated script trying to accomplish stated objects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sys
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dotenv <span style="color:#f92672">import</span> load_dotenv
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_community.document_loaders <span style="color:#f92672">import</span> PyPDFLoader
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.text_splitter <span style="color:#f92672">import</span> CharacterTextSplitter
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_openai <span style="color:#f92672">import</span> OpenAIEmbeddings
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_community.vectorstores <span style="color:#f92672">import</span> FAISS
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.chains <span style="color:#f92672">import</span> RetrievalQA
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_openai <span style="color:#f92672">import</span> OpenAI
+</span></span><span style="display:flex;"><span>load_dotenv()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    question <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    pdf_name <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">2</span>]
+</span></span><span style="display:flex;"><span>    api_key <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getenv(<span style="color:#e6db74">&#34;OPENAI_API_KEY&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    text <span style="color:#f92672">=</span> extract_data(pdf_name)
+</span></span><span style="display:flex;"><span>    docs <span style="color:#f92672">=</span> split_text(text)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    docstorage <span style="color:#f92672">=</span> vectorize_and_store(docs, api_key)
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> answer_question(question, api_key, docstorage)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    print(response[<span style="color:#e6db74">&#39;result&#39;</span>])
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># return response</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">extract_data</span>(pdf_name):
+</span></span><span style="display:flex;"><span>    loader <span style="color:#f92672">=</span> PyPDFLoader(pdf_name)
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> loader<span style="color:#f92672">.</span>load()
+</span></span><span style="display:flex;"><span>    policy_text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> doc <span style="color:#f92672">in</span> data:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> isinstance(doc, dict) <span style="color:#f92672">and</span> <span style="color:#e6db74">&#39;text&#39;</span> <span style="color:#f92672">in</span> doc:
+</span></span><span style="display:flex;"><span>            policy_text <span style="color:#f92672">+=</span> doc[<span style="color:#e6db74">&#39;text&#39;</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> isinstance(doc, str):
+</span></span><span style="display:flex;"><span>            policy_text <span style="color:#f92672">+=</span> doc
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            policy_text <span style="color:#f92672">+=</span> repr(doc)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> policy_text
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">split_text</span>(text):
+</span></span><span style="display:flex;"><span>    ct_splitter <span style="color:#f92672">=</span> CharacterTextSplitter(separator<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;.&#39;</span>, chunk_size<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>, chunk_overlap<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>)
+</span></span><span style="display:flex;"><span>    docs <span style="color:#f92672">=</span> ct_splitter<span style="color:#f92672">.</span>split_text(text)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> docs
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">vectorize_and_store</span>(docs, api_key):
+</span></span><span style="display:flex;"><span>    embedding_function <span style="color:#f92672">=</span> OpenAIEmbeddings(openai_api_key<span style="color:#f92672">=</span>api_key)
+</span></span><span style="display:flex;"><span>    docstorage <span style="color:#f92672">=</span> FAISS<span style="color:#f92672">.</span>from_texts(docs, embedding_function)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> docstorage
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">answer_question</span>(question, api_key, docstorage):
+</span></span><span style="display:flex;"><span>    llm<span style="color:#f92672">=</span>OpenAI(model_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-3.5-turbo-instruct&#34;</span>, openai_api_key<span style="color:#f92672">=</span>api_key)
+</span></span><span style="display:flex;"><span>    qa <span style="color:#f92672">=</span> RetrievalQA<span style="color:#f92672">.</span>from_chain_type(llm<span style="color:#f92672">=</span>llm, chain_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stuff&#34;</span>, retriever<span style="color:#f92672">=</span>docstorage<span style="color:#f92672">.</span>as_retriever())          
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> qa<span style="color:#f92672">.</span>invoke(question)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> response
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>main()
+</span></span></code></pre></div><h3 id="running-the-script">Running the Script</h3>
+<p>Notice that we can now pass two additional strings: 1) the question to be answered and 2) the name of the pdf to pull the content.</p>
+<pre tabindex="0"><code>$ python llm_faiss_vectorstore.py &#34;Can I receive a blanket approval for outside work?&#34; &#34;pm-11.pdf&#34;
+</code></pre><pre tabindex="0"><code> No, blanket approvals for outside employment will not be granted. Approval for outside work must be obtained through normal administrative channels by the Chancellor or a designated campus administrative officer. ```
+</code></pre>
+    </div>
+    
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+  <h4>Comments:</h4>
+  <div id="cusdis_thread" data-host="https://cusdis.com"
+    data-app-id="00693eb6-18f3-4176-b3ba-cf9245891bce"
+    data-page-id="a239ee6dcd30b1e2220cd854578d46ba" 
+    data-page-url="http://blog.agilephd.com/posts/llm_langchain_revisited/"
+    data-page-title="Building an LLM Application with Langchain (revisited)"
+    data-theme="auto">
+  </div>
+  <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+  
+  
+
+    </main>
+  </body>
+</html>

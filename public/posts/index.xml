@@ -6,8 +6,15 @@
     <description>Recent content in Posts on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.agilephd.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building an LLM Application with Langchain (revisited)</title>
+      <link>http://blog.agilephd.com/posts/llm_langchain_revisited/</link>
+      <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://blog.agilephd.com/posts/llm_langchain_revisited/</guid>
+      <description>This is updated code from an earlier post on Langchain.&#xA;The code is being updated for three main reasons:&#xA;Some Windows users were having issues with Chroma. I wanted to pass arguments to the script. The script need more structure. Vectorstore In the earlier version, I used Chroma for storing the vectors. I liked this solution because it was easy and stored the results in a SQLite database. Unfortunately, one or more students using Windows had an issue with Chroma that we tried to overcome but decided to try another solution.</description>
+    </item>
     <item>
       <title>Building an LLM Application with Langchain</title>
       <link>http://blog.agilephd.com/posts/llm_langchain/</link>
