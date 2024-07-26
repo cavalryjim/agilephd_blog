@@ -7,15 +7,15 @@ date = 2024-07-25
 This is updated code from an [earlier post about Langchain](https://blog.agilephd.com/posts/llm_langchain/).
 
 The code is being updated for three main reasons:
-- Some Windows users were having issues with Chroma.
+- Some Windows users were having issues using Chroma for a vectorstore.
 - I wanted to pass arguments to the script.
-- The script need more structure.
+- The script needed more structure.
 
 ### Vectorstore
 
 In the earlier version, I used Chroma for storing the vectors.  I liked this solution because it was easy and stored the results in a SQLite database.  Unfortunately, one or more students using Windows had an issue with Chroma that we tried to overcome but decided to try another solution.
 
-While there are several database options, I decided to use [Facebook AI Similarity Search (FAISS)](https://python.langchain.com/v0.2/docs/integrations/vectorstores/faiss/).  One of the main attributes of FAISS is that it is an in-memory vectorstore which, to me, reduces the complexity of installing any additional software such as Postgres.  The refactor for this was relatively simple with an additional import, removing a couple lines, and changing the word `Chroma` to `FAISS`.
+While there are several database options, I decided to use [Facebook AI Similarity Search (FAISS)](https://python.langchain.com/v0.2/docs/integrations/vectorstores/faiss/).  One of the main attributes of FAISS is that it is an in-memory vectorstore which, to me, reduces the complexity of installing any additional software such as Postgres.  The refactor for this was relatively simple with an additional import, removing a couple lines of code, and changing the word `Chroma` to `FAISS`.
 
 ### Passing Arguments
 

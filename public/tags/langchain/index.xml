@@ -13,7 +13,7 @@
       <link>http://blog.agilephd.com/posts/llm_langchain_revisited/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://blog.agilephd.com/posts/llm_langchain_revisited/</guid>
-      <description>This is updated code from an earlier post about Langchain.&#xA;The code is being updated for three main reasons:&#xA;Some Windows users were having issues with Chroma. I wanted to pass arguments to the script. The script need more structure. Vectorstore In the earlier version, I used Chroma for storing the vectors. I liked this solution because it was easy and stored the results in a SQLite database. Unfortunately, one or more students using Windows had an issue with Chroma that we tried to overcome but decided to try another solution.</description>
+      <description>This is updated code from an earlier post about Langchain.&#xA;The code is being updated for three main reasons:&#xA;Some Windows users were having issues using Chroma for a vectorstore. I wanted to pass arguments to the script. The script needed more structure. Vectorstore In the earlier version, I used Chroma for storing the vectors. I liked this solution because it was easy and stored the results in a SQLite database.</description>
     </item>
     <item>
       <title>Building an LLM Application with Langchain</title>
