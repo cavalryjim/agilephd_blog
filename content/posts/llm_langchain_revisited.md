@@ -4,7 +4,7 @@ tags = ["python", "AI", "langchain"]
 date = 2024-07-25
 +++
 
-This is updated code from an [earlier post on Langchain](https://blog.agilephd.com/posts/llm_langchain/).
+This is updated code from an [earlier post about Langchain](https://blog.agilephd.com/posts/llm_langchain/).
 
 The code is being updated for three main reasons:
 - Some Windows users were having issues with Chroma.
