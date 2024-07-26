@@ -13,9 +13,9 @@ The code is being updated for three main reasons:
 
 ### Vectorstore
 
-In the earlier version, I used Chroma for storing the vectors.  I liked this solution because it was easy and stored the results in a SQLite database.  Unfortunately, one or more students using Windows had an issue with Chroma that we tried to overcome but decided to try another solution.
+In the earlier version, I used Chroma for storing the vectors.  I liked this solution because it was easy and stored the results in a SQLite database.  Unfortunately, one, or more, students using Windows had an issue with Chroma that we tried to overcome but decided to try another solution.
 
-While there are several database options, I decided to use [Facebook AI Similarity Search (FAISS)](https://python.langchain.com/v0.2/docs/integrations/vectorstores/faiss/).  One of the main attributes of FAISS is that it is an in-memory vectorstore which, to me, reduces the complexity of installing any additional software such as Postgres.  The refactor for this was relatively simple with an additional import, removing a couple lines of code, and changing the word `Chroma` to `FAISS`.
+While there are several storage options, I decided to use [Facebook AI Similarity Search (FAISS)](https://python.langchain.com/v0.2/docs/integrations/vectorstores/faiss/).  One of the main attributes of FAISS is that it is an in-memory vectorstore which, to me, reduces the complexity of installing any additional software such as Postgres.  The refactor for this was relatively simple with an additional import, removing a couple lines of code, and changing the word `Chroma` to `FAISS`.
 
 ### Passing Arguments
 
