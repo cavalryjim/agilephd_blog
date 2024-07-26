@@ -19,7 +19,7 @@ While there are several storage options, I decided to use [Facebook AI Similarit
 
 ### Passing Arguments
 
-When demoing the previous version of this code, I was immediately challenged with "How can we pass arguments?".  First, I gave a psuedo explanation mentioning Flask & Heroku or Django & Elastic Beanstalk.  Next, I added `import sys` and `print(sys.argv)` to the code.  If you have never used `sys.argv`, it provides a list of the script name and any other objects that happen to be part of the python call to the script.
+When demoing the previous version of this code, I was immediately challenged with "How can we pass arguments?".  First, I gave a psuedo explanation mentioning Flask & Heroku or Django & Elastic Beanstalk.  Next, I added `import sys` and `print(sys.argv)` to the code.  If you have never used `sys.argv`, it provides a list object containing the script name and any other objects that happen to be part of the python call to the script.
 
 ### Adding Structure
 
