@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Langchain on AgilePhD</title>
-    <link>http://blog.agilephd.com/tags/langchain/</link>
+    <link>http://localhost:1313/tags/langchain/</link>
     <description>Recent content in Langchain on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.agilephd.com/tags/langchain/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/langchain/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building an LLM Application with Langchain (revisited)</title>
-      <link>http://blog.agilephd.com/posts/llm_langchain_revisited/</link>
+      <link>http://localhost:1313/posts/llm_langchain_revisited/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://blog.agilephd.com/posts/llm_langchain_revisited/</guid>
+      <guid>http://localhost:1313/posts/llm_langchain_revisited/</guid>
       <description>This is updated code from an earlier post about Langchain.&#xA;The code is being updated for three main reasons:&#xA;Some Windows users were having issues using Chroma for a vectorstore. I wanted to pass arguments to the script. The script needed more structure. Vectorstore In the earlier version, I used Chroma for storing the vectors. I liked this solution because it was easy and stored the results in a SQLite database.</description>
     </item>
     <item>
       <title>Building an LLM Application with Langchain</title>
-      <link>http://blog.agilephd.com/posts/llm_langchain/</link>
+      <link>http://localhost:1313/posts/llm_langchain/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://blog.agilephd.com/posts/llm_langchain/</guid>
+      <guid>http://localhost:1313/posts/llm_langchain/</guid>
       <description>Primarily developed in Python, LangChain is a robust framework designed to simplify the development of applications that utilize large language models (LLMs). It enables developers to connect these models with various data sources and external APIs, facilitating the integration of advanced natural language processing capabilities into their applications. LangChain provides tools for constructing LLM-powered workflows, handling memory and state management, and ensuring scalability and efficiency. By offering a streamlined interface for working with LLMs, LangChain empowers developers to create sophisticated AI-driven solutions in areas such as chatbots, data analysis, content generation, and more, without needing extensive expertise in machine learning or AI model development.</description>
     </item>
   </channel>
