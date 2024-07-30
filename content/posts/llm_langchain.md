@@ -44,7 +44,7 @@ from langchain_openai import OpenAI
 load_dotenv()
 ```
 
-In above block, we're importing essential modules for handling PDFs, text processing, embeddings, vector storage, and the language model. The `load_dotenv` function loads environment variables from a `.env` file, which is useful for securely managing API keys.
+In the block above, we're importing essential modules for handling PDFs, text processing, embeddings, vector storage, and the language model. The `load_dotenv` function loads environment variables from a `.env` file, which is useful for securely managing API keys.
 
 ### Extract Contents from PDF
 
