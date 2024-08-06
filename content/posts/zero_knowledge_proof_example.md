@@ -1,6 +1,6 @@
 +++
 title = 'Zero-Knowledge Proofs: An Example using Python'
-tags = ["ZKPs", "Python"]
+tags = ["ZKPs", "python"]
 date = 2024-08-06
 +++
 
@@ -10,7 +10,7 @@ In this example, we will simulate the process where the prover wants to prove to
 
 ### The Code
 
-As a note, the code could be utilized in any coding environment but I would recommend a Jupyter Notebook. 
+As a note, this code could be utilized in any coding environment but I would recommend a Jupyter Notebook. 
 
 This class contains two balls and methods to shuffle them and verify their order.
 
@@ -29,8 +29,8 @@ class ZeroKnowledgeProof:
 ```
 
 This function runs the zero-knowledge proof multiple times (default 10 iterations). Each iteration involves:
-- Saving the initial order of the balls.
 - Shuffling the balls.
+- Saving the order of the balls.
 - The verifier (simulated here) decides to switch the balls or not.
 - Verifying if the prover correctly identifies the switch.
 
@@ -40,8 +40,8 @@ The output will print each iteration's initial and shuffled order, and whether t
 def prove_different_colors(zkp, iterations):
     n = 1
     while n <= iterations:
-        initial_balls = zkp.balls.copy()
         zkp.shuffle_balls()
+        initial_balls = zkp.balls.copy()
 
         choice = random.choice([True, False])  
         if choice:
@@ -57,7 +57,7 @@ def prove_different_colors(zkp, iterations):
     return True
 ```
 
-Initialize a zkp object.
+To run the above logic, I initialize a zkp object.
 
 ```python
 zkp = ZeroKnowledgeProof()
@@ -83,6 +83,7 @@ for i in range(10):
 
 ### Conclusion
 
-If you were the color blind friend, how many times would the prover have to provide the correct answer before you believed him?  Statistically, 
+If you were the color blind friend, how many times would the prover have to provide the correct answer before you believed him?  Statistically, the probability of getting the order of the balls correct once is 50%.  To get the order correct twice, the probability drops to 25%.  Three times would be 12.5%.  The probability of getting the order of the balls correct 10 times in a row would be 0.09%.  As you can see, the probability is trending toward becoming statistically impossible.
+
 
 

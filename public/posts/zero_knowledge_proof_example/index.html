@@ -20,14 +20,14 @@
   <meta name="twitter:title" content="Zero-Knowledge Proofs: An Example using Python">
   <meta name="twitter:description" content="Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario descripted in an earlier introduction to zero-knowledge proofs, we will use the color-blind friend and colored balls scenario as the context.
 In this example, we will simulate the process where the prover wants to prove to the verifier whether he can distinguish between two balls of different colors without revealing which is which.
-The Code As a note, the code could be utilized in any coding environment but I would recommend a Jupyter Notebook.">
+The Code As a note, this code could be utilized in any coding environment but I would recommend a Jupyter Notebook.">
 
     <meta property="og:url" content="http://blog.agilephd.com/posts/zero_knowledge_proof_example/">
   <meta property="og:site_name" content="AgilePhD">
   <meta property="og:title" content="Zero-Knowledge Proofs: An Example using Python">
   <meta property="og:description" content="Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario descripted in an earlier introduction to zero-knowledge proofs, we will use the color-blind friend and colored balls scenario as the context.
 In this example, we will simulate the process where the prover wants to prove to the verifier whether he can distinguish between two balls of different colors without revealing which is which.
-The Code As a note, the code could be utilized in any coding environment but I would recommend a Jupyter Notebook.">
+The Code As a note, this code could be utilized in any coding environment but I would recommend a Jupyter Notebook.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -104,7 +104,7 @@ The Code As a note, the code could be utilized in any coding environment but I w
       <p>Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario descripted in <a href="https://blog.agilephd.com/posts/zero_knowlege_proof/">an earlier introduction to zero-knowledge proofs</a>, we will use the color-blind friend and colored balls scenario as the context.</p>
 <p>In this example, we will simulate the process where the prover wants to prove to the verifier whether he can distinguish between two balls of different colors without revealing which is which.</p>
 <h3 id="the-code">The Code</h3>
-<p>As a note, the code could be utilized in any coding environment but I would recommend a Jupyter Notebook.</p>
+<p>As a note, this code could be utilized in any coding environment but I would recommend a Jupyter Notebook.</p>
 <p>This class contains two balls and methods to shuffle them and verify their order.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> random
 </span></span><span style="display:flex;"><span>
@@ -119,8 +119,8 @@ The Code As a note, the code could be utilized in any coding environment but I w
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> initial_balls <span style="color:#f92672">==</span> shuffled_balls
 </span></span></code></pre></div><p>This function runs the zero-knowledge proof multiple times (default 10 iterations). Each iteration involves:</p>
 <ul>
-<li>Saving the initial order of the balls.</li>
 <li>Shuffling the balls.</li>
+<li>Saving the order of the balls.</li>
 <li>The verifier (simulated here) decides to switch the balls or not.</li>
 <li>Verifying if the prover correctly identifies the switch.</li>
 </ul>
@@ -128,8 +128,8 @@ The Code As a note, the code could be utilized in any coding environment but I w
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prove_different_colors</span>(zkp, iterations):
 </span></span><span style="display:flex;"><span>    n <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> n <span style="color:#f92672">&lt;=</span> iterations:
-</span></span><span style="display:flex;"><span>        initial_balls <span style="color:#f92672">=</span> zkp<span style="color:#f92672">.</span>balls<span style="color:#f92672">.</span>copy()
 </span></span><span style="display:flex;"><span>        zkp<span style="color:#f92672">.</span>shuffle_balls()
+</span></span><span style="display:flex;"><span>        initial_balls <span style="color:#f92672">=</span> zkp<span style="color:#f92672">.</span>balls<span style="color:#f92672">.</span>copy()
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        choice <span style="color:#f92672">=</span> random<span style="color:#f92672">.</span>choice([<span style="color:#66d9ef">True</span>, <span style="color:#66d9ef">False</span>])  
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> choice:
@@ -143,7 +143,7 @@ The Code As a note, the code could be utilized in any coding environment but I w
 </span></span><span style="display:flex;"><span>        n <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
-</span></span></code></pre></div><p>Initialize a zkp object.</p>
+</span></span></code></pre></div><p>To run the above logic, I initialize a zkp object.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>zkp <span style="color:#f92672">=</span> ZeroKnowledgeProof()
 </span></span></code></pre></div><p>Here I am creating a function to test the zero-knowledge proof.  The output will print a success or failure message.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_zpk</span>(zkp, iterations<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>):
@@ -156,7 +156,7 @@ The Code As a note, the code could be utilized in any coding environment but I w
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
 </span></span><span style="display:flex;"><span>    test_zpk(zkp, <span style="color:#ae81ff">10</span>)
 </span></span></code></pre></div><h3 id="conclusion">Conclusion</h3>
-<p>If you were the color blind friend, how many times would the prover have to provide the correct answer before you believed him?  Statistically,</p>
+<p>If you were the color blind friend, how many times would the prover have to provide the correct answer before you believed him?  Statistically, the probability of getting the order of the balls correct once is 50%.  To get the order correct twice, the probability drops to 25%.  Three times would be 12.5%.  The probability of getting the order of the balls correct 10 times in a row would be 0.09%.  As you can see, the probability is trending toward becoming statistically impossible.</p>
 
       <h4>Comments:</h4>
       <div id="cusdis_thread" data-host="https://cusdis.com"
