@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ZKPs on AgilePhD</title>
+    <link>http://blog.agilephd.com/tags/zkps/</link>
+    <description>Recent content in ZKPs on AgilePhD</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://blog.agilephd.com/tags/zkps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zero-Knowledge Proofs: An Example using Python</title>
+      <link>http://blog.agilephd.com/posts/zero_knowledge_proof_example/</link>
+      <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://blog.agilephd.com/posts/zero_knowledge_proof_example/</guid>
+      <description>Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario descripted in an earlier introduction to zero-knowledge proofs, we will use the color-blind friend and colored balls scenario as the context.&#xA;In this example, we will simulate the process where the prover wants to prove to the verifier whether he can distinguish between two balls of different colors without revealing which is which.&#xA;The Code As a note, the code could be utilized in any coding environment but I would recommend a Jupyter Notebook.</description>
+    </item>
+    <item>
+      <title>Zero-Knowledge Proofs: An Introduction</title>
+      <link>http://blog.agilephd.com/posts/zero_knowlege_proof/</link>
+      <pubDate>Mon, 05 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://blog.agilephd.com/posts/zero_knowlege_proof/</guid>
+      <description>A zero-knowledge proof (ZKP) is a method by which one party (the prover) can prove to another party (the verifier) that a statement is true without revealing any additional information beyond the validity of the statement itself. This cryptographic technique is incredibly powerful and has various applications in the field of cybersecurity, blockchain, and privacy-preserving technologies.&#xA;The Essence of Zero-Knowledge Proofs To understand the concept, let&amp;rsquo;s break it down into three fundamental properties that a zero-knowledge proof must satisfy:</description>
+    </item>
+  </channel>
+</rss>
