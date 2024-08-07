@@ -13,7 +13,7 @@
       <link>http://blog.agilephd.com/posts/zero_knowledge_proof_example/</link>
       <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://blog.agilephd.com/posts/zero_knowledge_proof_example/</guid>
-      <description>Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario described in an earlier introduction to zero-knowledge proofs, I will use the color-blind friend and colored balls scenario as the context.&#xA;In this example, I will simulate the process where the prover wants to prove to the verifier, who is color-blind, whether he can distinguish between two balls of different colors without revealing which is which.</description>
+      <description>Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario described in an earlier post about zero-knowledge proofs, I will use the color-blind friend and colored balls scenario as the context.&#xA;In this example, I will simulate the process where the prover wants to prove to the verifier, who is color-blind, whether he can distinguish between two balls of different colors without revealing which is which.</description>
     </item>
     <item>
       <title>Zero-Knowledge Proofs: An Introduction</title>
