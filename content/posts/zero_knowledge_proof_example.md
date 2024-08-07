@@ -12,7 +12,7 @@ In this example, I will simulate the process where the prover wants to prove to 
 
 As a note, this code could be utilized in any coding environment but I would recommend a Jupyter Notebook.  A version of the code mentioned in this post can be viewed on [GitHub](https://github.com/cavalryjim/zkp_example).
 
-#### ZKP Class
+#### Create the ZKP Class
 
 This class contains two balls and methods to shuffle them and verify their order.
 
