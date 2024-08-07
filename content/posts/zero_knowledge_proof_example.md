@@ -4,13 +4,15 @@ tags = ["ZKPs", "python"]
 date = 2024-08-06
 +++
 
-Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario descripted in [an earlier introduction to zero-knowledge proofs](https://blog.agilephd.com/posts/zero_knowlege_proof/), we will use the color-blind friend and colored balls scenario as the context.
+Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario described in [an earlier introduction to zero-knowledge proofs](https://blog.agilephd.com/posts/zero_knowlege_proof/), I will use the color-blind friend and colored balls scenario as the context.
 
-In this example, we will simulate the process where the prover wants to prove to the verifier whether he can distinguish between two balls of different colors without revealing which is which.
+In this example, I will simulate the process where the prover wants to prove to the verifier, who is color-blind, whether he can distinguish between two balls of different colors without revealing which is which.
 
 ### The Code
 
 As a note, this code could be utilized in any coding environment but I would recommend a Jupyter Notebook.  A version of the code mentioned in this post can be viewed on [GitHub](https://github.com/cavalryjim/zkp_example).
+
+#### ZKP Class
 
 This class contains two balls and methods to shuffle them and verify their order.
 
@@ -27,6 +29,8 @@ class ZeroKnowledgeProof:
     def verify(self, initial_balls, shuffled_balls):
         return initial_balls == shuffled_balls
 ```
+
+#### Function to Run the ZKP Object
 
 This function runs the zero-knowledge proof multiple times (default 10 iterations). Each iteration involves:
 - Shuffling the balls.
@@ -62,6 +66,8 @@ To run the above logic, I initialize a zkp object.
 ```python
 zkp = ZeroKnowledgeProof()
 ```
+
+#### Function to Test the ZKP
 
 Here I am creating a function to test the zero-knowledge proof.  The output will print a success or failure message.
 
