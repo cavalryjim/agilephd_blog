@@ -27,7 +27,7 @@ When writing code, things can quickly get out of hand.  Structured code is alway
 
 ### Udated Version
 
-Here is the updated script trying to accomplish stated objects:
+Here is the updated script trying to accomplish stated objectives:
 
 ```python
 import os
