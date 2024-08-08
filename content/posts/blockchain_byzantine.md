@@ -4,6 +4,7 @@ tags = ["blockchain"]
 date = 2024-05-28
 +++
 
+
 ![byzantine generals problem](../../byzantine-generals-problem.jpg)
 
 In game theory, the Byzantine Generals Problem is a fundamental dilemma illustrating the challenges of achieving consensus in a distributed network. The problem is named after a scenario where several generals of the Byzantine army must coordinate their attack strategy. These generals face two significant hurdles:
