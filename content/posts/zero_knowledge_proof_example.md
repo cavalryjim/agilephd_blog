@@ -4,7 +4,7 @@ tags = ["ZKPs", "python"]
 date = 2024-08-06
 +++
 
-Here's a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario described in [an earlier post about zero-knowledge proofs](https://blog.agilephd.com/posts/zero_knowlege_proof/), I will use the color-blind friend and colored balls scenario as the context.
+Here is a simple Python example that demonstrates a zero-knowledge proof. Keeping with the senario described in [an earlier post about zero-knowledge proofs](https://blog.agilephd.com/posts/zero_knowlege_proof/), I will use the color-blind friend and colored balls scenario as the context.
 
 In this example, I will simulate the process where the prover wants to prove to the verifier, who is color-blind, whether he can distinguish between two balls of different colors without revealing which is which.
 
