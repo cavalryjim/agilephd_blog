@@ -6,8 +6,22 @@
     <description>Recent content in Blockchain on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://blog.agilephd.com/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blockchain: A Python Example</title>
+      <link>http://blog.agilephd.com/posts/blockchain_python/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://blog.agilephd.com/posts/blockchain_python/</guid>
+      <description>Here is a simple Blockchain example written in Python.&#xA;Import a few packages that will be useful.&#xA;import hashlib import json from datetime import datetime Start by defining the Block and Blockchain classes.&#xA;The Block class will represent a single block in the blockchain. Each block will contain the block&amp;rsquo;s index, previous block&amp;rsquo;s hash, timestamp, data (transactions), nonce, and it&amp;rsquo;s own hash. The compute_hash method calculates the SHA-256 hash of the block&amp;rsquo;s contents.</description>
+    </item>
+    <item>
+      <title>Blockchain: Byzantine Generals Problem</title>
+      <link>http://blog.agilephd.com/posts/blockchain_byzantine/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://blog.agilephd.com/posts/blockchain_byzantine/</guid>
+      <description>In game theory, the Byzantine Generals Problem is a fundamental dilemma illustrating the challenges of achieving consensus in a distributed network. The problem is named after a scenario where several generals of the Byzantine army must coordinate their attack strategy. These generals face two significant hurdles:&#xA;Communication Over Unreliable Channels: The generals can only communicate by sending messages, which might get lost or tampered with.&#xA;Potential Traitors: Some generals might be traitors who could send misleading information to prevent the loyal generals from reaching a consensus.</description>
+    </item>
     <item>
       <title>Nonce and the Hash</title>
       <link>http://blog.agilephd.com/posts/nonce_and_hash/</link>
