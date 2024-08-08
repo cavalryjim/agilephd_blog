@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Scraping on AgilePhD</title>
-    <link>http://blog.agilephd.com/tags/web-scraping/</link>
+    <link>blog.agilephd.com/tags/web-scraping/</link>
     <description>Recent content in Web Scraping on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Jul 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.agilephd.com/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="blog.agilephd.com/tags/web-scraping/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Intro to Web Scraping with the Scrapy Package</title>
-      <link>http://blog.agilephd.com/posts/scrapy_quotes/</link>
+      <link>blog.agilephd.com/posts/scrapy_quotes/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>http://blog.agilephd.com/posts/scrapy_quotes/</guid>
+      <guid>blog.agilephd.com/posts/scrapy_quotes/</guid>
       <description>Web scraping is the automated process of extracting data from one, or more, websites. Automation allows for the collection and analysis of large volumes of web-based information efficiently. Utilizing tools and programming languages such as Python, web scraping involves sending requests to websites, parsing the HTML content, and retrieving specific data points like text, images, or links. This technique is widely used in various fields, including data analysis, market research, and content aggregation, allowing businesses and individuals to gather valuable insights and make informed decisions based on real-time web data.</description>
     </item>
   </channel>

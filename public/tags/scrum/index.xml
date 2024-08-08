@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scrum on AgilePhD</title>
-    <link>http://blog.agilephd.com/tags/scrum/</link>
+    <link>blog.agilephd.com/tags/scrum/</link>
     <description>Recent content in Scrum on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 09 Feb 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.agilephd.com/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="blog.agilephd.com/tags/scrum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scrum: The Product Owner</title>
-      <link>http://blog.agilephd.com/posts/scrum_product_owner/</link>
+      <link>blog.agilephd.com/posts/scrum_product_owner/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://blog.agilephd.com/posts/scrum_product_owner/</guid>
+      <guid>blog.agilephd.com/posts/scrum_product_owner/</guid>
       <description>Note: Portions of this posts were previously published as a book chapter about the Product Owner role in a Scrum team.&#xA;Software development during the 1990s experienced a fundamental shift in respect to the planning and management techniques. With accusations such as the Chaos Report, the field of IT project management was under attack and innovative approaches were emerging from industry.1 One of the main instigations causing new development approaches was the requirement of substantial upfront planning and the inability of traditional methods to handle frequent changes.</description>
     </item>
     <item>
       <title>Scrum: Brazilian Jiu-Jitsu of Software Development</title>
-      <link>http://blog.agilephd.com/posts/scrum_bjj/</link>
+      <link>blog.agilephd.com/posts/scrum_bjj/</link>
       <pubDate>Thu, 23 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>http://blog.agilephd.com/posts/scrum_bjj/</guid>
+      <guid>blog.agilephd.com/posts/scrum_bjj/</guid>
       <description>Reprint from SiliconBayouNews&#xA;Occasionally, something comes along that causes a shift in the way we do things. In the sport of mixed martial arts, that shift came with the introduction of a fighting technique known as Brazilian Jiu-Jitsu. At its core, Brazilian Jiu-Jitsu focuses on the fact that the majority of fights take place on the ground. Royce Gracie, a man of relatively small size, gained fame for his ability to defeat much larger opponents through the use of Brazilian Jiu-Jitsu.</description>
     </item>
     <item>
       <title>Going Back to School in a Technology Related Field: MBA vs MS</title>
-      <link>http://blog.agilephd.com/posts/graduate_school/</link>
+      <link>blog.agilephd.com/posts/graduate_school/</link>
       <pubDate>Fri, 22 Aug 2014 00:00:00 +0000</pubDate>
-      <guid>http://blog.agilephd.com/posts/graduate_school/</guid>
+      <guid>blog.agilephd.com/posts/graduate_school/</guid>
       <description>Reprint from SiliconBayouNews&#xA;Been thinking about getting a graduate degree? Here is some advice for entrepreneurs and technology professionals. For the perspective of this article, the focus will be on MBA vs. MS in a technology related field such as computer science or information systems. Other graduate programs may be relevant to your career but if you have to explain your degree to people, it probably will not mean much to them.</description>
     </item>
   </channel>
