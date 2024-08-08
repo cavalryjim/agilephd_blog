@@ -13,7 +13,7 @@
       <link>http://blog.agilephd.com/posts/blockchain_python/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
       <guid>http://blog.agilephd.com/posts/blockchain_python/</guid>
-      <description>Here is a simple Blockchain example written in Python.&#xA;Import a few packages that will be useful.&#xA;import hashlib import json from datetime import datetime Start by defining the Block and Blockchain classes.&#xA;The Block class will represent a single block in the blockchain. Each block will contain the block&amp;rsquo;s index, previous block&amp;rsquo;s hash, timestamp, data (transactions), nonce, and it&amp;rsquo;s own hash. The compute_hash method calculates the SHA-256 hash of the block&amp;rsquo;s contents.</description>
+      <description>Here is a simple Blockchain example written in Python.&#xA;The Code As a note, this code could be utilized in any coding environment but I would recommend a Jupyter Notebook. A version of the code mentioned in this post can be viewed on GitHub.&#xA;Import a few packages that will be useful.&#xA;import hashlib import json from datetime import datetime Start by defining the Block and Blockchain classes.&#xA;Create the Block Class The Block class will represent a single block in the blockchain.</description>
     </item>
     <item>
       <title>Blockchain: Byzantine Generals Problem</title>

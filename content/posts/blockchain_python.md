@@ -6,6 +6,10 @@ date = 2024-06-01
 
 Here is a simple Blockchain example written in Python.
 
+### The Code
+
+As a note, this code could be utilized in any coding environment but I would recommend a Jupyter Notebook.  A version of the code mentioned in this post can be viewed on [GitHub](https://github.com/cavalryjim/blockchain_example).
+
 Import a few packages that will be useful.
 
 ```python
@@ -15,6 +19,8 @@ from datetime import datetime
 ```
 
 Start by defining the Block and Blockchain classes. 
+
+#### Create the Block Class
 
 The `Block` class will represent a single block in the blockchain.  Each block will contain the block's index, previous block's hash, timestamp, data (transactions), nonce, and it's own hash.  The `compute_hash` method calculates the SHA-256 hash of the block's contents.
 
@@ -35,6 +41,8 @@ class Block:
         block_string = json.dumps(self.__dict__, sort_keys=True).encode()
         return hashlib.sha256(block_string).hexdigest()
 ```
+
+#### Create the Blockchain Class
 
 The `Blockchain` class will manage the chain of blocks and handle the consensus mechanism.  The class defines the following methods:
 - `create_genesis_block` method initializes the chain with the genesis block.
@@ -128,6 +136,8 @@ class Blockchain:
         return result
 ```
 
+#### Running the code
+
 When running this example, it will create a simple Blockchain, add some transactions, mine new blocks, and print the Blockchain's contents. It also checks the validity of the entire chain to ensure its integrity.
 
 ```python
@@ -156,5 +166,7 @@ print("Blockchain valid?", blockchain.check_chain_validity())
 ```
 Blockchain valid? True
 ```
+
+### Conclusion
 
 This basic implementation demonstrates how blockchain can achieve consensus and maintain a secure, tamper-evident record, effectively solving the [Byzantine Generals Problem](https://blog.agilephd.com/posts/blockchain_byzantine/) in a distributed network.
