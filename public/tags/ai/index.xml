@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI on AgilePhD</title>
-    <link>blog.agilephd.com/tags/ai/</link>
+    <link>http://blog.agilephd.com/tags/ai/</link>
     <description>Recent content in AI on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 25 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="blog.agilephd.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.agilephd.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Building an LLM Application with Langchain (revisited)</title>
-      <link>blog.agilephd.com/posts/llm_langchain_revisited/</link>
+      <link>http://blog.agilephd.com/posts/llm_langchain_revisited/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>blog.agilephd.com/posts/llm_langchain_revisited/</guid>
+      <guid>http://blog.agilephd.com/posts/llm_langchain_revisited/</guid>
       <description>This is updated code from an earlier post about Langchain.&#xA;The code is being updated for three main reasons:&#xA;Some Windows users were having issues using Chroma for a vectorstore. I wanted to pass arguments to the script. The script needed more structure. Vectorstore In the earlier version, I used Chroma for storing the vectors. I liked this solution because it was easy and stored the results in a SQLite database.</description>
     </item>
     <item>
       <title>Building an LLM Application with Langchain</title>
-      <link>blog.agilephd.com/posts/llm_langchain/</link>
+      <link>http://blog.agilephd.com/posts/llm_langchain/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>blog.agilephd.com/posts/llm_langchain/</guid>
+      <guid>http://blog.agilephd.com/posts/llm_langchain/</guid>
       <description>Primarily developed in Python, LangChain is a robust framework designed to simplify the development of applications that utilize large language models (LLMs). It enables developers to connect these models with various data sources and external APIs, facilitating the integration of advanced natural language processing capabilities into their applications. LangChain provides tools for constructing LLM-powered workflows, handling memory and state management, and ensuring scalability and efficiency. By offering a streamlined interface for working with LLMs, LangChain empowers developers to create sophisticated AI-driven solutions in areas such as chatbots, data analysis, content generation, and more, without needing extensive expertise in machine learning or AI model development.</description>
     </item>
     <item>
       <title>Students: How to Avoid Cheating with ChatGPT</title>
-      <link>blog.agilephd.com/posts/cheating_chatgpt/</link>
+      <link>http://blog.agilephd.com/posts/cheating_chatgpt/</link>
       <pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>blog.agilephd.com/posts/cheating_chatgpt/</guid>
+      <guid>http://blog.agilephd.com/posts/cheating_chatgpt/</guid>
       <description>In the age of advanced artificial intelligence, tools like ChatGPT have revolutionized how we access information, complete tasks, and enhance our productivity. However, with great power comes great responsibility. It&amp;rsquo;s crucial to understand how to use AI ethically and avoid falling into the trap of cheating. This blog post will guide you on the ethical use of ChatGPT and how to avoid misusing this powerful tool.&#xA;The Temptation of AI ChatGPT can assist with writing essays, solving complex problems, generating creative content, and much more.</description>
     </item>
     <item>
       <title>Harnessing the Power of AI with Prompt Engineering</title>
-      <link>blog.agilephd.com/posts/prompt_engineering/</link>
+      <link>http://blog.agilephd.com/posts/prompt_engineering/</link>
       <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>blog.agilephd.com/posts/prompt_engineering/</guid>
+      <guid>http://blog.agilephd.com/posts/prompt_engineering/</guid>
       <description>In the ever-evolving landscape of artificial intelligence (AI), prompt engineering has emerged as a critical skill for harnessing the full potential of large language models (LLMs) like OpenAI’s GPT-4. This burgeoning field involves crafting precise inputs, or &amp;ldquo;prompts,&amp;rdquo; to guide these models in generating accurate, relevant, and contextually appropriate outputs. Whether you are a developer, data scientist, or AI enthusiast, understanding prompt engineering can significantly enhance your ability to leverage AI for various applications.</description>
     </item>
   </channel>

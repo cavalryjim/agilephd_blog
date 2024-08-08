@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cryptography on AgilePhD</title>
-    <link>blog.agilephd.com/tags/cryptography/</link>
+    <link>http://blog.agilephd.com/tags/cryptography/</link>
     <description>Recent content in Cryptography on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 22 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="blog.agilephd.com/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.agilephd.com/tags/cryptography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Asymmetric Cryptography with Python</title>
-      <link>blog.agilephd.com/posts/asymmetric_cryptography/</link>
+      <link>http://blog.agilephd.com/posts/asymmetric_cryptography/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>blog.agilephd.com/posts/asymmetric_cryptography/</guid>
+      <guid>http://blog.agilephd.com/posts/asymmetric_cryptography/</guid>
       <description>RSA (Rivest-Shamir-Adleman) Cryptography RSA cryptography, named after its inventors Ron Rivest, Adi Shamir, and Leonard Adleman, is a widely used asymmetric encryption algorithm. It is a fundamental tool in modern cryptography and is used for secure data transmission, digital signatures, and various other cryptographic applications. RSA relies on the mathematical properties of prime numbers for its security.&#xA;Here&amp;rsquo;s a simplified explanation of how RSA cryptography works:&#xA;Key Generation: The first step is to generate a pair of keys: a public key and a private key.</description>
     </item>
   </channel>
