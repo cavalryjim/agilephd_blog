@@ -1,5 +1,5 @@
 +++
-title = 'Consensus Algorithms'
+title = 'Blockchain: Consensus Algorithms'
 tags = ["blockchain"]
 date = 2024-03-18
 +++

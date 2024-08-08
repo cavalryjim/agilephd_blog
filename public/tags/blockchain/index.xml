@@ -23,7 +23,7 @@
       <description>In game theory, the Byzantine Generals Problem is a fundamental dilemma illustrating the challenges of achieving consensus in a distributed network. The problem is named after a scenario where several generals of the Byzantine army must coordinate their attack strategy. These generals face two significant hurdles:&#xA;Communication Over Unreliable Channels: The generals can only communicate by sending messages, which might get lost or tampered with.&#xA;Potential Traitors: Some generals might be traitors who could send misleading information to prevent the loyal generals from reaching a consensus.</description>
     </item>
     <item>
-      <title>Nonce and the Hash</title>
+      <title>Blockchain: Nonce and the Hash</title>
       <link>http://blog.agilephd.com/posts/nonce_and_hash/</link>
       <pubDate>Tue, 02 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://blog.agilephd.com/posts/nonce_and_hash/</guid>
@@ -37,7 +37,7 @@
       <description>This post will discuss the concept of hashing and provide examples using the Python programming language.&#xA;The Hash A hash refers to a mathematical function that takes some type of information as input and returns an encrypted output with a fixed length. This output, or hash, is unique to the information used as the input. You can think of it as being like a fingerprint.&#xA;SHA256 is a popular cryptographic hash algorithm that produces a 256-bit hash value.</description>
     </item>
     <item>
-      <title>Consensus Algorithms</title>
+      <title>Blockchain: Consensus Algorithms</title>
       <link>http://blog.agilephd.com/posts/consensus_algorithms/</link>
       <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://blog.agilephd.com/posts/consensus_algorithms/</guid>
