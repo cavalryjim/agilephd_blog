@@ -38,7 +38,7 @@ class Block:
         block_dict = self.__dict__
         if 'hash' in block_dict:
             del block_dict['hash']
-        block_string = json.dumps(self.__dict__, sort_keys=True).encode()
+        block_string = json.dumps(block_dict, sort_keys=True).encode()
         return hashlib.sha256(block_string).hexdigest()
 ```
 
