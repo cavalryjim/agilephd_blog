@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on AgilePhD</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://blog.agilephd.com/tags/</link>
     <description>Recent content in Tags on AgilePhD</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 06 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://blog.agilephd.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>http://blog.agilephd.com/tags/python/</link>
       <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>http://blog.agilephd.com/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>ZKPs</title>
-      <link>http://localhost:1313/tags/zkps/</link>
+      <link>http://blog.agilephd.com/tags/zkps/</link>
       <pubDate>Tue, 06 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/zkps/</guid>
+      <guid>http://blog.agilephd.com/tags/zkps/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>http://blog.agilephd.com/tags/ai/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>http://blog.agilephd.com/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Langchain</title>
-      <link>http://localhost:1313/tags/langchain/</link>
+      <link>http://blog.agilephd.com/tags/langchain/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/langchain/</guid>
+      <guid>http://blog.agilephd.com/tags/langchain/</guid>
       <description></description>
     </item>
     <item>
       <title>Aws</title>
-      <link>http://localhost:1313/tags/aws/</link>
+      <link>http://blog.agilephd.com/tags/aws/</link>
       <pubDate>Wed, 10 Jul 2024 20:32:38 -0500</pubDate>
-      <guid>http://localhost:1313/tags/aws/</guid>
+      <guid>http://blog.agilephd.com/tags/aws/</guid>
       <description></description>
     </item>
     <item>
       <title>Django</title>
-      <link>http://localhost:1313/tags/django/</link>
+      <link>http://blog.agilephd.com/tags/django/</link>
       <pubDate>Wed, 10 Jul 2024 20:32:38 -0500</pubDate>
-      <guid>http://localhost:1313/tags/django/</guid>
+      <guid>http://blog.agilephd.com/tags/django/</guid>
       <description></description>
     </item>
     <item>
       <title>Blockchain</title>
-      <link>http://localhost:1313/tags/blockchain/</link>
+      <link>http://blog.agilephd.com/tags/blockchain/</link>
       <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/blockchain/</guid>
+      <guid>http://blog.agilephd.com/tags/blockchain/</guid>
       <description></description>
     </item>
     <item>
       <title>Cryptography</title>
-      <link>http://localhost:1313/tags/cryptography/</link>
+      <link>http://blog.agilephd.com/tags/cryptography/</link>
       <pubDate>Fri, 22 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cryptography/</guid>
+      <guid>http://blog.agilephd.com/tags/cryptography/</guid>
       <description></description>
     </item>
     <item>
       <title>Healthcare</title>
-      <link>http://localhost:1313/tags/healthcare/</link>
+      <link>http://blog.agilephd.com/tags/healthcare/</link>
       <pubDate>Tue, 12 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/healthcare/</guid>
+      <guid>http://blog.agilephd.com/tags/healthcare/</guid>
       <description></description>
     </item>
     <item>
       <title>Web Scraping</title>
-      <link>http://localhost:1313/tags/web-scraping/</link>
+      <link>http://blog.agilephd.com/tags/web-scraping/</link>
       <pubDate>Mon, 25 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/web-scraping/</guid>
+      <guid>http://blog.agilephd.com/tags/web-scraping/</guid>
       <description></description>
     </item>
     <item>
       <title>Scrum</title>
-      <link>http://localhost:1313/tags/scrum/</link>
+      <link>http://blog.agilephd.com/tags/scrum/</link>
       <pubDate>Sun, 09 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/scrum/</guid>
+      <guid>http://blog.agilephd.com/tags/scrum/</guid>
       <description></description>
     </item>
     <item>
       <title>Heroku</title>
-      <link>http://localhost:1313/tags/heroku/</link>
+      <link>http://blog.agilephd.com/tags/heroku/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/heroku/</guid>
+      <guid>http://blog.agilephd.com/tags/heroku/</guid>
       <description></description>
     </item>
     <item>
       <title>Golf</title>
-      <link>http://localhost:1313/tags/golf/</link>
+      <link>http://blog.agilephd.com/tags/golf/</link>
       <pubDate>Thu, 15 Aug 2019 20:02:58 -0500</pubDate>
-      <guid>http://localhost:1313/tags/golf/</guid>
+      <guid>http://blog.agilephd.com/tags/golf/</guid>
       <description></description>
     </item>
   </channel>
